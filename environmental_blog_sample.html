@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Monitoring - Falling Data Zone</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffc700;
+            color: #000000;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background-color: #ffc700;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #000000;
+        }
+        
+        .logo-image {
+            height: 50px;
+            width: auto;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-title {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.2;
+            color: #000000;
+        }
+        
+        .logo-subtitle {
+            font-size: 13px;
+            font-weight: 400;
+            color: #000000;
+            opacity: 0.8;
+            line-height: 1.2;
+        }
+        
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .nav-link {
+            color: #000000;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 16px;
+            transition: opacity 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            opacity: 0.7;
+        }
+        
+        .linkedin-icon {
+            width: 20px;
+            height: 20px;
+            background-color: #000000;
+            color: #ffc700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+        
+        .hero-section {
+            margin-bottom: 80px;
+        }
+        
+        .page-title {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+        
+        .page-subtitle {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #000000;
+            margin-bottom: 30px;
+            max-width: 800px;
+        }
+        
+        .status-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: rgba(46, 204, 113, 0.1);
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 60px;
+        }
+        
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #2ECC71;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .conditions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+        
+        .condition-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .condition-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .condition-value {
+            font-size: 36px;
+            font-weight: 700;
+            color: #2C3E50;
+            margin-bottom: 8px;
+            line-height: 1;
+        }
+        
+        .condition-label {
+            font-size: 16px;
+            font-weight: 500;
+            color: #2C3E50;
+            opacity: 0.8;
+        }
+        
+        .data-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .data-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2C3E50;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .metric-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(44, 62, 80, 0.08);
+        }
+        
+        .metric-item:last-child {
+            border-bottom: none;
+        }
+        
+        .metric-label {
+            font-size: 15px;
+            font-weight: 400;
+            color: #2C3E50;
+            opacity: 0.8;
+        }
+        
+        .metric-value {
+            font-size: 15px;
+            font-weight: 600;
+            color: #2C3E50;
+        }
+        
+        .chart-area {
+            background-color: rgba(44, 62, 80, 0.02);
+            height: 200px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2C3E50;
+            font-size: 14px;
+            font-weight: 500;
+            opacity: 0.6;
+            margin-top: 20px;
+            border: 2px dashed rgba(44, 62, 80, 0.1);
+        }
+        
+        .terminal-section {
+            background-color: #2C3E50;
+            color: #2ECC71;
+            padding: 40px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            white-space: pre-line;
+            overflow-x: auto;
+            margin: 60px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .alert-box {
+            background-color: rgba(231, 76, 60, 0.1);
+            border-left: 4px solid #E74C3C;
+            padding: 20px;
+            border-radius: 6px;
+            margin: 40px 0;
+            color: #C0392B;
+            font-weight: 500;
+        }
+        
+        .tab-navigation {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 40px;
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 8px;
+            border-radius: 8px;
+        }
+        
+        .tab-link {
+            padding: 12px 24px;
+            background-color: transparent;
+            border: none;
+            border-radius: 6px;
+            color: #2C3E50;
+            font-weight: 500;
+            font-size: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .tab-link.active {
+            background-color: rgba(255, 255, 255, 0.9);
+            font-weight: 600;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tab-link:hover:not(.active) {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .footer {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 40px 0;
+            text-align: center;
+            color: #2C3E50;
+            margin-top: 80px;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        .footer-text {
+            font-size: 14px;
+            line-height: 1.8;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-link {
+            color: #2C3E50;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        
+        .footer-link:hover {
+            opacity: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .header-container,
+            .main-container,
+            .footer-container {
+                padding: 0 20px;
+            }
+            
+            .nav-menu {
+                gap: 20px;
+            }
+            
+            .page-title {
+                font-size: 36px;
+            }
+            
+            .conditions-grid {
+                grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+                gap: 20px;
+            }
+            
+            .data-sections {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="https://www.fallingdata.zone" class="logo-section">
+                <img src="/FDZ Logo v13.png" alt="Falling Data Zone - Environmental Monitoring" class="logo-image">
+            </a>
+            <nav class="nav-menu">
+                <a href="#" class="nav-link">Dashboard</a>
+                <a href="#" class="nav-link">Historical</a>
+                <a href="https://www.fallingdata.zone" class="nav-link">Portfolio</a>
+                <a href="https://www.linkedin.com/in/christopher-beye" class="linkedin-icon">in</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="main-container">
+        <section class="hero-section">
+            <h1 class="page-title">Liberty Hill Environmental Station</h1>
+            <p class="page-subtitle">Real-time environmental monitoring combining weather, aviation, and seismic data streams. Demonstrating data-driven insights through automated collection, analysis, and visualization of multi-source environmental phenomena.</p>
+            
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                Live monitoring operational • Last updated: 2 minutes ago
+            </div>
+        </section>
+        
+        <div class="tab-navigation">
+            <a href="#" class="tab-link active">Current Conditions</a>
+            <a href="#" class="tab-link">Daily Reports</a>
+            <a href="#" class="tab-link">Historical Data</a>
+            <a href="#" class="tab-link">System Status</a>
+        </div>
+        
+        <div class="conditions-grid">
+            <div class="condition-card">
+                <div class="condition-value">87°F</div>
+                <div class="condition-label">Temperature</div>
+            </div>
+            <div class="condition-card">
+                <div class="condition-value">12 mph</div>
+                <div class="condition-label">Wind Speed</div>
+            </div>
+            <div class="condition-card">
+                <div class="condition-value">67%</div>
+                <div class="condition-label">Humidity</div>
+            </div>
+            <div class="condition-card">
+                <div class="condition-value">142</div>
+                <div class="condition-label">Aircraft Tracked</div>
+            </div>
+            <div class="condition-card">
+                <div class="condition-value">0</div>
+                <div class="condition-label">Seismic Events</div>
+            </div>
+        </div>
+        
+        <div class="alert-box">
+            <strong>⚠️ Current Status:</strong> All monitoring systems operational. No severe weather alerts active. Seismic monitoring detecting normal background activity levels.
+        </div>
+        
+        <div class="data-sections">
+            <div class="data-card">
+                <h2 class="section-title">🌡️ Weather Conditions</h2>
+                <div class="metric-item">
+                    <span class="metric-label">High Temperature</span>
+                    <span class="metric-value">87°F (+5° above normal)</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Low Temperature</span>
+                    <span class="metric-value">68°F (+3° above normal)</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Barometric Pressure</span>
+                    <span class="metric-value">29.85 inHg (Rising)</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Wind Direction</span>
+                    <span class="metric-value">SSW at 12 mph</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Lightning Activity</span>
+                    <span class="metric-value">18 strikes (10mi radius)</span>
+                </div>
+                <div class="chart-area">
+                    Temperature trend chart generated by n8n automation
+                </div>
+            </div>
+            
+            <div class="data-card">
+                <h2 class="section-title">✈️ Aviation Activity</h2>
+                <div class="metric-item">
+                    <span class="metric-label">Total Aircraft Tracked</span>
+                    <span class="metric-value">142 aircraft</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Commercial Aviation</span>
+                    <span class="metric-value">89 flights</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">General Aviation</span>
+                    <span class="metric-value">53 flights</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Highest Altitude</span>
+                    <span class="metric-value">41,000 ft</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Local Traffic (10mi)</span>
+                    <span class="metric-value">23 aircraft</span>
+                </div>
+                <div class="chart-area">
+                    Flight path visualization with real-time aircraft positions
+                </div>
+            </div>
+            
+            <div class="data-card">
+                <h2 class="section-title">🌍 Seismic Monitoring</h2>
+                <div class="metric-item">
+                    <span class="metric-label">Station Status</span>
+                    <span class="metric-value">Operational (4 channels)</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Data Quality</span>
+                    <span class="metric-value">97% excellent</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Local Events (<10mi)</span>
+                    <span class="metric-value">0 earthquakes</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Regional Events (<50mi)</span>
+                    <span class="metric-value">2 earthquakes</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Largest Recent Event</span>
+                    <span class="metric-value">M2.1 - 34mi SW</span>
+                </div>
+                <div class="chart-area">
+                    Real-time seismogram from RaspberryShake R923A station
+                </div>
+            </div>
+            
+            <div class="data-card">
+                <h2 class="section-title">⚙️ System Performance</h2>
+                <div class="metric-item">
+                    <span class="metric-label">Weather Collection</span>
+                    <span class="metric-value">✅ Active (60-second intervals)</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Aircraft Tracking</span>
+                    <span class="metric-value">✅ Active (30-second intervals)</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Seismic Monitoring</span>
+                    <span class="metric-value">✅ Active (5-minute intervals)</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Database Performance</span>
+                    <span class="metric-value">✅ Excellent response times</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">API Connectivity</span>
+                    <span class="metric-value">✅ All data sources online</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="terminal-section">STATION REPORT
+LIBERTY HILL STATION, OK
+DATE: Tuesday, June 17, 2025
+COORDINATES: 35.6678°N, 98.7912°W
+
+TEMPERATURE (°F)
+ YESTERDAY
+  MAXIMUM          87     NORMAL 82     DEPARTURE +5
+  MINIMUM          68     NORMAL 65     DEPARTURE +3
+  AVERAGE          77     NORMAL 73     DEPARTURE +4
+
+PRECIPITATION (IN)
+ YESTERDAY         0.00     NORMAL 0.12     DEPARTURE -0.12
+ MONTH TO DATE     2.34     —
+ YEAR TO DATE     18.67     —
+
+AIRCRAFT SURVEILLANCE – ADS-B GROUND STATION
+ TOTAL OBSERVED        142 aircraft
+ COMMERCIAL FLIGHTS     89 aircraft  
+ GENERAL AVIATION       53 aircraft
+ HIGHEST ALTITUDE    41,000 ft
+ AIRCRAFT <10 MI         23 aircraft
+
+SEISMIC MONITORING – STATION R923A
+ STATUS                OPERATIONAL – 4 channels
+ OBSERVATIONS          133,504+ samples
+ DATA QUALITY          97% excellent
+
+REPORT GENERATED: Tuesday, June 17, 2025 08:45 CDT
+Automated via n8n workflows • Data sources: WeatherFlow • ADS-B Exchange • RaspberryShake • USGS</div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-text">
+                Environmental monitoring station operated as part of the Falling Data Zone research initiative.<br>
+                Automated data collection and analysis using n8n workflows, PostgreSQL databases, and multi-sensor integration.
+            </div>
+            <div class="footer-links">
+                <a href="https://www.fallingdata.zone" class="footer-link">Portfolio</a>
+                <a href="#" class="footer-link">Technical Documentation</a>
+                <a href="#" class="footer-link">Data Archive</a>
+                <a href="#" class="footer-link">API Access</a>
+                <a href="mailto:sean.lavigne@fallingdata.zone" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
