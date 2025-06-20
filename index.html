@@ -763,6 +763,8 @@ Data sources: WeatherFlow Tempest • ADS-B Exchange • RaspberryShake • USGS
         if (data.weather) {
           this.updateElement('temperature', `${data.weather.temperature}°F`);
           this.updateElement('feelsLike', `${data.weather.feelsLike}°F`);
+          this.updateElement('feelsLikeDetail', `Heat index ${data.weather.heatIndex}°F`);
+          this.updateElement('rainDetail', `${data.weather.precipitationLastHour}" last hour`);
           this.updateElement('humidity', `${data.weather.humidity}%`);
           this.updateElement('pressure', data.weather.pressure);
           this.updateElement('windSpeed', `${data.weather.windSpeed} mph`);
