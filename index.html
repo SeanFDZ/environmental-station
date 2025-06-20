@@ -769,7 +769,13 @@ Data sources: WeatherFlow Tempest • ADS-B Exchange • RaspberryShake • USGS
           this.updateElement('windGust', `${data.weather.windGust} mph`);
           this.updateElement('rainfall', `${data.weather.precipitation}"`);
           this.updateElement('solarRadiation', data.weather.solarRadiation);
-          this.updateElement('lightningStrikes', data.weather.lightningStrikes);
+          // Lightning updates
+          this.updateElement('lightningStrikes', data.weather.lightningStrikes || 0);
+          this.updateElement('lightningTotal', `${data.weather.lightningStrikes || 0} detected`);
+          this.updateElement('lightningLastHour', `${data.weather.lightningStrikes || 0} strikes`);
+          this.updateElement('lightningLast3Hours', `${data.weather.lightningStrikes || 0} strikes`);
+          this.updateElement('lightningDistance', data.weather.lightningStrikes > 0 ? '— miles away' : 'No recent strikes');
+          this.updateElement('lightningDetail', data.weather.lightningStrikes > 0 ? 'Active nearby' : 'No activity');
           
           // Update weather details
           this.updateElement('tempDetail', `${data.weather.temperature > data.weather.normalHigh ? '+' : ''}${data.weather.temperature - data.weather.normalHigh}° vs normal`);
