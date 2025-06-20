@@ -729,4 +729,151 @@ Data sources: WeatherFlow Tempest • ADS-B Exchange • RaspberryShake • USGS
     class ObservatoryDashboard {
       constructor() {
         this.lastUpdateTime = new Date();
-        this.refreshInterval =
+        this.refreshInterval = 60000; // 60 seconds
+        this.init();
+      }
+
+      async init() {
+        await this.loadLiveData();
+        this.startAutoRefresh();
+      }
+
+      async loadLiveData() {
+        try {
+          const response = await fetch('/data/current.json');
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          
+          const data = await response.json();
+          console.log('Live data loaded:', data);
+          
+          this.updateDashboard(data);
+          this.lastUpdateTime = new Date(data.timestamp);
+          this.updateLastUpdatedTime();
+          
+        } catch (error) {
+          console.error('Error loading live data:', error);
+          this.showError('Unable to load live data');
+        }
+      }
+
+      updateDashboard(data) {
+        // Update weather data
+        if (data.weather) {
+          this.updateElement('temperature', `${data.weather.temperature}°F`);
+          this.updateElement('feelsLike', `${data.weather.feelsLike}°F`);
+          this.updateElement('humidity', `${data.weather.humidity}%`);
+          this.updateElement('pressure', data.weather.pressure);
+          this.updateElement('windSpeed', `${data.weather.windSpeed} mph`);
+          this.updateElement('windGust', `${data.weather.windGust} mph`);
+          this.updateElement('rainfall', `${data.weather.precipitation}"`);
+          this.updateElement('solarRadiation', data.weather.solarRadiation);
+          this.updateElement('lightningStrikes', data.weather.lightningStrikes);
+          
+          // Update weather details
+          this.updateElement('tempDetail', `${data.weather.temperature > data.weather.normalHigh ? '+' : ''}${data.weather.temperature - data.weather.normalHigh}° vs normal`);
+          this.updateElement('windDetail', `${this.getWindDirection(data.weather.windDirection)} gusts to ${data.weather.windGust} mph`);
+          this.updateElement('humidityDetail', `Dew point ${data.weather.dewPoint}°F`);
+          this.updateElement('solarDetail', `W/m² • UV: ${data.weather.uvIndex}`);
+          
+          // Update weather section
+          this.updateElement('highTemp', `${data.weather.temperature}°F (Normal: ${data.weather.normalHigh}°F)`);
+          this.updateElement('lowTemp', `${data.weather.normalLow}°F (Normal: ${data.weather.normalLow}°F)`);
+          this.updateElement('uvIndex', `${data.weather.uvIndex} (${this.getUVDescription(data.weather.uvIndex)})`);
+        }
+
+        // Update aircraft data
+        if (data.aircraft) {
+          this.updateElement('aircraftCount', data.aircraft.total);
+          this.updateElement('aircraftDetail', 'Tracked in last 30 min');
+          this.updateElement('totalAircraft', `${data.aircraft.total} tracked (last 30 min)`);
+          this.updateElement('commercialFlights', `${data.aircraft.commercial} aircraft`);
+          this.updateElement('generalAviation', `${data.aircraft.generalAviation} aircraft`);
+          this.updateElement('lifeFlights', `${data.aircraft.lifeFlights} aircraft`);
+          this.updateElement('militaryAircraft', `${data.aircraft.military} aircraft`);
+          this.updateElement('highestAltitude', `${data.aircraft.highestAltitude.toLocaleString()} ft`);
+          this.updateElement('aircraftNearby', `${data.aircraft.aircraftNearby} aircraft`);
+        }
+
+        // Update seismic data
+        if (data.seismic) {
+          this.updateElement('seismicMeasurements', data.seismic.totalObservations.toLocaleString());
+          this.updateElement('seismicDetail', 'Samples in last 30 min');
+          this.updateElement('seismicSamples', `${data.seismic.totalObservations.toLocaleString()} samples (last 30 min)`);
+          this.updateElement('seismicChannels', `${data.seismic.activeChannels} channels`);
+          this.updateElement('stationHealth', data.seismic.stationHealth);
+        }
+
+        // Update system status
+        if (data.system) {
+          this.updateElement('dataUptime', `${data.system.dataUptime}%`);
+          this.updateElement('lastMaintenance', data.system.lastMaintenance);
+          this.updateElement('sensorHealth', data.system.sensorHealth);
+        }
+
+        // Update alerts
+        if (data.alerts) {
+          const alertBanner = document.getElementById('statusAlert');
+          if (alertBanner) {
+            alertBanner.textContent = data.alerts.statusMessage;
+            alertBanner.className = data.alerts.hasAlerts ? 'alert-banner warning' : 'alert-banner';
+          }
+        }
+      }
+
+      updateElement(id, value) {
+        const element = document.getElementById(id);
+        if (element) {
+          element.textContent = value;
+        }
+      }
+
+      getWindDirection(degrees) {
+        const directions = ['N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE', 'S', 'SSW', 'SW', 'WSW', 'W', 'WNW', 'NW', 'NNW'];
+        const index = Math.round(degrees / 22.5) % 16;
+        return directions[index];
+      }
+
+      getUVDescription(uv) {
+        if (uv <= 2) return 'Low';
+        if (uv <= 5) return 'Moderate';
+        if (uv <= 7) return 'High';
+        if (uv <= 10) return 'Very High';
+        return 'Extreme';
+      }
+
+      updateLastUpdatedTime() {
+        const element = document.getElementById('lastUpdated');
+        if (element) {
+          const now = new Date();
+          const diffMinutes = Math.floor((now - this.lastUpdateTime) / 60000);
+          element.textContent = `• Last updated: ${diffMinutes === 0 ? 'Just now' : diffMinutes + ' minutes ago'}`;
+        }
+      }
+
+      showError(message) {
+        const alertBanner = document.getElementById('statusAlert');
+        if (alertBanner) {
+          alertBanner.textContent = message;
+          alertBanner.className = 'alert-banner error';
+        }
+      }
+
+      startAutoRefresh() {
+        setInterval(() => {
+          this.loadLiveData();
+        }, this.refreshInterval);
+
+        // Update the "last updated" time every minute
+        setInterval(() => {
+          this.updateLastUpdatedTime();
+        }, 60000);
+      }
+    }
+
+    // Initialize the dashboard when the page loads
+    document.addEventListener('DOMContentLoaded', () => {
+      new ObservatoryDashboard();
+    });
+  </script>
