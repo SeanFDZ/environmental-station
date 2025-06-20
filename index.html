@@ -26,7 +26,7 @@
       font-family: var(--font-family-main);
       font-size: var(--font-size);
       color: var(--font-color);
-      background: linear-gradient(135deg, var(--background-color) 0%, hsl(46.82, 85%, 45%) 100%);
+      background-color: var(--background-color);
       letter-spacing: var(--letter-spacing);
       line-height: var(--line-height);
       margin: 0;
@@ -101,11 +101,18 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: var(--card-background);
+      background: #000;
+      color: var(--background-color);
       padding: 12px 20px;
       border-radius: 25px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(10px);
+      border: 4px solid transparent;
+      outline: 2px solid #000;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .live-status:hover {
+      outline: 4px solid #000;
     }
 
     .status-indicator {
@@ -124,11 +131,11 @@
 
     .live-text {
       font-weight: 500;
-      color: var(--accent-green);
+      color: var(--background-color);
     }
 
     .last-updated {
-      color: var(--text-muted);
+      color: var(--background-color);
       font-size: 0.9rem;
     }
 
@@ -141,24 +148,25 @@
     }
 
     .condition-card {
-      background: var(--card-background);
+      background: var(--background-color);
       padding: 25px;
       border-radius: 15px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 4px solid transparent;
+      outline: 2px solid #000;
+      transition: all 0.3s ease;
+      cursor: pointer;
     }
 
     .condition-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+      outline: 4px solid #000;
+      transform: translateY(-2px);
     }
 
     .condition-icon {
       font-size: 2.5rem;
       margin-bottom: 15px;
       display: block;
+      filter: brightness(0);
     }
 
     .condition-value {
@@ -170,13 +178,13 @@
 
     .condition-label {
       font-size: 1rem;
-      color: var(--text-muted);
+      color: var(--font-color);
       margin-bottom: 5px;
     }
 
     .condition-detail {
       font-size: 0.85rem;
-      color: var(--text-muted);
+      color: var(--font-color);
     }
 
     /* Data Sections */
@@ -188,12 +196,10 @@
     }
 
     .data-section {
-      background: var(--card-background);
+      background: var(--background-color);
       padding: 30px;
       border-radius: 15px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.3);
+      border: 2px solid #000;
     }
 
     .section-title {
@@ -218,7 +224,7 @@
     }
 
     .metric-label {
-      color: var(--text-muted);
+      color: var(--font-color);
       font-weight: 500;
     }
 
@@ -229,22 +235,24 @@
 
     /* Alert Banner */
     .alert-banner {
-      background: linear-gradient(135deg, var(--accent-green), #2ECC71);
-      color: white;
+      background: #000;
+      color: var(--background-color);
       padding: 20px 25px;
       border-radius: 12px;
       margin: 30px 0;
-      box-shadow: 0 6px 20px rgba(39, 174, 96, 0.3);
+      border: 2px solid #000;
     }
 
     .alert-banner.warning {
-      background: linear-gradient(135deg, var(--accent-orange), #F39C12);
-      box-shadow: 0 6px 20px rgba(230, 126, 34, 0.3);
+      background: var(--accent-orange);
+      color: #000;
+      border: 2px solid #000;
     }
 
     .alert-banner.error {
-      background: linear-gradient(135deg, #E74C3C, #C0392B);
-      box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
+      background: #E74C3C;
+      color: #fff;
+      border: 2px solid #000;
     }
 
     /* Chart Placeholder */
@@ -265,16 +273,16 @@
     }
 
     .cli-report {
-      background: #1e1e1e;
-      color: #00ff00;
+      background: #ffffff;
+      color: #000000;
       font-family: 'Courier New', monospace;
       font-size: 0.85rem;
       padding: 25px;
       border-radius: 10px;
       white-space: pre-line;
       overflow-x: auto;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-      border: 1px solid #333;
+      border: 2px solid #000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     /* Navigation Tabs */
@@ -282,18 +290,19 @@
       display: flex;
       gap: 5px;
       margin-bottom: 30px;
-      background: rgba(255, 255, 255, 0.3);
+      background: var(--background-color);
       padding: 5px;
       border-radius: 12px;
-      backdrop-filter: blur(10px);
+      border: 2px solid #000;
     }
 
     .nav-tab {
       padding: 12px 24px;
       background: transparent;
-      border: none;
+      border: 4px solid transparent;
+      outline: 1px solid #000;
       border-radius: 8px;
-      color: var(--text-muted);
+      color: var(--font-color);
       font-weight: 500;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -302,13 +311,14 @@
     }
 
     .nav-tab.active {
-      background: rgba(255, 255, 255, 0.8);
-      color: var(--font-color);
+      background: #000;
+      color: var(--background-color);
       font-weight: 600;
+      outline: 1px solid #000;
     }
 
     .nav-tab:hover {
-      background: rgba(255, 255, 255, 0.5);
+      outline: 2px solid #000;
     }
 
     /* Footer Styles */
@@ -476,7 +486,7 @@
         <span class="condition-icon">✈️</span>
         <div class="condition-value" id="aircraftCount">142</div>
         <div class="condition-label">Aircraft Tracked</div>
-        <div class="condition-detail" id="aircraftDetail">89 Commercial, 53 GA, 2 Life Flight, 10 Military (last 30 min)</div>
+        <div class="condition-detail" id="aircraftDetail">Collected in last 30 min</div>
       </div>
 
       <div class="condition-card">
@@ -488,12 +498,19 @@
     </div>
 
     <div class="alert-banner" id="statusAlert">
-      <strong>✅ All Systems Operational:</strong> Weather station online • Aircraft tracking active • Seismic monitoring normal • No severe weather alerts
+      <div style="display: inline-flex; align-items: center; gap: 8px;">
+        <div style="width: 12px; height: 12px; background: #27AE60; border-radius: 50%; animation: pulse 2s infinite;"></div>
+        <strong>All Systems Operational:</strong>
+      </div>
+      Weather station online • Aircraft tracking active • Seismic monitoring normal • No severe weather alerts
     </div>
 
     <div class="data-sections">
       <div class="data-section">
-        <h2 class="section-title">🌡️ Weather Conditions</h2>
+        <h2 class="section-title">
+          <span style="color: #000; font-size: 1.3rem; filter: brightness(0);">🌡️</span>
+          Weather Conditions
+        </h2>
         <div class="metric-row">
           <span class="metric-label">High Temperature</span>
           <span class="metric-value" id="highTemp">87°F (Normal: 82°F)</span>
@@ -521,7 +538,10 @@
       </div>
 
       <div class="data-section">
-        <h2 class="section-title">✈️ Aviation Activity</h2>
+        <h2 class="section-title">
+          <span style="color: #000; font-size: 1.3rem; filter: brightness(0);">✈️</span>
+          Aviation Activity
+        </h2>
         <div class="metric-row">
           <span class="metric-label">Total Aircraft</span>
           <span class="metric-value" id="totalAircraft">142 tracked (last 30 min)</span>
@@ -549,7 +569,10 @@
       </div>
 
       <div class="data-section">
-        <h2 class="section-title">📊 Seismic Monitoring</h2>
+        <h2 class="section-title">
+          <span style="color: #000; font-size: 1.3rem; filter: brightness(0);">📊</span>
+          Seismic Monitoring
+        </h2>
         <div class="metric-row">
           <span class="metric-label">Data Samples</span>
           <span class="metric-value" id="seismicSamples">8,420 samples (last 30 min)</span>
@@ -577,18 +600,27 @@
       </div>
 
       <div class="data-section">
-        <h2 class="section-title">⚙️ System Health</h2>
+        <h2 class="section-title">
+          <span style="color: #000; font-size: 1.3rem; filter: brightness(0);">⚙️</span>
+          System Health
+        </h2>
         <div class="metric-row">
           <span class="metric-label">Data Collection</span>
-          <span class="metric-value" id="dataCollection">✅ Active</span>
+          <span class="metric-value" id="dataCollection">
+            <span style="color: #27AE60;">●</span> Active
+          </span>
         </div>
         <div class="metric-row">
           <span class="metric-label">Database Status</span>
-          <span class="metric-value" id="databaseStatus">✅ PostgreSQL Online</span>
+          <span class="metric-value" id="databaseStatus">
+            <span style="color: #27AE60;">●</span> PostgreSQL Online
+          </span>
         </div>
         <div class="metric-row">
           <span class="metric-label">n8n Workflows</span>
-          <span class="metric-value" id="workflowStatus">✅ 3 Active</span>
+          <span class="metric-value" id="workflowStatus">
+            <span style="color: #27AE60;">●</span> 3 Active
+          </span>
         </div>
         <div class="metric-row">
           <span class="metric-label">Uptime</span>
