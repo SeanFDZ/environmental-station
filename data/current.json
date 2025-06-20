@@ -1,0 +1,48 @@
+{
+  "timestamp": "2025-06-20T20:13:08.158Z",
+  "lastUpdated": "2025-06-20T20:13:08.158Z",
+  "weather": {
+    "temperature": 0,
+    "feelsLike": 0,
+    "humidity": 0,
+    "pressure": "0.00",
+    "windSpeed": 0,
+    "windGust": 0,
+    "windDirection": 0,
+    "uvIndex": 0,
+    "solarRadiation": 0,
+    "dewPoint": 0,
+    "precipitation": "0.00",
+    "lightningStrikes": 0,
+    "dataAvailable": false
+  },
+  "aircraft": {
+    "total": 0,
+    "commercial": 0,
+    "generalAviation": 0,
+    "lifeFlights": 0,
+    "military": 0,
+    "balloons": 0,
+    "highestAltitude": 0,
+    "aircraftNearby": 0,
+    "totalObservations": 0,
+    "dataAvailable": false
+  },
+  "seismic": {
+    "totalObservations": 0,
+    "activeChannels": 4,
+    "dataQuality": 97,
+    "stationHealth": "Unknown",
+    "dataStatus": "No Data",
+    "recentObservations": 0,
+    "stationCode": "R923A",
+    "networkCode": "AM",
+    "dataAvailable": false
+  },
+  "system": {
+    "allSystemsOperational": false,
+    "dataUptime": 99.8,
+    "lastMaintenance": "5 days ago",
+    "sensorHealth": "All Good"
+  }
+}
