@@ -1,17 +1,764 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Environmental Monitoring - Falling Data Zone</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="152x152" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Observatory at Liberty Hill Station</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --font-family-main: 'Poppins', sans-serif;
+      --font-color: #000;
+      --font-size: 17.866px;
+      --letter-spacing: 0.35732px;
+      --line-height: 32.1588px;
+      --background-color: hsl(46.82, 100%, 50%);
+      --card-background: rgba(255, 255, 255, 0.9);
+      --accent-green: #27AE60;
+      --accent-blue: #3498DB;
+      --accent-orange: #E67E22;
+      --text-muted: #5D6D7E;
+    }
+
+    body {
+      font-family: var(--font-family-main);
+      font-size: var(--font-size);
+      color: var(--font-color);
+      background: linear-gradient(135deg, var(--background-color) 0%, hsl(46.82, 85%, 45%) 100%);
+      letter-spacing: var(--letter-spacing);
+      line-height: var(--line-height);
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18.66px 46.65px;
+      background-color: var(--background-color);
+      color: var(--font-color);
+      box-sizing: border-box;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    header img {
+      max-height: 72px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--font-color);
+      font-size: 1rem;
+      transition: opacity 0.3s ease;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    nav a svg {
+      vertical-align: middle;
+      fill: #000;
+      width: 18px;
+      height: 18px;
+    }
+
+    main {
+      padding: 40px 60px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* Dashboard Specific Styles */
+    .station-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .station-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin: 0 0 10px 0;
+      background: linear-gradient(135deg, #2C3E50, #34495E);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .station-subtitle {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      margin: 0 0 20px 0;
+    }
+
+    .live-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--card-background);
+      padding: 12px 20px;
+      border-radius: 25px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .status-indicator {
+      width: 12px;
+      height: 12px;
+      background: var(--accent-green);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 1; }
+      50% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+
+    .live-text {
+      font-weight: 500;
+      color: var(--accent-green);
+    }
+
+    .last-updated {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    /* Current Conditions Grid */
+    .conditions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin: 40px 0;
+    }
+
+    .condition-card {
+      background: var(--card-background);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .condition-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    .condition-icon {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    .condition-value {
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: var(--font-color);
+      margin-bottom: 8px;
+    }
+
+    .condition-label {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 5px;
+    }
+
+    .condition-detail {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Data Sections */
+    .data-sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 30px;
+      margin: 40px 0;
+    }
+
+    .data-section {
+      background: var(--card-background);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 0 0 20px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .metric-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .metric-row:last-child {
+      border-bottom: none;
+    }
+
+    .metric-label {
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .metric-value {
+      font-weight: 600;
+      color: var(--font-color);
+    }
+
+    /* Alert Banner */
+    .alert-banner {
+      background: linear-gradient(135deg, var(--accent-green), #2ECC71);
+      color: white;
+      padding: 20px 25px;
+      border-radius: 12px;
+      margin: 30px 0;
+      box-shadow: 0 6px 20px rgba(39, 174, 96, 0.3);
+    }
+
+    .alert-banner.warning {
+      background: linear-gradient(135deg, var(--accent-orange), #F39C12);
+      box-shadow: 0 6px 20px rgba(230, 126, 34, 0.3);
+    }
+
+    .alert-banner.error {
+      background: linear-gradient(135deg, #E74C3C, #C0392B);
+      box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
+    }
+
+    /* Chart Placeholder */
+    .chart-placeholder {
+      background: rgba(255, 255, 255, 0.5);
+      border: 2px dashed var(--text-muted);
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-top: 20px;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    /* CLI Report Section */
+    .cli-report-section {
+      margin: 40px 0;
+    }
+
+    .cli-report {
+      background: #1e1e1e;
+      color: #00ff00;
+      font-family: 'Courier New', monospace;
+      font-size: 0.85rem;
+      padding: 25px;
+      border-radius: 10px;
+      white-space: pre-line;
+      overflow-x: auto;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      border: 1px solid #333;
+    }
+
+    /* Navigation Tabs */
+    .nav-tabs {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 30px;
+      background: rgba(255, 255, 255, 0.3);
+      padding: 5px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-tab {
+      padding: 12px 24px;
+      background: transparent;
+      border: none;
+      border-radius: 8px;
+      color: var(--text-muted);
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      font-family: inherit;
+    }
+
+    .nav-tab.active {
+      background: rgba(255, 255, 255, 0.8);
+      color: var(--font-color);
+      font-weight: 600;
+    }
+
+    .nav-tab:hover {
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    /* Footer Styles */
+    footer {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-family-main);
+      font-size: var(--font-size);
+      padding: 15.55px 46.65px;
+      background-color: var(--background-color);
+      color: var(--font-color);
+      box-sizing: border-box;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      margin-top: 60px;
+    }
+
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .footer-left a {
+      color: var(--font-color);
+      text-decoration: none;
+      margin-bottom: 4px;
+    }
+
+    .footer-center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .footer-center img {
+      height: 108px;
+      width: 110px;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+    }
+
+    .footer-right a svg {
+      height: 18px;
+      width: 18px;
+      fill: #000;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      main {
+        padding: 20px 30px;
+      }
+
+      .conditions-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .data-sections {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .station-title {
+        font-size: 2rem;
+      }
+
+      .nav-tabs {
+        flex-wrap: wrap;
+      }
+
+      header {
+        padding: 15px 30px;
+      }
+
+      footer {
+        padding: 15px 30px;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .footer-center {
+        position: static;
+        transform: none;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Liberty Hill Station</h1>
-    <p>Coming soon - Real-time environmental monitoring station</p>
-    <p>This will showcase weather, aviation, and seismic data integration.</p>
-</body>
-</html>
+  <header>
+    <div style="display: flex; align-items: center;">
+      <img src="FDZ-Logo-v13-WX.png" alt="The Observatory at Liberty Hill Station Logo" />
+    </div>
+    <nav>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+      <a href="/reports">Reports</a>
+      <a href="https://www.linkedin.com/in/seanlavigne" target="_blank" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 
+            2.24 5 5 5h14c2.76 0 5-2.24 
+            5-5v-14c0-2.76-2.24-5-5-5zm-11 
+            19h-3v-10h3v10zm-1.5-11.27c-.97 
+            0-1.75-.79-1.75-1.76 0-.97.79-1.75 
+            1.75-1.75s1.75.78 1.75 
+            1.75c0 .97-.78 1.76-1.75 
+            1.76zm13.5 11.27h-3v-5.5c0-1.32-.03-3.01-1.84-3.01-1.84 
+            0-2.12 1.43-2.12 2.91v5.6h-3v-10h2.88v1.36h.04c.4-.76 
+            1.36-1.56 2.8-1.56 3 0 3.56 1.97 
+            3.56 4.53v5.67z"/>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="station-header">
+      <div class="live-status">
+        <div class="status-indicator"></div>
+        <span class="live-text">Live Monitoring Active</span>
+        <span class="last-updated" id="lastUpdated">• Last updated: 2 minutes ago</span>
+      </div>
+    </div>
+
+    <div class="nav-tabs">
+      <a href="#" class="nav-tab active">Live Dashboard</a>
+      <a href="/reports" class="nav-tab">Daily Reports</a>
+      <a href="/reports/historical" class="nav-tab">Historical Data</a>
+      <a href="/about" class="nav-tab">Station Info</a>
+    </div>
+
+    <div class="conditions-grid">
+      <div class="condition-card">
+        <span class="condition-icon">🌡️</span>
+        <div class="condition-value" id="temperature">87°F</div>
+        <div class="condition-label">Temperature</div>
+        <div class="condition-detail" id="tempDetail">+5° above normal</div>
+      </div>
+
+      <div class="condition-card">
+        <span class="condition-icon">💨</span>
+        <div class="condition-value" id="windSpeed">12 mph</div>
+        <div class="condition-label">Wind Speed</div>
+        <div class="condition-detail" id="windDetail">SSW gusts to 18 mph</div>
+      </div>
+
+      <div class="condition-card">
+        <span class="condition-icon">💧</span>
+        <div class="condition-value" id="humidity">67%</div>
+        <div class="condition-label">Humidity</div>
+        <div class="condition-detail" id="humidityDetail">Dew point 72°F</div>
+      </div>
+
+      <div class="condition-card">
+        <span class="condition-icon">🌧️</span>
+        <div class="condition-value" id="rainfall">0.00"</div>
+        <div class="condition-label">Today's Rain</div>
+        <div class="condition-detail" id="rainDetail">0.12" below normal</div>
+      </div>
+
+      <div class="condition-card">
+        <span class="condition-icon">✈️</span>
+        <div class="condition-value" id="aircraftCount">142</div>
+        <div class="condition-label">Aircraft Tracked</div>
+        <div class="condition-detail" id="aircraftDetail">89 Commercial, 53 GA, 2 Life Flight, 10 Military (last 30 min)</div>
+      </div>
+
+      <div class="condition-card">
+        <span class="condition-icon">📊</span>
+        <div class="condition-value" id="seismicMeasurements">8,420</div>
+        <div class="condition-label">Seismic Samples</div>
+        <div class="condition-detail" id="seismicDetail">Collected in last 30 min</div>
+      </div>
+    </div>
+
+    <div class="alert-banner" id="statusAlert">
+      <strong>✅ All Systems Operational:</strong> Weather station online • Aircraft tracking active • Seismic monitoring normal • No severe weather alerts
+    </div>
+
+    <div class="data-sections">
+      <div class="data-section">
+        <h2 class="section-title">🌡️ Weather Conditions</h2>
+        <div class="metric-row">
+          <span class="metric-label">High Temperature</span>
+          <span class="metric-value" id="highTemp">87°F (Normal: 82°F)</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Low Temperature</span>
+          <span class="metric-value" id="lowTemp">68°F (Normal: 65°F)</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Barometric Pressure</span>
+          <span class="metric-value" id="pressure">29.85 inHg (Rising)</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">UV Index</span>
+          <span class="metric-value" id="uvIndex">8 (Very High)</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Lightning Strikes</span>
+          <span class="metric-value" id="lightning">18 in 10mi radius</span>
+        </div>
+        <div class="chart-placeholder">
+          📈 Temperature & Pressure Trends
+          <br>Chart generated by n8n automation
+        </div>
+      </div>
+
+      <div class="data-section">
+        <h2 class="section-title">✈️ Aviation Activity</h2>
+        <div class="metric-row">
+          <span class="metric-label">Total Aircraft</span>
+          <span class="metric-value" id="totalAircraft">142 tracked (last 30 min)</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Commercial Flights</span>
+          <span class="metric-value" id="commercialFlights">89 aircraft</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">General Aviation</span>
+          <span class="metric-value" id="generalAviation">53 aircraft</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Life Flight / EMS</span>
+          <span class="metric-value" id="lifeFlights">2 aircraft</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Military Aircraft</span>
+          <span class="metric-value" id="militaryAircraft">10 aircraft</span>
+        </div>
+        <div class="chart-placeholder">
+          🗺️ Aircraft Activity Map
+          <br>Real-time ADS-B tracking visualization
+        </div>
+      </div>
+
+      <div class="data-section">
+        <h2 class="section-title">📊 Seismic Monitoring</h2>
+        <div class="metric-row">
+          <span class="metric-label">Data Samples</span>
+          <span class="metric-value" id="seismicSamples">8,420 samples (last 30 min)</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Channels Active</span>
+          <span class="metric-value" id="seismicChannels">4 channels</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Station Status</span>
+          <span class="metric-value" id="seismicStationStatus">R923A Operational</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Sample Rate</span>
+          <span class="metric-value" id="sampleRate">100 Hz per channel</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Recent Events</span>
+          <span class="metric-value" id="recentEvents">0 significant</span>
+        </div>
+        <div class="chart-placeholder">
+          📈 Live Seismogram
+          <br>RaspberryShake continuous monitoring
+        </div>
+      </div>
+
+      <div class="data-section">
+        <h2 class="section-title">⚙️ System Health</h2>
+        <div class="metric-row">
+          <span class="metric-label">Data Collection</span>
+          <span class="metric-value" id="dataCollection">✅ Active</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Database Status</span>
+          <span class="metric-value" id="databaseStatus">✅ PostgreSQL Online</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">n8n Workflows</span>
+          <span class="metric-value" id="workflowStatus">✅ 3 Active</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Uptime</span>
+          <span class="metric-value" id="uptime">99.7% (30 days)</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Last Backup</span>
+          <span class="metric-value" id="lastBackup">2 hours ago</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cli-report-section">
+      <h2 class="section-title">📋 Latest Station Report</h2>
+      <div class="cli-report" id="cliReport">STATION REPORT
+LIBERTY HILL STATION, OK
+DATE: Friday, June 20, 2025
+COORDINATES: 35.6678°N, 98.7912°W
+
+TEMPERATURE (°F)
+ TODAY
+  MAXIMUM          87     NORMAL 82     DEPARTURE +5
+  MINIMUM          68     NORMAL 65     DEPARTURE +3
+  AVERAGE          77     NORMAL 73     DEPARTURE +4
+
+PRECIPITATION (IN)
+ TODAY             0.00     NORMAL 0.12     DEPARTURE -0.12
+ MONTH TO DATE     2.34     —
+ YEAR TO DATE     18.67     —
+
+AIRCRAFT SURVEILLANCE – ADS-B GROUND STATION
+ TOTAL OBSERVED        142 aircraft
+ COMMERCIAL FLIGHTS     89 aircraft  
+ GENERAL AVIATION       53 aircraft
+ HIGHEST ALTITUDE    41,000 ft
+ AIRCRAFT <10 MI         23 aircraft
+
+SEISMIC MONITORING – STATION R923A
+ STATUS                OPERATIONAL – 4 channels
+ OBSERVATIONS          133,504+ samples
+ DATA QUALITY          97% excellent
+
+REPORT GENERATED: Friday, June 20, 2025 14:23 CDT
+Data sources: WeatherFlow Tempest • ADS-B Exchange • RaspberryShake • USGS</div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      <a href="mailto:Observatory@FallingData.Zone">Observatory@FallingData.Zone</a>
+      <span>Powered by Data & Strategy</span>
+    </div>
+    <div class="footer-center">
+      <img src="FDZ-Logo-Only.png" alt="Falling Data Logo" />
+    </div>
+    <div class="footer-right">
+      <a href="https://www.linkedin.com/in/seanlavigne" target="_blank" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 
+            2.24 5 5 5h14c2.76 0 5-2.24 
+            5-5v-14c0-2.76-2.24-5-5-5zm-11 
+            19h-3v-10h3v10zm-1.5-11.27c-.97 
+            0-1.75-.79-1.75-1.76 0-.97.79-1.75 
+            1.75-1.75s1.75.78 1.75 
+            1.75c0 .97-.78 1.76-1.75 
+            1.76zm13.5 11.27h-3v-5.5c0-1.32-.03-3.01-1.84-3.01-1.84 
+            0-2.12 1.43-2.12 2.91v5.6h-3v-10h2.88v1.36h.04c.4-.76 
+            1.36-1.56 2.8-1.56 3 0 3.56 1.97 
+            3.56 4.53v5.67z"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    // Live Data Management
+    class ObservatoryDashboard {
+      constructor() {
+        this.lastUpdateTime = new Date();
+        this.refreshInterval = 60000; // 60 seconds
+        this.init();
+      }
+
+      init() {
+        this.updateLastUpdatedTime();
+        this.startAutoRefresh();
+        this.setupEventListeners();
+      }
+
+      // Update the "Last Updated" timestamp
+      updateLastUpdatedTime() {
+        const now = new Date();
+        const timeAgo = this.getTimeAgo(now - this.lastUpdateTime);
+        document.getElementById('lastUpdated').textContent = `• Last updated: ${timeAgo}`;
+      }
+
+      // Calculate time ago in human readable format
+      getTimeAgo(milliseconds) {
+        const seconds = Math.floor(milliseconds / 1000);
+        const minutes = Math.floor(seconds / 60);
+        const hours = Math.floor(minutes / 60);
+
+        if (seconds < 60) return `${seconds} seconds ago`;
+        if (minutes < 60) return `${minutes} minute${minutes > 1 ? 's' : ''} ago`;
+        return `${hours} hour${hours > 1 ? 's' : ''} ago`;
+      }
+
+      // Fetch and update live data from JSON files
+      async fetchLiveData() {
+        try {
+          // This will eventually fetch from data/current.json generated by n8n
+          // For now, we'll simulate the data structure
+          const response = await this.simulateDataFetch();
+          this.updateDashboard(response);
+          this.lastUpdateTime = new Date();
+        } catch (error) {
+          console.error('Failed to fetch live data:', error);
+          this.showOfflineStatus();
+        }
+      }
+
+      // Simulate data fetch (replace with actual fetch to data/current.json)
+      async simulateDataFetch() {
+        // This simulates what n8n will generate
+        return new Promise(resolve => {
+          setTimeout(() => {
+            resolve({
+              timestamp: new Date().toISOString(),
+              timeWindow: 30, // minutes
+              weather: {
+                temperature: 87 + Math.floor(Math.random() * 6) - 3,
+                humidity: 67 + Math.floor(Math.random() * 10) - 5,
+                windSpeed: 12 + Math.floor(Math.random() * 8) - 4,
+                pressure: 29.85 + (Math.random() * 0.1) - 0.05,
+                rainfall: 0.00
+              },
+              aircraft: {
+                total: 142 + Math.floor(Math.random() * 20) - 10,
+                commercial: 89 + Math.floor(Math.random() * 10) - 5,
+                generalAviation: 53 + Math.floor(Math.random() * 10) - 5,
+                lifeFlight: Math.floor(Math.random() * 5),
+                military: Math.floor(Math.random() * 15)
+              },
+              seismic: {
+                status: 'operational',
+                samples: 8420 + Math.floor(Math.random() * 500) - 250,
+                channels: 4,
+                sampleRate: 100,
+                events: Math.floor(Math.random() * 3)
+              }
+            });
+          }, 500);
+        });
+      }
+
+      // Update dashboard elements with new data
+      updateDashboard(data) {
+        // Update weather data
+        document.getElementById('temperature').textContent = `${data.weather.temperature}°F`;
+        document.getElementById('windSpeed').textContent = `${data.weather.windSpeed} mph`;
+        document.getElementById('humidity').textContent = `${data.weather.humidity}%`;
+
+        // Update aircraft data
+        document.getElementById('aircraftCount').textContent = data.aircraft.total;
+        document.getElementById('totalAircraft').textContent = `${data.aircraft.total} tracked`;
+        document.getElementById('commercialFlights').textContent = `${data.aircraft.commercial} aircraft`;
+        document.getElementById('generalAviation').textContent = `${data.aircraft.generalAviation} aircraft`;
+
+        // Update seismic data
+        document.getElementById('seismicQuality').textContent = `${data.seismic.quality}% excellent`;
+        document.getElementById('recentEvents').textContent = `${data.seismic.events} significant`;
+
+        // Update status indicators
