@@ -34,7 +34,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 18.66px 46.65px;
-      background-color: #fff;
+      background-color: var(--background-color);
       color: var(--font-color);
       box-sizing: border-box;
     }
@@ -52,6 +52,7 @@
 
     nav a svg {
       vertical-align: middle;
+      fill: #000;
     }
 
     main {
@@ -65,26 +66,33 @@
       font-family: var(--font-family-main);
       font-size: var(--font-size);
       padding: 15.55px 46.65px;
-      background-color: #fff;
+      background-color: var(--background-color);
       color: var(--font-color);
       box-sizing: border-box;
     }
 
-    .footer-left, .footer-center, .footer-right {
+    .footer-left {
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
     .footer-left a {
       color: var(--font-color);
       text-decoration: none;
-      margin-right: 10px;
+      margin-bottom: 4px;
+    }
+
+    .footer-center img {
+      display: block;
+      height: auto;
+      max-width: 100%;
     }
 
     .footer-right a svg {
       height: 18px;
       width: 18px;
-      fill: currentColor;
+      fill: #000;
     }
   </style>
 </head>
@@ -98,7 +106,7 @@
       <a href="/contact">Contact</a>
       <a href="/login">Login</a>
       <a href="https://www.linkedin.com/in/seanlavigne" target="_blank" aria-label="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="18" viewBox="0 0 24 24" width="18">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 
             2.24 5 5 5h14c2.76 0 5-2.24 
             5-5v-14c0-2.76-2.24-5-5-5zm-11 
@@ -121,15 +129,15 @@
 
   <footer>
     <div class="footer-left">
-      <a href="mailto:Sean.Lavigne@FallingData.Zone">Sean.Lavigne@FallingData.Zone</a>
+      <a href="mailto:Observatory@FallingData.Zone">Observatory@FallingData.Zone</a>
       <span>Powered by Data & Strategy</span>
     </div>
     <div class="footer-center">
-      <img src="FDZ-Logo-Only.png" alt="Falling Data Logo" style="max-height: 40px;" />
+      <img src="FDZ-Logo-Only.png" alt="Falling Data Logo" />
     </div>
     <div class="footer-right">
       <a href="https://www.linkedin.com/in/seanlavigne" target="_blank" aria-label="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="18" viewBox="0 0 24 24" width="18">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 
             2.24 5 5 5h14c2.76 0 5-2.24 
             5-5v-14c0-2.76-2.24-5-5-5zm-11 
