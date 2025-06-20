@@ -759,40 +759,51 @@ Data sources: WeatherFlow Tempest • ADS-B Exchange • RaspberryShake • USGS
       }
 
       updateDashboard(data) {
-        // Update weather data
+        // Update main condition cards
         if (data.weather) {
           this.updateElement('temperature', `${data.weather.temperature}°F`);
           this.updateElement('feelsLike', `${data.weather.feelsLike}°F`);
           this.updateElement('humidity', `${data.weather.humidity}%`);
           this.updateElement('pressure', data.weather.pressure);
           this.updateElement('windSpeed', `${data.weather.windSpeed} mph`);
-          this.updateElement('windGust', `${data.weather.windGust} mph`);
           this.updateElement('rainfall', `${data.weather.precipitation}"`);
           this.updateElement('solarRadiation', data.weather.solarRadiation);
-          // Lightning updates
-          this.updateElement('lightningStrikes', data.weather.lightningStrikes || 0);
-          this.updateElement('lightningTotal', `${data.weather.lightningStrikes || 0} detected`);
-          this.updateElement('lightningLastHour', `${data.weather.lightningStrikes || 0} strikes`);
-          this.updateElement('lightningLast3Hours', `${data.weather.lightningStrikes || 0} strikes`);
-          this.updateElement('lightningDistance', data.weather.lightningStrikes > 0 ? '— miles away' : 'No recent strikes');
-          this.updateElement('lightningDetail', data.weather.lightningStrikes > 0 ? 'Active nearby' : 'No activity');
+          this.updateElement('lightningStrikes', data.weather.lightningStrikes);
           
-          // Update weather details
+          // Update detailed weather section
+          this.updateElement('highTemp', `${data.weather.temperature}°F (Normal: ${data.weather.normalHigh}°F)`);
+          this.updateElement('lowTemp', `${data.weather.normalLow}°F (Normal: ${data.weather.normalLow}°F)`);
+          this.updateElement('heatIndex', `${data.weather.heatIndex}°F (${this.getHeatIndexLevel(data.weather.heatIndex)})`);
+          this.updateElement('windChill', data.weather.temperature > 50 ? 'N/A (Above 50°F)' : `${data.weather.windChill}°F`);
+          this.updateElement('wetBulbGlobe', `${data.weather.wetBulbGlobeTemperature}°F (${this.getWBGTLevel(data.weather.wetBulbGlobeTemperature)})`);
+          this.updateElement('pressureBarometric', `${data.weather.pressure} inHg (${data.weather.pressureTrend} ${this.getPressureTrendArrow(data.weather.pressureTrend)})`);
+          this.updateElement('pressureStation', `${data.weather.stationPressure} inHg`);
+          this.updateElement('pressureSeaLevel', `${(parseFloat(data.weather.pressure) + 0.02).toFixed(2)} inHg`); // Estimated
+          this.updateElement('windLull', `${data.weather.windLull} mph (variable winds)`);
+          this.updateElement('brightness', `${data.weather.brightness.toLocaleString()} lux`);
+          this.updateElement('airDensity', `${data.weather.airDensity} kg/m³`);
+          this.updateElement('uvIndex', `${data.weather.uvIndex} (${this.getUVDescription(data.weather.uvIndex)})`);
+          
+          // Update lightning & precipitation section
+          this.updateElement('lightningTotal', `${data.weather.lightningStrikes} detected`);
+          this.updateElement('lightningLastHour', `${data.weather.lightningStrikesLastHour} strikes`);
+          this.updateElement('lightningLast3Hours', `${data.weather.lightningStrikesLast3Hours} strikes`);
+          this.updateElement('lightningDistance', data.weather.lightningLastDistance > 0 ? `${data.weather.lightningLastDistance} miles away` : 'No recent strikes');
+          this.updateElement('precipCurrent', `${data.weather.precipitationRate} in/hr`);
+          this.updateElement('precipLastHour', `${data.weather.precipitationLastHour} inches`);
+          this.updateElement('precipToday', `${data.weather.precipitation} inches`);
+          
+          // Update card details
           this.updateElement('tempDetail', `${data.weather.temperature > data.weather.normalHigh ? '+' : ''}${data.weather.temperature - data.weather.normalHigh}° vs normal`);
           this.updateElement('windDetail', `${this.getWindDirection(data.weather.windDirection)} gusts to ${data.weather.windGust} mph`);
           this.updateElement('humidityDetail', `Dew point ${data.weather.dewPoint}°F`);
           this.updateElement('solarDetail', `W/m² • UV: ${data.weather.uvIndex}`);
-          
-          // Update weather section
-          this.updateElement('highTemp', `${data.weather.temperature}°F (Normal: ${data.weather.normalHigh}°F)`);
-          this.updateElement('lowTemp', `${data.weather.normalLow}°F (Normal: ${data.weather.normalLow}°F)`);
-          this.updateElement('uvIndex', `${data.weather.uvIndex} (${this.getUVDescription(data.weather.uvIndex)})`);
+          this.updateElement('lightningDetail', data.weather.lightningStrikes > 0 ? 'Active nearby' : 'No activity');
         }
-
+      
         // Update aircraft data
         if (data.aircraft) {
           this.updateElement('aircraftCount', data.aircraft.total);
-          this.updateElement('aircraftDetail', 'Tracked in last 30 min');
           this.updateElement('totalAircraft', `${data.aircraft.total} tracked (last 30 min)`);
           this.updateElement('commercialFlights', `${data.aircraft.commercial} aircraft`);
           this.updateElement('generalAviation', `${data.aircraft.generalAviation} aircraft`);
@@ -801,31 +812,63 @@ Data sources: WeatherFlow Tempest • ADS-B Exchange • RaspberryShake • USGS
           this.updateElement('highestAltitude', `${data.aircraft.highestAltitude.toLocaleString()} ft`);
           this.updateElement('aircraftNearby', `${data.aircraft.aircraftNearby} aircraft`);
         }
-
+      
         // Update seismic data
         if (data.seismic) {
           this.updateElement('seismicMeasurements', data.seismic.totalObservations.toLocaleString());
-          this.updateElement('seismicDetail', 'Samples in last 30 min');
           this.updateElement('seismicSamples', `${data.seismic.totalObservations.toLocaleString()} samples (last 30 min)`);
           this.updateElement('seismicChannels', `${data.seismic.activeChannels} channels`);
+          this.updateElement('sampleRate', `${data.seismic.sampleRate} Hz`);
+          this.updateElement('recentEvents', `${data.seismic.recentEvents} detected`);
           this.updateElement('stationHealth', data.seismic.stationHealth);
+          this.updateElement('totalObservations', `${data.seismic.totalHistoricalObservations.toLocaleString()} recorded`);
         }
-
+      
         // Update system status
         if (data.system) {
           this.updateElement('dataUptime', `${data.system.dataUptime}%`);
+          this.updateElement('databaseRecords', `${data.system.databaseRecords.toLocaleString()} observations`);
           this.updateElement('lastMaintenance', data.system.lastMaintenance);
           this.updateElement('sensorHealth', data.system.sensorHealth);
+          this.updateElement('nextCalibration', data.system.nextCalibration);
+          this.updateElement('storageUsed', `${data.system.storageUsedGB} GB (${data.system.storageUsedPercent}%)`);
         }
-
+      
         // Update alerts
         if (data.alerts) {
           const alertBanner = document.getElementById('statusAlert');
           if (alertBanner) {
-            alertBanner.textContent = data.alerts.statusMessage;
+            alertBanner.innerHTML = `
+              <div style="display: inline-flex; align-items: center; gap: 8px;">
+                <div style="width: 12px; height: 12px; background: #27AE60; border-radius: 50%; animation: pulse 2s infinite;"></div>
+                <strong>All Systems Operational:</strong>
+              </div>
+              ${data.alerts.statusMessage}
+            `;
             alertBanner.className = data.alerts.hasAlerts ? 'alert-banner warning' : 'alert-banner';
           }
         }
+      }
+      
+      // Add these helper functions
+      getHeatIndexLevel(heatIndex) {
+        if (heatIndex < 80) return 'Normal';
+        if (heatIndex < 90) return 'Caution level';
+        if (heatIndex < 105) return 'Extreme caution';
+        return 'Danger level';
+      }
+      
+      getWBGTLevel(wbgt) {
+        if (wbgt < 78) return 'Low stress';
+        if (wbgt < 82) return 'Moderate stress';
+        if (wbgt < 86) return 'High stress';
+        return 'Extreme stress';
+      }
+      
+      getPressureTrendArrow(trend) {
+        if (trend === 'rising') return '↗';
+        if (trend === 'falling') return '↘';
+        return '→';
       }
 
       updateElement(id, value) {
