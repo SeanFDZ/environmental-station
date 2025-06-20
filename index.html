@@ -15,7 +15,6 @@
       --letter-spacing: 0.35732px;
       --line-height: 32.1588px;
       --background-color: hsl(46.82, 100%, 50%);
-      --card-background: rgba(255, 255, 255, 0.9);
       --accent-green: #27AE60;
       --accent-blue: #3498DB;
       --accent-orange: #E67E22;
@@ -81,22 +80,6 @@
       margin-bottom: 40px;
     }
 
-    .station-title {
-      font-size: 2.5rem;
-      font-weight: 600;
-      margin: 0 0 10px 0;
-      background: linear-gradient(135deg, #2C3E50, #34495E);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .station-subtitle {
-      font-size: 1.2rem;
-      color: var(--text-muted);
-      margin: 0 0 20px 0;
-    }
-
     .live-status {
       display: inline-flex;
       align-items: center;
@@ -137,6 +120,42 @@
     .last-updated {
       color: var(--background-color);
       font-size: 0.9rem;
+    }
+
+    /* Navigation Tabs */
+    .nav-tabs {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 30px;
+      background: var(--background-color);
+      padding: 5px;
+      border-radius: 12px;
+      border: 2px solid #000;
+    }
+
+    .nav-tab {
+      padding: 12px 24px;
+      background: transparent;
+      border: 4px solid transparent;
+      outline: 1px solid #000;
+      border-radius: 8px;
+      color: var(--font-color);
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      font-family: inherit;
+    }
+
+    .nav-tab.active {
+      background: #000;
+      color: var(--background-color);
+      font-weight: 600;
+      outline: 1px solid #000;
+    }
+
+    .nav-tab:hover {
+      outline: 2px solid #000;
     }
 
     /* Current Conditions Grid */
@@ -187,6 +206,28 @@
       color: var(--font-color);
     }
 
+    /* Alert Banner */
+    .alert-banner {
+      background: #000;
+      color: var(--background-color);
+      padding: 20px 25px;
+      border-radius: 12px;
+      margin: 30px 0;
+      border: 2px solid #000;
+    }
+
+    .alert-banner.warning {
+      background: var(--accent-orange);
+      color: #000;
+      border: 2px solid #000;
+    }
+
+    .alert-banner.error {
+      background: #E74C3C;
+      color: #fff;
+      border: 2px solid #000;
+    }
+
     /* Data Sections */
     .data-sections {
       display: grid;
@@ -211,6 +252,12 @@
       gap: 10px;
     }
 
+    .section-icon {
+      color: #000;
+      font-size: 1.3rem;
+      filter: brightness(0);
+    }
+
     .metric-row {
       display: flex;
       justify-content: space-between;
@@ -233,37 +280,15 @@
       color: var(--font-color);
     }
 
-    /* Alert Banner */
-    .alert-banner {
-      background: #000;
-      color: var(--background-color);
-      padding: 20px 25px;
-      border-radius: 12px;
-      margin: 30px 0;
-      border: 2px solid #000;
-    }
-
-    .alert-banner.warning {
-      background: var(--accent-orange);
-      color: #000;
-      border: 2px solid #000;
-    }
-
-    .alert-banner.error {
-      background: #E74C3C;
-      color: #fff;
-      border: 2px solid #000;
-    }
-
     /* Chart Placeholder */
     .chart-placeholder {
       background: rgba(255, 255, 255, 0.5);
-      border: 2px dashed var(--text-muted);
+      border: 2px dashed var(--font-color);
       padding: 40px 20px;
       text-align: center;
       border-radius: 10px;
       margin-top: 20px;
-      color: var(--text-muted);
+      color: var(--font-color);
       font-style: italic;
     }
 
@@ -283,42 +308,6 @@
       overflow-x: auto;
       border: 2px solid #000;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Navigation Tabs */
-    .nav-tabs {
-      display: flex;
-      gap: 5px;
-      margin-bottom: 30px;
-      background: var(--background-color);
-      padding: 5px;
-      border-radius: 12px;
-      border: 2px solid #000;
-    }
-
-    .nav-tab {
-      padding: 12px 24px;
-      background: transparent;
-      border: 4px solid transparent;
-      outline: 1px solid #000;
-      border-radius: 8px;
-      color: var(--font-color);
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      text-decoration: none;
-      font-family: inherit;
-    }
-
-    .nav-tab.active {
-      background: #000;
-      color: var(--background-color);
-      font-weight: 600;
-      outline: 1px solid #000;
-    }
-
-    .nav-tab:hover {
-      outline: 2px solid #000;
     }
 
     /* Footer Styles */
@@ -383,10 +372,6 @@
       .data-sections {
         grid-template-columns: 1fr;
         gap: 20px;
-      }
-
-      .station-title {
-        font-size: 2rem;
       }
 
       .nav-tabs {
@@ -508,7 +493,7 @@
     <div class="data-sections">
       <div class="data-section">
         <h2 class="section-title">
-          <span style="color: #000; font-size: 1.3rem; filter: brightness(0);">🌡️</span>
+          <span class="section-icon">🌡️</span>
           Weather Conditions
         </h2>
         <div class="metric-row">
@@ -539,7 +524,7 @@
 
       <div class="data-section">
         <h2 class="section-title">
-          <span style="color: #000; font-size: 1.3rem; filter: brightness(0);">✈️</span>
+          <span class="section-icon">✈️</span>
           Aviation Activity
         </h2>
         <div class="metric-row">
@@ -570,7 +555,7 @@
 
       <div class="data-section">
         <h2 class="section-title">
-          <span style="color: #000; font-size: 1.3rem; filter: brightness(0);">📊</span>
+          <span class="section-icon">📊</span>
           Seismic Monitoring
         </h2>
         <div class="metric-row">
@@ -601,7 +586,7 @@
 
       <div class="data-section">
         <h2 class="section-title">
-          <span style="color: #000; font-size: 1.3rem; filter: brightness(0);">⚙️</span>
+          <span class="section-icon">⚙️</span>
           System Health
         </h2>
         <div class="metric-row">
@@ -732,7 +717,6 @@ Data sources: WeatherFlow Tempest • ADS-B Exchange • RaspberryShake • USGS
       async fetchLiveData() {
         try {
           // This will eventually fetch from data/current.json generated by n8n
-          // For now, we'll simulate the data structure
           const response = await this.simulateDataFetch();
           this.updateDashboard(response);
           this.lastUpdateTime = new Date();
@@ -744,7 +728,6 @@ Data sources: WeatherFlow Tempest • ADS-B Exchange • RaspberryShake • USGS
 
       // Simulate data fetch (replace with actual fetch to data/current.json)
       async simulateDataFetch() {
-        // This simulates what n8n will generate
         return new Promise(resolve => {
           setTimeout(() => {
             resolve({
@@ -784,13 +767,101 @@ Data sources: WeatherFlow Tempest • ADS-B Exchange • RaspberryShake • USGS
         document.getElementById('humidity').textContent = `${data.weather.humidity}%`;
 
         // Update aircraft data
-        document.getElementById('aircraftCount').textContent = data.aircraft.total;
-        document.getElementById('totalAircraft').textContent = `${data.aircraft.total} tracked`;
+        const aircraftTotal = data.aircraft.commercial + data.aircraft.generalAviation + data.aircraft.lifeFlight + data.aircraft.military;
+        document.getElementById('aircraftCount').textContent = aircraftTotal;
+        document.getElementById('aircraftDetail').textContent = `Collected in last ${data.timeWindow} min`;
+        
+        document.getElementById('totalAircraft').textContent = `${aircraftTotal} tracked (last ${data.timeWindow} min)`;
         document.getElementById('commercialFlights').textContent = `${data.aircraft.commercial} aircraft`;
         document.getElementById('generalAviation').textContent = `${data.aircraft.generalAviation} aircraft`;
+        document.getElementById('lifeFlights').textContent = `${data.aircraft.lifeFlight} aircraft`;
+        document.getElementById('militaryAircraft').textContent = `${data.aircraft.military} aircraft`;
 
         // Update seismic data
-        document.getElementById('seismicQuality').textContent = `${data.seismic.quality}% excellent`;
+        document.getElementById('seismicMeasurements').textContent = data.seismic.samples.toLocaleString();
+        document.getElementById('seismicDetail').textContent = `Collected in last ${data.timeWindow} min`;
+        document.getElementById('seismicSamples').textContent = `${data.seismic.samples.toLocaleString()} samples (last ${data.timeWindow} min)`;
+        document.getElementById('sampleRate').textContent = `${data.seismic.sampleRate} Hz per channel`;
         document.getElementById('recentEvents').textContent = `${data.seismic.events} significant`;
 
         // Update status indicators
+        this.updateLastUpdatedTime();
+        this.updateConnectionStatus();
+      }
+
+      // Update connection status based on time since last update
+      updateConnectionStatus() {
+        const now = new Date();
+        const timeSinceUpdate = now - this.lastUpdateTime;
+        const minutesSinceUpdate = Math.floor(timeSinceUpdate / 60000);
+
+        const indicator = document.querySelector('.status-indicator');
+        const liveText = document.querySelector('.live-text');
+
+        if (minutesSinceUpdate <= 2) {
+          // Green: Data is fresh (0-2 minutes)
+          indicator.style.background = '#27AE60';
+          indicator.style.animation = 'pulse 2s infinite';
+          liveText.textContent = 'Live Monitoring Active';
+          liveText.style.color = 'var(--background-color)';
+        } else if (minutesSinceUpdate <= 5) {
+          // Amber: Data is getting stale (3-5 minutes)
+          indicator.style.background = '#E67E22';
+          indicator.style.animation = 'pulse 1s infinite';
+          liveText.textContent = 'Data Delayed';
+          liveText.style.color = 'var(--background-color)';
+        } else {
+          // Red: Data is stale (5+ minutes)
+          indicator.style.background = '#E74C3C';
+          indicator.style.animation = 'pulse 0.5s infinite';
+          liveText.textContent = 'Data Connection Lost';
+          liveText.style.color = 'var(--background-color)';
+        }
+      }
+
+      // Show offline status (for fetch errors)
+      showOfflineStatus() {
+        const indicator = document.querySelector('.status-indicator');
+        const liveText = document.querySelector('.live-text');
+        indicator.style.background = '#E74C3C';
+        indicator.style.animation = 'pulse 0.5s infinite';
+        liveText.textContent = 'Data Connection Lost';
+        liveText.style.color = 'var(--background-color)';
+      }
+
+      // Start automatic refresh cycle
+      startAutoRefresh() {
+        // Update timestamp and status every 30 seconds
+        setInterval(() => {
+          this.updateLastUpdatedTime();
+          this.updateConnectionStatus();
+        }, 30000);
+
+        // Fetch new data every 60 seconds
+        setInterval(() => {
+          this.fetchLiveData();
+        }, this.refreshInterval);
+
+        // Initial data fetch
+        this.fetchLiveData();
+      }
+
+      // Setup event listeners
+      setupEventListeners() {
+        // Add click handler for manual refresh
+        document.querySelector('.live-status').addEventListener('click', () => {
+          this.fetchLiveData();
+        });
+
+        // Add visual feedback for manual refresh
+        document.querySelector('.live-status').style.cursor = 'pointer';
+        document.querySelector('.live-status').title = 'Click to refresh data manually';
+      }
+    }
+
+    // Initialize dashboard when page loads
+    document.addEventListener('DOMContentLoaded', () => {
+      new ObservatoryDashboard();
+    });
+  </script>
+        
