@@ -370,17 +370,7 @@
       <a href="#station">Station Info</a>
       <a href="https://www.linkedin.com/in/seanlavigne" target="_blank" aria-label="LinkedIn">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 
-            2.24 5 5 5h14c2.76 0 5-2.24 
-            5-5v-14c0-2.76-2.24-5-5-5zm-11 
-            19h-3v-10h3v10zm-1.5-11.27c-.97 
-            0-1.75-.79-1.75-1.76 0-.97.79-1.75 
-            1.75-1.75s1.75.78 1.75 
-            1.75c0 .97-.78 1.76-1.75 
-            1.76zm13.5 11.27h-3v-5.5c0-1.32-.03-3.01-1.84-3.01-1.84 
-            0-2.12 1.43-2.12 2.91v5.6h-3v-10h2.88v1.36h.04c.4-.76 
-            1.36-1.56 2.8-1.56 3 0 3.56 1.97 
-            3.56 4.53v5.67z"/>
+          <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76 0-.97.79-1.75 1.75-1.75s1.75.78 1.75 1.75c0 .97-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.5c0-1.32-.03-3.01-1.84-3.01-1.84 0-2.12 1.43-2.12 2.91v5.6h-3v-10h2.88v1.36h.04c.4-.76 1.36-1.56 2.8-1.56 3 0 3.56 1.97 3.56 4.53v5.67z"/>
         </svg>
       </a>
     </nav>
@@ -404,6 +394,13 @@
       </div>
 
       <div class="condition-card">
+        <img src="icons/feels-like.svg" alt="Feels Like" class="condition-icon" />
+        <div class="condition-value" id="feelsLike">92°F</div>
+        <div class="condition-label">Feels Like</div>
+        <div class="condition-detail" id="feelsLikeDetail">Heat index 94°F</div>
+      </div>
+
+      <div class="condition-card">
         <img src="icons/wind.svg" alt="Wind" class="condition-icon" />
         <div class="condition-value" id="windSpeed">12 mph</div>
         <div class="condition-label">Wind Speed</div>
@@ -418,10 +415,31 @@
       </div>
 
       <div class="condition-card">
+        <img src="icons/pressure.svg" alt="Pressure" class="condition-icon" />
+        <div class="condition-value" id="pressure">29.85</div>
+        <div class="condition-label">Pressure</div>
+        <div class="condition-detail" id="pressureDetail">Rising ↗</div>
+      </div>
+
+      <div class="condition-card">
         <img src="icons/rain.svg" alt="Rain" class="condition-icon" />
         <div class="condition-value" id="rainfall">0.00"</div>
         <div class="condition-label">Today's Rain</div>
-        <div class="condition-detail" id="rainDetail">0.12" below normal</div>
+        <div class="condition-detail" id="rainDetail">0.12" last hour</div>
+      </div>
+
+      <div class="condition-card">
+        <img src="icons/solar.svg" alt="Solar" class="condition-icon" />
+        <div class="condition-value" id="solarRadiation">850</div>
+        <div class="condition-label">Solar Radiation</div>
+        <div class="condition-detail" id="solarDetail">W/m² • UV: 8</div>
+      </div>
+
+      <div class="condition-card">
+        <img src="icons/lightning.svg" alt="Lightning" class="condition-icon" />
+        <div class="condition-value" id="lightningStrikes">18</div>
+        <div class="condition-label">Lightning Strikes</div>
+        <div class="condition-detail" id="lightningDetail">Last: 5.2mi away</div>
       </div>
 
       <div class="condition-card">
@@ -462,20 +480,87 @@
           <span class="metric-value" id="lowTemp">68°F (Normal: 65°F)</span>
         </div>
         <div class="metric-row">
+          <span class="metric-label">Heat Index</span>
+          <span class="metric-value" id="heatIndex">94°F (Caution level)</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Wind Chill</span>
+          <span class="metric-value" id="windChill">N/A (Above 50°F)</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Wet Bulb Globe Temp</span>
+          <span class="metric-value" id="wetBulbGlobe">82°F (Moderate stress)</span>
+        </div>
+        <div class="metric-row">
           <span class="metric-label">Barometric Pressure</span>
-          <span class="metric-value" id="pressure">29.85 inHg (Rising)</span>
+          <span class="metric-value" id="pressureBarometric">29.85 inHg (Rising ↗)</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Station Pressure</span>
+          <span class="metric-value" id="pressureStation">29.82 inHg</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Sea Level Pressure</span>
+          <span class="metric-value" id="pressureSeaLevel">29.87 inHg</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Wind Lull</span>
+          <span class="metric-value" id="windLull">8 mph (variable winds)</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Brightness</span>
+          <span class="metric-value" id="brightness">85,000 lux</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Air Density</span>
+          <span class="metric-value" id="airDensity">1.185 kg/m³</span>
         </div>
         <div class="metric-row">
           <span class="metric-label">UV Index</span>
           <span class="metric-value" id="uvIndex">8 (Very High)</span>
         </div>
-        <div class="metric-row">
-          <span class="metric-label">Lightning Strikes</span>
-          <span class="metric-value" id="lightning">18 in 10mi radius</span>
-        </div>
         <div class="chart-placeholder">
           📈 Temperature & Pressure Trends
           <br>Chart generated by n8n automation
+        </div>
+      </div>
+
+      <div class="data-section">
+        <h2 class="section-title">
+          <img src="icons/lightning.svg" alt="Lightning" class="section-icon" />
+          Lightning & Precipitation
+        </h2>
+        <div class="metric-row">
+          <span class="metric-label">Lightning Strikes (Total)</span>
+          <span class="metric-value" id="lightningTotal">18 detected</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Strikes (Last Hour)</span>
+          <span class="metric-value" id="lightningLastHour">12 strikes</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Strikes (Last 3 Hours)</span>
+          <span class="metric-value" id="lightningLast3Hours">23 strikes</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Last Strike Distance</span>
+          <span class="metric-value" id="lightningDistance">5.2 miles away</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Current Precipitation</span>
+          <span class="metric-value" id="precipCurrent">0.00 in/hr</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Last Hour Accumulation</span>
+          <span class="metric-value" id="precipLastHour">0.12 inches</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Today's Total</span>
+          <span class="metric-value" id="precipToday">0.24 inches</span>
+        </div>
+        <div class="chart-placeholder">
+          ⚡ Lightning Activity Map
+          <br>Strike locations and precipitation radar
         </div>
       </div>
 
@@ -503,6 +588,14 @@
         <div class="metric-row">
           <span class="metric-label">Military Aircraft</span>
           <span class="metric-value" id="militaryAircraft">10 aircraft</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Highest Altitude</span>
+          <span class="metric-value" id="highestAltitude">41,000 ft</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Aircraft Within 10mi</span>
+          <span class="metric-value" id="aircraftNearby">23 aircraft</span>
         </div>
         <div class="chart-placeholder">
           🗺️ Aircraft Activity Map
@@ -535,6 +628,10 @@
           <span class="metric-label">Station Health</span>
           <span class="metric-value" id="stationHealth">Excellent</span>
         </div>
+        <div class="metric-row">
+          <span class="metric-label">Total Observations</span>
+          <span class="metric-value" id="totalObservations">1,847,293 recorded</span>
+        </div>
         <div class="chart-placeholder">
           📈 Seismogram Display
           <br>Live waveform data from RaspberryShake
@@ -549,6 +646,10 @@
         <div class="metric-row">
           <span class="metric-label">Data Uptime</span>
           <span class="metric-value" id="dataUptime">99.8%</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Database Records</span>
+          <span class="metric-value" id="databaseRecords">1,847,293 observations</span>
         </div>
         <div class="metric-row">
           <span class="metric-label">Last Maintenance</span>
@@ -617,17 +718,7 @@ Data sources: WeatherFlow Tempest • ADS-B Exchange • RaspberryShake • USGS
     <div class="footer-right">
       <a href="https://www.linkedin.com/in/seanlavigne" target="_blank" aria-label="LinkedIn">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 
-            2.24 5 5 5h14c2.76 0 5-2.24 
-            5-5v-14c0-2.76-2.24-5-5-5zm-11 
-            19h-3v-10h3v10zm-1.5-11.27c-.97 
-            0-1.75-.79-1.75-1.76 0-.97.79-1.75 
-            1.75-1.75s1.75.78 1.75 
-            1.75c0 .97-.78 1.76-1.75 
-            1.76zm13.5 11.27h-3v-5.5c0-1.32-.03-3.01-1.84-3.01-1.84 
-            0-2.12 1.43-2.12 2.91v5.6h-3v-10h2.88v1.36h.04c.4-.76 
-            1.36-1.56 2.8-1.56 3 0 3.56 1.97 
-            3.56 4.53v5.67z"/>
+          <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76 0-.97.79-1.75 1.75-1.75s1.75.78 1.75 1.75c0 .97-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.5c0-1.32-.03-3.01-1.84-3.01-1.84 0-2.12 1.43-2.12 2.91v5.6h-3v-10h2.88v1.36h.04c.4-.76 1.36-1.56 2.8-1.56 3 0 3.56 1.97 3.56 4.53v5.67z"/>
         </svg>
       </a>
     </div>
@@ -638,100 +729,4 @@ Data sources: WeatherFlow Tempest • ADS-B Exchange • RaspberryShake • USGS
     class ObservatoryDashboard {
       constructor() {
         this.lastUpdateTime = new Date();
-        this.refreshInterval = 60000; // 60 seconds
-        this.init();
-      }
-
-      init() {
-        this.updateLastUpdatedTime();
-        this.startAutoRefresh();
-        this.setupEventListeners();
-      }
-
-      // Update the "Last Updated" timestamp
-      updateLastUpdatedTime() {
-        const now = new Date();
-        const timeAgo = this.getTimeAgo(now - this.lastUpdateTime);
-        document.getElementById('lastUpdated').textContent = `• Last updated: ${timeAgo}`;
-      }
-
-      // Calculate time ago in human readable format
-      getTimeAgo(milliseconds) {
-        const seconds = Math.floor(milliseconds / 1000);
-        const minutes = Math.floor(seconds / 60);
-        const hours = Math.floor(minutes / 60);
-
-        if (seconds < 60) return `${seconds} seconds ago`;
-        if (minutes < 60) return `${minutes} minute${minutes > 1 ? 's' : ''} ago`;
-        return `${hours} hour${hours > 1 ? 's' : ''} ago`;
-      }
-
-      // Simulate fetching live data
-      async fetchLiveData() {
-        try {
-          const data = await this.simulateApiCall();
-          this.updateDashboard(data);
-          this.showOnlineStatus();
-        } catch (error) {
-          console.error('Failed to fetch live data:', error);
-          this.showOfflineStatus();
-        }
-      }
-
-      // Simulate API response
-      simulateApiCall() {
-        return new Promise((resolve) => {
-          setTimeout(() => {
-            resolve({
-              weather: {
-                temperature: 87 + (Math.random() - 0.5) * 4,
-                windSpeed: 12 + Math.floor(Math.random() * 6),
-                humidity: 67 + Math.floor((Math.random() - 0.5) * 10)
-              },
-              aircraft: {
-                commercial: 85 + Math.floor(Math.random() * 10),
-                generalAviation: 50 + Math.floor(Math.random() * 10),
-                lifeFlight: Math.floor(Math.random() * 3),
-                military: 8 + Math.floor(Math.random() * 5)
-              },
-              seismic: {
-                samples: 8000 + Math.floor(Math.random() * 1000),
-                channels: 4,
-                sampleRate: 100,
-                events: Math.floor(Math.random() * 3)
-              },
-              timeWindow: 30
-            });
-          }, 500);
-        });
-      }
-
-      // Update dashboard elements with new data
-      updateDashboard(data) {
-        // Update weather data
-        document.getElementById('temperature').textContent = `${Math.round(data.weather.temperature)}°F`;
-        document.getElementById('windSpeed').textContent = `${data.weather.windSpeed} mph`;
-        document.getElementById('humidity').textContent = `${data.weather.humidity}%`;
-
-        // Update aircraft data
-        const aircraftTotal = data.aircraft.commercial + data.aircraft.generalAviation + data.aircraft.lifeFlight + data.aircraft.military;
-        document.getElementById('aircraftCount').textContent = aircraftTotal;
-        document.getElementById('aircraftDetail').textContent = `Collected in last ${data.timeWindow} min`;
-        
-        document.getElementById('totalAircraft').textContent = `${aircraftTotal} tracked (last ${data.timeWindow} min)`;
-        document.getElementById('commercialFlights').textContent = `${data.aircraft.commercial} aircraft`;
-        document.getElementById('generalAviation').textContent = `${data.aircraft.generalAviation} aircraft`;
-        document.getElementById('lifeFlights').textContent = `${data.aircraft.lifeFlight} aircraft`;
-        document.getElementById('militaryAircraft').textContent = `${data.aircraft.military} aircraft`;
-
-        // Update seismic data
-        document.getElementById('seismicMeasurements').textContent = data.seismic.samples.toLocaleString();
-        document.getElementById('seismicDetail').textContent = `Collected in last ${data.timeWindow} min`;
-        
-        document.getElementById('seismicSamples').textContent = `${data.seismic.samples.toLocaleString()} samples (last ${data.timeWindow} min)`;
-        document.getElementById('recentEvents').textContent = `${data.seismic.events} detected`;
-
-        this.lastUpdateTime = new Date();
-      }
-
-      // Show online status (green indicator)
+        this.refreshInterval =
