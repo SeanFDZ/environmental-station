@@ -15,6 +15,7 @@
       --letter-spacing: 0.35732px;
       --line-height: 32.1588px;
       --background-color: hsl(46.82, 100%, 50%);
+      --card-background: #f8f8f8;
       --accent-green: #27AE60;
       --accent-blue: #3498DB;
       --accent-orange: #E67E22;
@@ -42,7 +43,6 @@
       background-color: var(--background-color);
       color: var(--font-color);
       box-sizing: border-box;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     header img {
@@ -74,7 +74,7 @@
       margin: 0 auto;
     }
 
-    /* Dashboard Specific Styles */
+    /* Station Header */
     .station-header {
       text-align: center;
       margin-bottom: 40px;
@@ -122,42 +122,6 @@
       font-size: 0.9rem;
     }
 
-    /* Navigation Tabs */
-    .nav-tabs {
-      display: flex;
-      gap: 5px;
-      margin-bottom: 30px;
-      background: var(--background-color);
-      padding: 5px;
-      border-radius: 12px;
-      border: 2px solid #000;
-    }
-
-    .nav-tab {
-      padding: 12px 24px;
-      background: transparent;
-      border: 4px solid transparent;
-      outline: 1px solid #000;
-      border-radius: 8px;
-      color: var(--font-color);
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      text-decoration: none;
-      font-family: inherit;
-    }
-
-    .nav-tab.active {
-      background: #000;
-      color: var(--background-color);
-      font-weight: 600;
-      outline: 1px solid #000;
-    }
-
-    .nav-tab:hover {
-      outline: 2px solid #000;
-    }
-
     /* Current Conditions Grid */
     .conditions-grid {
       display: grid;
@@ -167,7 +131,7 @@
     }
 
     .condition-card {
-      background: var(--background-color);
+      background: var(--card-background);
       padding: 25px;
       border-radius: 15px;
       border: 4px solid transparent;
@@ -182,10 +146,10 @@
     }
 
     .condition-icon {
-      font-size: 2.5rem;
+      width: 40px;
+      height: 40px;
       margin-bottom: 15px;
       display: block;
-      filter: brightness(0);
     }
 
     .condition-value {
@@ -237,7 +201,7 @@
     }
 
     .data-section {
-      background: var(--background-color);
+      background: var(--card-background);
       padding: 30px;
       border-radius: 15px;
       border: 2px solid #000;
@@ -253,9 +217,8 @@
     }
 
     .section-icon {
-      color: #000;
-      font-size: 1.3rem;
-      filter: brightness(0);
+      width: 20px;
+      height: 20px;
     }
 
     .metric-row {
@@ -295,6 +258,9 @@
     /* CLI Report Section */
     .cli-report-section {
       margin: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .cli-report {
@@ -308,6 +274,8 @@
       overflow-x: auto;
       border: 2px solid #000;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 680px;
+      width: fit-content;
     }
 
     /* Footer Styles */
@@ -322,7 +290,6 @@
       background-color: var(--background-color);
       color: var(--font-color);
       box-sizing: border-box;
-      border-top: 1px solid rgba(0, 0, 0, 0.1);
       margin-top: 60px;
     }
 
@@ -374,10 +341,6 @@
         gap: 20px;
       }
 
-      .nav-tabs {
-        flex-wrap: wrap;
-      }
-
       header {
         padding: 15px 30px;
       }
@@ -401,9 +364,10 @@
       <img src="FDZ-Logo-v13-WX.png" alt="The Observatory at Liberty Hill Station Logo" />
     </div>
     <nav>
-      <a href="/about">About</a>
-      <a href="/contact">Contact</a>
-      <a href="/reports">Reports</a>
+      <a href="#live">Live Dashboard</a>
+      <a href="#daily">Daily Reports</a>
+      <a href="#historical">Historical Data</a>
+      <a href="#station">Station Info</a>
       <a href="https://www.linkedin.com/in/seanlavigne" target="_blank" aria-label="LinkedIn">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 
@@ -431,51 +395,44 @@
       </div>
     </div>
 
-    <div class="nav-tabs">
-      <a href="#" class="nav-tab active">Live Dashboard</a>
-      <a href="/reports" class="nav-tab">Daily Reports</a>
-      <a href="/reports/historical" class="nav-tab">Historical Data</a>
-      <a href="/about" class="nav-tab">Station Info</a>
-    </div>
-
     <div class="conditions-grid">
       <div class="condition-card">
-        <span class="condition-icon">🌡️</span>
+        <img src="icons/temperature.svg" alt="Temperature" class="condition-icon" />
         <div class="condition-value" id="temperature">87°F</div>
         <div class="condition-label">Temperature</div>
         <div class="condition-detail" id="tempDetail">+5° above normal</div>
       </div>
 
       <div class="condition-card">
-        <span class="condition-icon">💨</span>
+        <img src="icons/wind.svg" alt="Wind" class="condition-icon" />
         <div class="condition-value" id="windSpeed">12 mph</div>
         <div class="condition-label">Wind Speed</div>
         <div class="condition-detail" id="windDetail">SSW gusts to 18 mph</div>
       </div>
 
       <div class="condition-card">
-        <span class="condition-icon">💧</span>
+        <img src="icons/humidity.svg" alt="Humidity" class="condition-icon" />
         <div class="condition-value" id="humidity">67%</div>
         <div class="condition-label">Humidity</div>
         <div class="condition-detail" id="humidityDetail">Dew point 72°F</div>
       </div>
 
       <div class="condition-card">
-        <span class="condition-icon">🌧️</span>
+        <img src="icons/rain.svg" alt="Rain" class="condition-icon" />
         <div class="condition-value" id="rainfall">0.00"</div>
         <div class="condition-label">Today's Rain</div>
         <div class="condition-detail" id="rainDetail">0.12" below normal</div>
       </div>
 
       <div class="condition-card">
-        <span class="condition-icon">✈️</span>
+        <img src="icons/aircraft.svg" alt="Aircraft" class="condition-icon" />
         <div class="condition-value" id="aircraftCount">142</div>
         <div class="condition-label">Aircraft Tracked</div>
         <div class="condition-detail" id="aircraftDetail">Collected in last 30 min</div>
       </div>
 
       <div class="condition-card">
-        <span class="condition-icon">📊</span>
+        <img src="icons/seismic.svg" alt="Seismic" class="condition-icon" />
         <div class="condition-value" id="seismicMeasurements">8,420</div>
         <div class="condition-label">Seismic Samples</div>
         <div class="condition-detail" id="seismicDetail">Collected in last 30 min</div>
@@ -493,7 +450,7 @@
     <div class="data-sections">
       <div class="data-section">
         <h2 class="section-title">
-          <span class="section-icon">🌡️</span>
+          <img src="icons/weather.svg" alt="Weather" class="section-icon" />
           Weather Conditions
         </h2>
         <div class="metric-row">
@@ -524,7 +481,7 @@
 
       <div class="data-section">
         <h2 class="section-title">
-          <span class="section-icon">✈️</span>
+          <img src="icons/aircraft.svg" alt="Aircraft" class="section-icon" />
           Aviation Activity
         </h2>
         <div class="metric-row">
@@ -555,7 +512,7 @@
 
       <div class="data-section">
         <h2 class="section-title">
-          <span class="section-icon">📊</span>
+          <img src="icons/seismic.svg" alt="Seismic" class="section-icon" />
           Seismic Monitoring
         </h2>
         <div class="metric-row">
@@ -567,76 +524,71 @@
           <span class="metric-value" id="seismicChannels">4 channels</span>
         </div>
         <div class="metric-row">
-          <span class="metric-label">Station Status</span>
-          <span class="metric-value" id="seismicStationStatus">R923A Operational</span>
-        </div>
-        <div class="metric-row">
           <span class="metric-label">Sample Rate</span>
-          <span class="metric-value" id="sampleRate">100 Hz per channel</span>
+          <span class="metric-value" id="sampleRate">100 Hz</span>
         </div>
         <div class="metric-row">
           <span class="metric-label">Recent Events</span>
-          <span class="metric-value" id="recentEvents">0 significant</span>
+          <span class="metric-value" id="recentEvents">2 detected</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Station Health</span>
+          <span class="metric-value" id="stationHealth">Excellent</span>
         </div>
         <div class="chart-placeholder">
-          📈 Live Seismogram
-          <br>RaspberryShake continuous monitoring
+          📈 Seismogram Display
+          <br>Live waveform data from RaspberryShake
         </div>
       </div>
 
       <div class="data-section">
         <h2 class="section-title">
-          <span class="section-icon">⚙️</span>
-          System Health
+          <img src="icons/system.svg" alt="System" class="section-icon" />
+          System Status
         </h2>
         <div class="metric-row">
-          <span class="metric-label">Data Collection</span>
-          <span class="metric-value" id="dataCollection">
-            <span style="color: #27AE60;">●</span> Active
-          </span>
+          <span class="metric-label">Data Uptime</span>
+          <span class="metric-value" id="dataUptime">99.8%</span>
         </div>
         <div class="metric-row">
-          <span class="metric-label">Database Status</span>
-          <span class="metric-value" id="databaseStatus">
-            <span style="color: #27AE60;">●</span> PostgreSQL Online
-          </span>
+          <span class="metric-label">Last Maintenance</span>
+          <span class="metric-value" id="lastMaintenance">5 days ago</span>
         </div>
         <div class="metric-row">
-          <span class="metric-label">n8n Workflows</span>
-          <span class="metric-value" id="workflowStatus">
-            <span style="color: #27AE60;">●</span> 3 Active
-          </span>
+          <span class="metric-label">Sensor Health</span>
+          <span class="metric-value" id="sensorHealth">All Good</span>
         </div>
         <div class="metric-row">
-          <span class="metric-label">Uptime</span>
-          <span class="metric-value" id="uptime">99.7% (30 days)</span>
+          <span class="metric-label">Next Calibration</span>
+          <span class="metric-value" id="nextCalibration">14 days</span>
         </div>
         <div class="metric-row">
-          <span class="metric-label">Last Backup</span>
-          <span class="metric-value" id="lastBackup">2 hours ago</span>
+          <span class="metric-label">Storage Used</span>
+          <span class="metric-value" id="storageUsed">47.3 GB (23%)</span>
+        </div>
+        <div class="chart-placeholder">
+          💾 System Performance
+          <br>Storage, CPU, and network metrics
         </div>
       </div>
     </div>
 
     <div class="cli-report-section">
-      <h2 class="section-title">📋 Latest Station Report</h2>
-      <div class="cli-report" id="cliReport">STATION REPORT
-LIBERTY HILL STATION, OK
-DATE: Friday, June 20, 2025
-COORDINATES: 35.6678°N, 98.7912°W
+      <h2>Latest Station Report</h2>
+      <div class="cli-report">
+═══════════════════════════════════════════════════════════════════════════════
+        THE OBSERVATORY AT LIBERTY HILL STATION
+═══════════════════════════════════════════════════════════════════════════════
 
-TEMPERATURE (°F)
- TODAY
-  MAXIMUM          87     NORMAL 82     DEPARTURE +5
-  MINIMUM          68     NORMAL 65     DEPARTURE +3
-  AVERAGE          77     NORMAL 73     DEPARTURE +4
+WEATHER CONDITIONS – WEATHERFLOW TEMPEST
+ TEMPERATURE           87°F / 30.6°C    FEELS LIKE        92°F
+ RELATIVE HUMIDITY     67%              DEW POINT         72°F  
+ WIND                  12 mph SSW       GUST PEAK         18 mph
+ PRESSURE              29.85 inHg       TREND             Rising
+ UV INDEX              8 (Very High)    SOLAR RAD         850 W/m²
+ PRECIPITATION         0.00" today      STORM DISTANCE    —
 
-PRECIPITATION (IN)
- TODAY             0.00     NORMAL 0.12     DEPARTURE -0.12
- MONTH TO DATE     2.34     —
- YEAR TO DATE     18.67     —
-
-AIRCRAFT SURVEILLANCE – ADS-B GROUND STATION
+ ADS-B GROUND STATION
  TOTAL OBSERVED        142 aircraft
  COMMERCIAL FLIGHTS     89 aircraft  
  GENERAL AVIATION       53 aircraft
@@ -649,7 +601,8 @@ SEISMIC MONITORING – STATION R923A
  DATA QUALITY          97% excellent
 
 REPORT GENERATED: Friday, June 20, 2025 14:23 CDT
-Data sources: WeatherFlow Tempest • ADS-B Exchange • RaspberryShake • USGS</div>
+Data sources: WeatherFlow Tempest • ADS-B Exchange • RaspberryShake • USGS
+      </div>
     </div>
   </main>
 
@@ -713,47 +666,41 @@ Data sources: WeatherFlow Tempest • ADS-B Exchange • RaspberryShake • USGS
         return `${hours} hour${hours > 1 ? 's' : ''} ago`;
       }
 
-      // Fetch and update live data from JSON files
+      // Simulate fetching live data
       async fetchLiveData() {
         try {
-          // This will eventually fetch from data/current.json generated by n8n
-          const response = await this.simulateDataFetch();
-          this.updateDashboard(response);
-          this.lastUpdateTime = new Date();
+          const data = await this.simulateApiCall();
+          this.updateDashboard(data);
+          this.showOnlineStatus();
         } catch (error) {
           console.error('Failed to fetch live data:', error);
           this.showOfflineStatus();
         }
       }
 
-      // Simulate data fetch (replace with actual fetch to data/current.json)
-      async simulateDataFetch() {
-        return new Promise(resolve => {
+      // Simulate API response
+      simulateApiCall() {
+        return new Promise((resolve) => {
           setTimeout(() => {
             resolve({
-              timestamp: new Date().toISOString(),
-              timeWindow: 30, // minutes
               weather: {
-                temperature: 87 + Math.floor(Math.random() * 6) - 3,
-                humidity: 67 + Math.floor(Math.random() * 10) - 5,
-                windSpeed: 12 + Math.floor(Math.random() * 8) - 4,
-                pressure: 29.85 + (Math.random() * 0.1) - 0.05,
-                rainfall: 0.00
+                temperature: 87 + (Math.random() - 0.5) * 4,
+                windSpeed: 12 + Math.floor(Math.random() * 6),
+                humidity: 67 + Math.floor((Math.random() - 0.5) * 10)
               },
               aircraft: {
-                total: 142 + Math.floor(Math.random() * 20) - 10,
-                commercial: 89 + Math.floor(Math.random() * 10) - 5,
-                generalAviation: 53 + Math.floor(Math.random() * 10) - 5,
-                lifeFlight: Math.floor(Math.random() * 5),
-                military: Math.floor(Math.random() * 15)
+                commercial: 85 + Math.floor(Math.random() * 10),
+                generalAviation: 50 + Math.floor(Math.random() * 10),
+                lifeFlight: Math.floor(Math.random() * 3),
+                military: 8 + Math.floor(Math.random() * 5)
               },
               seismic: {
-                status: 'operational',
-                samples: 8420 + Math.floor(Math.random() * 500) - 250,
+                samples: 8000 + Math.floor(Math.random() * 1000),
                 channels: 4,
                 sampleRate: 100,
                 events: Math.floor(Math.random() * 3)
-              }
+              },
+              timeWindow: 30
             });
           }, 500);
         });
@@ -762,7 +709,7 @@ Data sources: WeatherFlow Tempest • ADS-B Exchange • RaspberryShake • USGS
       // Update dashboard elements with new data
       updateDashboard(data) {
         // Update weather data
-        document.getElementById('temperature').textContent = `${data.weather.temperature}°F`;
+        document.getElementById('temperature').textContent = `${Math.round(data.weather.temperature)}°F`;
         document.getElementById('windSpeed').textContent = `${data.weather.windSpeed} mph`;
         document.getElementById('humidity').textContent = `${data.weather.humidity}%`;
 
@@ -780,88 +727,11 @@ Data sources: WeatherFlow Tempest • ADS-B Exchange • RaspberryShake • USGS
         // Update seismic data
         document.getElementById('seismicMeasurements').textContent = data.seismic.samples.toLocaleString();
         document.getElementById('seismicDetail').textContent = `Collected in last ${data.timeWindow} min`;
-        document.getElementById('seismicSamples').textContent = `${data.seismic.samples.toLocaleString()} samples (last ${data.timeWindow} min)`;
-        document.getElementById('sampleRate').textContent = `${data.seismic.sampleRate} Hz per channel`;
-        document.getElementById('recentEvents').textContent = `${data.seismic.events} significant`;
-
-        // Update status indicators
-        this.updateLastUpdatedTime();
-        this.updateConnectionStatus();
-      }
-
-      // Update connection status based on time since last update
-      updateConnectionStatus() {
-        const now = new Date();
-        const timeSinceUpdate = now - this.lastUpdateTime;
-        const minutesSinceUpdate = Math.floor(timeSinceUpdate / 60000);
-
-        const indicator = document.querySelector('.status-indicator');
-        const liveText = document.querySelector('.live-text');
-
-        if (minutesSinceUpdate <= 2) {
-          // Green: Data is fresh (0-2 minutes)
-          indicator.style.background = '#27AE60';
-          indicator.style.animation = 'pulse 2s infinite';
-          liveText.textContent = 'Live Monitoring Active';
-          liveText.style.color = 'var(--background-color)';
-        } else if (minutesSinceUpdate <= 5) {
-          // Amber: Data is getting stale (3-5 minutes)
-          indicator.style.background = '#E67E22';
-          indicator.style.animation = 'pulse 1s infinite';
-          liveText.textContent = 'Data Delayed';
-          liveText.style.color = 'var(--background-color)';
-        } else {
-          // Red: Data is stale (5+ minutes)
-          indicator.style.background = '#E74C3C';
-          indicator.style.animation = 'pulse 0.5s infinite';
-          liveText.textContent = 'Data Connection Lost';
-          liveText.style.color = 'var(--background-color)';
-        }
-      }
-
-      // Show offline status (for fetch errors)
-      showOfflineStatus() {
-        const indicator = document.querySelector('.status-indicator');
-        const liveText = document.querySelector('.live-text');
-        indicator.style.background = '#E74C3C';
-        indicator.style.animation = 'pulse 0.5s infinite';
-        liveText.textContent = 'Data Connection Lost';
-        liveText.style.color = 'var(--background-color)';
-      }
-
-      // Start automatic refresh cycle
-      startAutoRefresh() {
-        // Update timestamp and status every 30 seconds
-        setInterval(() => {
-          this.updateLastUpdatedTime();
-          this.updateConnectionStatus();
-        }, 30000);
-
-        // Fetch new data every 60 seconds
-        setInterval(() => {
-          this.fetchLiveData();
-        }, this.refreshInterval);
-
-        // Initial data fetch
-        this.fetchLiveData();
-      }
-
-      // Setup event listeners
-      setupEventListeners() {
-        // Add click handler for manual refresh
-        document.querySelector('.live-status').addEventListener('click', () => {
-          this.fetchLiveData();
-        });
-
-        // Add visual feedback for manual refresh
-        document.querySelector('.live-status').style.cursor = 'pointer';
-        document.querySelector('.live-status').title = 'Click to refresh data manually';
-      }
-    }
-
-    // Initialize dashboard when page loads
-    document.addEventListener('DOMContentLoaded', () => {
-      new ObservatoryDashboard();
-    });
-  </script>
         
+        document.getElementById('seismicSamples').textContent = `${data.seismic.samples.toLocaleString()} samples (last ${data.timeWindow} min)`;
+        document.getElementById('recentEvents').textContent = `${data.seismic.events} detected`;
+
+        this.lastUpdateTime = new Date();
+      }
+
+      // Show online status (green indicator)
