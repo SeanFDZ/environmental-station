@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports Archive - The Observatory at Liberty Hill Station</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="FDZ-favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: hsl(46.82, 100%, 50%);
+            min-height: 100vh;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18.66px 46.65px;
+            background-color: hsl(46.82, 100%, 50%);
+            color: #000;
+            box-sizing: border-box;
+        }
+
+        header img {
+            max-height: 72px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #000;
+            font-size: 1rem;
+            transition: opacity 0.3s ease;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        nav a svg {
+            vertical-align: middle;
+            fill: #000;
+            width: 18px;
+            height: 18px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            flex: 1;
+        }
+
+        .page-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .page-title h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .page-title p {
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        .report-type-selector {
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #000;
+            width: 100%;
+            max-width: none;
+        }
+
+        .report-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .report-type-btn {
+            background: hsl(46.82, 100%, 50%);
+            color: #000;
+            border: 2px solid #000;
+            padding: 15px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .report-type-btn:hover {
+            background: hsl(46.82, 100%, 60%);
+            transform: translateY(-2px);
+        }
+
+        .report-type-btn.active {
+            background: #000;
+            color: hsl(46.82, 100%, 50%);
+        }
+
+        .date-selector {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .date-selector.active {
+            display: block;
+        }
+
+        .date-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .date-btn {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .date-btn:hover {
+            background: hsl(46.82, 100%, 50%);
+            border-color: #000;
+        }
+
+        .date-btn.available {
+            border-color: #000;
+            font-weight: 600;
+        }
+
+        .report-display {
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #000;
+            display: none;
+        }
+
+        .report-display.active {
+            display: block;
+        }
+
+        .report-content {
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            font-weight: bold;
+            white-space: pre;
+            overflow-x: auto;
+            tab-size: 8;
+            -moz-tab-size: 8;
+            color: #000;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            font-style: italic;
+        }
+
+        .error {
+            color: #d32f2f;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 17.866px;
+            padding: 15.55px 46.65px;
+            background-color: hsl(46.82, 100%, 50%);
+            color: #000;
+            box-sizing: border-box;
+            margin-top: auto;
+        }
+
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .footer-left a {
+            color: #000;
+            text-decoration: none;
+            margin-bottom: 4px;
+        }
+
+        .footer-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .footer-center img {
+            height: 108px;
+            width: 110px;
+            object-fit: contain;
+            object-position: center;
+            display: block;
+        }
+
+        .footer-right a svg {
+            height: 18px;
+            width: 18px;
+            fill: #000;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .logo-section h1 {
+                font-size: 24px;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .report-types {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="FDZ-Logo-v13-WX.png" alt="The Observatory at Liberty Hill Station Logo" />
+        </div>
+        <nav>
+            <a href="index.html">Live Dashboard</a>
+            <a href="reports.html">Reports Archive</a>
+            <a href="mailto:Observatory@FallingData.Zone">Contact</a>
+            <a href="https://www.linkedin.com/in/seanlavigne" target="_blank" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76 0-.97.79-1.75 1.75-1.75s1.75.78 1.75 1.75c0 .97-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.5c0-1.32-.03-3.01-1.84-3.01-1.84 0-2.12 1.43-2.12 2.91v5.6h-3v-10h2.88v1.36h.04c.4-.76 1.36-1.56 2.8-1.56 3 0 3.56 1.97 3.56 4.53v5.67z"/>
+                </svg>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-title">
+            <h1>Historical Reports Archive</h1>
+            <p>Browse daily, weekly, monthly, and annual station reports</p>
+        </div>
+
+        <div class="report-type-selector">
+            <h2>Select Report Type</h2>
+            <div class="report-types">
+                <button class="report-type-btn active" data-type="daily">Daily Reports</button>
+                <button class="report-type-btn" data-type="weekly">Weekly Reports</button>
+                <button class="report-type-btn" data-type="monthly">Monthly Reports</button>
+                <button class="report-type-btn" data-type="annual">Annual Reports</button>
+            </div>
+
+            <div id="daily-selector" class="date-selector active">
+                <h3>Select Date</h3>
+                <div id="daily-dates" class="date-grid"></div>
+            </div>
+
+            <div id="weekly-selector" class="date-selector">
+                <h3>Select Week</h3>
+                <div id="weekly-dates" class="date-grid"></div>
+            </div>
+
+            <div id="monthly-selector" class="date-selector">
+                <h3>Select Month</h3>
+                <div id="monthly-dates" class="date-grid"></div>
+            </div>
+
+            <div id="annual-selector" class="date-selector">
+                <h3>Select Year</h3>
+                <div id="annual-dates" class="date-grid"></div>
+            </div>
+        </div>
+
+        <div id="report-display" class="report-display">
+            <div id="report-content" class="report-content">
+                <div class="loading">Select a report type and date to view the report...</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <a href="mailto:Observatory@FallingData.Zone">Observatory@FallingData.Zone</a>
+            <span>Powered by Data & Strategy</span>
+        </div>
+        <div class="footer-center">
+            <img src="FDZ-Logo-Only.png" alt="Falling Data Logo">
+        </div>
+        <div class="footer-right">
+            <a href="https://www.linkedin.com/in/seanlavigne" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76 0-.97.79-1.75 1.75-1.75s1.75.78 1.75 1.75c0 .97-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.5c0-1.32-.03-3.01-1.84-3.01-1.84 0-2.12 1.43-2.12 2.91v5.6h-3v-10h2.88v1.36h.04c.4-.76 1.36-1.56 2.8-1.56 3 0 3.56 1.97 3.56 4.53v5.67z"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        class ReportsArchive {
+            constructor() {
+                this.currentReportType = 'daily';
+                this.availableReports = {};
+                this.init();
+            }
+
+            async init() {
+                this.setupEventListeners();
+                await this.loadAvailableReports();
+                this.displayDateOptions('daily');
+            }
+
+            setupEventListeners() {
+                // Report type buttons
+                document.querySelectorAll('.report-type-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        this.selectReportType(e.target.dataset.type);
+                    });
+                });
+            }
+
+            async loadAvailableReports() {
+                const reportTypes = ['daily', 'weekly', 'monthly', 'annual'];
+                
+                for (const type of reportTypes) {
+                    try {
+                        const response = await fetch(`https://api.github.com/repos/SeanFDZ/environmental-station/contents/data/${type}`);
+                        const files = await response.json();
+                        
+                        if (Array.isArray(files)) {
+                            this.availableReports[type] = files
+                                .filter(file => file.name.endsWith('.txt'))
+                                .map(file => ({
+                                    filename: file.name,
+                                    download_url: file.download_url,
+                                    date: this.extractDateFromFilename(file.name, type)
+                                }))
+                                .sort((a, b) => new Date(b.date) - new Date(a.date));
+                        } else {
+                            this.availableReports[type] = [];
+                        }
+                    } catch (error) {
+                        console.error(`Error loading ${type} reports:`, error);
+                        this.availableReports[type] = [];
+                    }
+                }
+            }
+
+            extractDateFromFilename(filename, type) {
+                // Extract date from filenames like LHS-Daily-2025-06-20.txt
+                const match = filename.match(/LHS-\w+-(.+)\.txt/);
+                if (match) {
+                    return match[1];
+                }
+                return '';
+            }
+
+            selectReportType(type) {
+                this.currentReportType = type;
+                
+                // Update active button
+                document.querySelectorAll('.report-type-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.querySelector(`[data-type="${type}"]`).classList.add('active');
+                
+                // Hide all date selectors
+                document.querySelectorAll('.date-selector').forEach(selector => {
+                    selector.classList.remove('active');
+                });
+                
+                // Show current selector
+                document.getElementById(`${type}-selector`).classList.add('active');
+                
+                // Display date options
+                this.displayDateOptions(type);
+                
+                // Hide report display
+                document.getElementById('report-display').classList.remove('active');
+            }
+
+            displayDateOptions(type) {
+                const container = document.getElementById(`${type}-dates`);
+                const reports = this.availableReports[type] || [];
+                
+                if (reports.length === 0) {
+                    container.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 20px; color: #666;">No reports available yet</div>';
+                    return;
+                }
+                
+                container.innerHTML = reports.map(report => {
+                    const displayDate = this.formatDisplayDate(report.date, type);
+                    return `
+                        <button class="date-btn available" onclick="archive.loadReport('${report.download_url}', '${report.filename}')">
+                            ${displayDate}
+                        </button>
+                    `;
+                }).join('');
+            }
+
+            formatDisplayDate(dateStr, type) {
+                switch (type) {
+                    case 'daily':
+                        return new Date(dateStr).toLocaleDateString('en-US', {
+                            month: 'short',
+                            day: 'numeric',
+                            year: 'numeric'
+                        });
+                    case 'weekly':
+                        return `Week of ${new Date(dateStr).toLocaleDateString('en-US', {
+                            month: 'short',
+                            day: 'numeric',
+                            year: 'numeric'
+                        })}`;
+                    case 'monthly':
+                        return new Date(dateStr + '-01').toLocaleDateString('en-US', {
+                            month: 'long',
+                            year: 'numeric'
+                        });
+                    case 'annual':
+                        return dateStr;
+                    default:
+                        return dateStr;
+                }
+            }
+
+            async loadReport(downloadUrl, filename) {
+                const reportDisplay = document.getElementById('report-display');
+                const reportContent = document.getElementById('report-content');
+                
+                reportDisplay.classList.add('active');
+                reportContent.innerHTML = '<div class="loading">Loading report...</div>';
+                
+                try {
+                    const response = await fetch(downloadUrl);
+                    const content = await response.text();
+                    
+                    reportContent.innerHTML = `
+                        <div style="margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #ddd;">
+                            <strong>Report:</strong> ${filename}
+                        </div>
+                        <div>${content}</div>
+                    `;
+                } catch (error) {
+                    console.error('Error loading report:', error);
+                    reportContent.innerHTML = '<div class="error">Error loading report. Please try again.</div>';
+                }
+            }
+        }
+
+        // Initialize the archive system
+        const archive = new ReportsArchive();
+    </script>
+</body>
+</html>
