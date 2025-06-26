@@ -691,28 +691,58 @@
 
 <script>
 async function loadLatestReport() {
-  try {
-    // Get list of daily reports and find the most recent
-    const response = await fetch('https://api.github.com/repos/SeanFDZ/environmental-station/contents/data/daily');
-    const files = await response.json();
+  const today = new Date();
+  const currentYear = today.getFullYear();
+  
+  // Try dates in order: today, yesterday, 2 days ago
+  // This accounts for reports being generated the following morning
+  const datesToTry = [
+    new Date(today),                    // Today's report (if available)
+    new Date(today.getTime() - 86400000),   // Yesterday  
+    new Date(today.getTime() - 172800000)   // 2 days ago
+  ];
+  
+  console.log('Searching for latest daily report...');
+  
+  for (const date of datesToTry) {
+    const year = date.getFullYear();
+    const dateString = date.toISOString().split('T')[0]; // YYYY-MM-DD format
+    const reportPath = `data/daily/${year}/LHS-Daily-${dateString}.txt`;
+    const reportUrl = `https://raw.githubusercontent.com/SeanFDZ/environmental-station/main/${reportPath}`;
     
-    if (files && files.length > 0) {
-      // Sort by filename (which includes date) to get most recent
-      const sortedFiles = files.sort((a, b) => b.name.localeCompare(a.name));
-      const latestFile = sortedFiles[0];
+    try {
+      console.log(`Checking for report: ${reportPath}`);
+      const response = await fetch(reportUrl);
       
-      // Fetch the content of the latest report
-      const reportResponse = await fetch(latestFile.download_url);
-      const reportContent = await reportResponse.text();
-      
-      document.getElementById('latest-report').textContent = reportContent;
-    } else {
-      document.getElementById('latest-report').textContent = 'No reports available yet.';
+      if (response.ok) {
+        const reportContent = await response.text();
+        console.log(`✅ Found latest report: ${dateString}`);
+        
+        document.getElementById('latest-report').textContent = reportContent;
+        
+        // Update the section title with the date
+        const reportSection = document.querySelector('.cli-report-section h2');
+        if (reportSection) {
+          const reportDate = new Date(date);
+          const formattedDate = reportDate.toLocaleDateString('en-US', {
+            weekday: 'long',
+            year: 'numeric', 
+            month: 'long',
+            day: 'numeric'
+          });
+          reportSection.textContent = `Latest Station Report - ${formattedDate}`;
+        }
+        
+        return;
+      }
+    } catch (error) {
+      console.log(`❌ Report not found: ${dateString}`);
     }
-  } catch (error) {
-    console.error('Error loading latest report:', error);
-    document.getElementById('latest-report').textContent = 'Error loading report. Please try again later.';
   }
+  
+  // If no recent reports found, show fallback message
+  console.log('⚠️ No recent daily reports found');
+  document.getElementById('latest-report').textContent = '⏳ Latest daily report is being generated...\n\nReports are typically available by 7:00 AM Central Time the following day.';
 }
 
 // Load the latest report when page loads
