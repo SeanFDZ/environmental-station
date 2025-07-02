@@ -1,6 +1,6 @@
 {
-  "timestamp": "2025-07-02T07:18:04.618Z",
-  "lastUpdated": "2025-07-02T07:18:04.618Z",
+  "timestamp": "2025-07-02T07:20:04.863Z",
+  "lastUpdated": "2025-07-02T07:20:04.863Z",
   "weather": {
     "temperature": 72,
     "feelsLike": 72,
@@ -8,8 +8,8 @@
     "pressure": "24.09",
     "windSpeed": 2,
     "windGust": 2,
-    "windLull": 2,
-    "windDirection": 250,
+    "windLull": 1,
+    "windDirection": 254,
     "heatIndex": 72,
     "windChill": 72,
     "dewPoint": 69,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 52,
+    "total": 53,
     "commercial": 15,
-    "generalAviation": 37,
+    "generalAviation": 38,
     "lifeFlights": 1,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 40000,
     "aircraftNearby": 0,
-    "totalObservations": 1436,
+    "totalObservations": 1460,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 60,
+    "totalObservations": 56,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,7 +57,7 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 32228,
+    "avgSamples": 32174,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
