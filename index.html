@@ -650,14 +650,12 @@
           <span class="metric-value" id="aircraftNearby">23 aircraft</span>
         </div>
         <div class="map-container" id="aircraft-map-container">
-          <img 
+          <object 
             id="aircraft-map" 
             class="map-image" 
-            src="maps/aircraft-map.svg" 
-            alt="Real-time ADS-B aircraft tracking map"
-            onerror="this.style.display='none'; document.getElementById('aircraft-map-error').style.display='block';"
-            onload="document.getElementById('aircraft-map-loading').style.display='none'; this.style.display='block';"
-          />
+            data="maps/aircraft-map.svg" 
+            type="image/svg+xml">
+          </object>
           <div id="aircraft-map-loading" class="map-loading">
             <div>🛩️ Loading Aircraft Map...</div>
             <div style="font-size: 12px;">Real-time ADS-B tracking visualization</div>
@@ -700,14 +698,12 @@
           <span class="metric-value" id="totalObservations">1,847,293 recorded</span>
         </div>
         <div class="map-container" id="earthquake-map-container">
-          <img 
+          <object 
             id="earthquake-map" 
             class="map-image" 
-            src="maps/earthquake-map.svg" 
-            alt="Real-time earthquake monitoring map"
-            onerror="this.style.display='none'; document.getElementById('earthquake-map-error').style.display='block';"
-            onload="document.getElementById('earthquake-map-loading').style.display='none'; this.style.display='block';"
-          />
+            data="maps/earthquake-map.svg" 
+            type="image/svg+xml">
+          </object>
           <div id="earthquake-map-loading" class="map-loading">
             <div>🌍 Loading Earthquake Map...</div>
             <div style="font-size: 12px;">Live earthquake data from USGS</div>
@@ -1125,7 +1121,7 @@ function refreshMaps() {
   aircraftLoading.style.display = 'block';
   aircraftError.style.display = 'none';
   aircraftMap.style.display = 'none';
-  aircraftMap.src = `maps/aircraft-map.svg?t=${timestamp}`;
+  aircraftMap.data = `maps/aircraft-map.svg?t=${timestamp}`;
   
   // Earthquake map refresh
   const earthquakeMap = document.getElementById('earthquake-map');
@@ -1135,7 +1131,7 @@ function refreshMaps() {
   earthquakeLoading.style.display = 'block';
   earthquakeError.style.display = 'none';
   earthquakeMap.style.display = 'none';
-  earthquakeMap.src = `maps/earthquake-map.svg?t=${timestamp}`;
+  earthquakeMap.data = `maps/earthquake-map.svg?t=${timestamp}`;
   
   updateMapTimestamps();
 });
