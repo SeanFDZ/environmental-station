@@ -255,6 +255,55 @@
       font-style: italic;
     }
 
+    /* Map display styles */
+    .map-container {
+      background: #000;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .map-image {
+      max-width: 100%;
+      max-height: 280px;
+      width: auto;
+      height: auto;
+      border-radius: 4px;
+      object-fit: contain;
+    }
+
+    .map-loading {
+      color: #fff;
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .map-error {
+      color: #ff6b6b;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .map-refresh-time {
+      position: absolute;
+      bottom: 5px;
+      right: 10px;
+      color: #aaa;
+      font-size: 10px;
+    }
+
+
+    
     /* CLI Report Section */
     .cli-report-section {
       margin: 40px 0;
@@ -600,9 +649,24 @@
           <span class="metric-label">Aircraft Within 10mi</span>
           <span class="metric-value" id="aircraftNearby">23 aircraft</span>
         </div>
-        <div class="chart-placeholder">
-          🗺️ Aircraft Activity Map
-          <br>Real-time ADS-B tracking visualization
+        <div class="map-container" id="aircraft-map-container">
+          <img 
+            id="aircraft-map" 
+            class="map-image" 
+            src="maps/aircraft-map.svg" 
+            alt="Real-time ADS-B aircraft tracking map"
+            onerror="this.style.display='none'; document.getElementById('aircraft-map-error').style.display='block';"
+            onload="document.getElementById('aircraft-map-loading').style.display='none'; this.style.display='block';"
+          />
+          <div id="aircraft-map-loading" class="map-loading">
+            <div>🛩️ Loading Aircraft Map...</div>
+            <div style="font-size: 12px;">Real-time ADS-B tracking visualization</div>
+          </div>
+          <div id="aircraft-map-error" class="map-error" style="display: none;">
+            <div>⚠️ Aircraft map temporarily unavailable</div>
+            <div style="font-size: 12px;">Map will refresh automatically</div>
+          </div>
+          <div class="map-refresh-time" id="aircraft-map-time"></div>
         </div>
       </div>
 
@@ -634,10 +698,24 @@
         <div class="metric-row">
           <span class="metric-label">Total Observations</span>
           <span class="metric-value" id="totalObservations">1,847,293 recorded</span>
-        </div>
-        <div class="chart-placeholder">
-          📈 Seismogram Display
-          <br>Live waveform data from RaspberryShake
+        <div class="map-container" id="earthquake-map-container">
+          <img 
+            id="earthquake-map" 
+            class="map-image" 
+            src="maps/earthquake-map.svg" 
+            alt="Real-time earthquake monitoring map"
+            onerror="this.style.display='none'; document.getElementById('earthquake-map-error').style.display='block';"
+            onload="document.getElementById('earthquake-map-loading').style.display='none'; this.style.display='block';"
+          />
+          <div id="earthquake-map-loading" class="map-loading">
+            <div>🌍 Loading Earthquake Map...</div>
+            <div style="font-size: 12px;">Live earthquake data from USGS</div>
+          </div>
+          <div id="earthquake-map-error" class="map-error" style="display: none;">
+            <div>⚠️ Earthquake map temporarily unavailable</div>
+            <div style="font-size: 12px;">Map will refresh automatically</div>
+          </div>
+          <div class="map-refresh-time" id="earthquake-map-time"></div>
         </div>
       </div>
 
@@ -747,6 +825,47 @@ async function loadLatestReport() {
 
 // Load the latest report when page loads
 document.addEventListener('DOMContentLoaded', loadLatestReport);
+
+// Map refresh functionality
+function updateMapTimestamps() {
+  const now = new Date().toLocaleTimeString('en-US', {
+    timeZone: 'America/Chicago',
+    hour12: true,
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+  
+  document.getElementById('aircraft-map-time').textContent = `Updated: ${now} CT`;
+  document.getElementById('earthquake-map-time').textContent = `Updated: ${now} CT`;
+}
+
+// Force refresh maps every 2 minutes to match n8n schedule
+function refreshMaps() {
+  const timestamp = Date.now();
+  
+  // Aircraft map refresh
+  const aircraftMap = document.getElementById('aircraft-map');
+  const aircraftLoading = document.getElementById('aircraft-map-loading');
+  const aircraftError = document.getElementById('aircraft-map-error');
+  
+  aircraftLoading.style.display = 'block';
+  aircraftError.style.display = 'none';
+  aircraftMap.style.display = 'none';
+  aircraftMap.src = `maps/aircraft-map.svg?t=${timestamp}`;
+  
+  // Earthquake map refresh
+  const earthquakeMap = document.getElementById('earthquake-map');
+  const earthquakeLoading = document.getElementById('earthquake-map-loading');
+  const earthquakeError = document.getElementById('earthquake-map-error');
+  
+  earthquakeLoading.style.display = 'block';
+  earthquakeError.style.display = 'none';
+  earthquakeMap.style.display = 'none';
+  earthquakeMap.src = `maps/earthquake-map.svg?t=${timestamp}`;
+  
+  updateMapTimestamps();
+}
+  
 </script>
   </main>
 
@@ -967,7 +1086,56 @@ document.addEventListener('DOMContentLoaded', loadLatestReport);
     }
 
     // Initialize the dashboard when the page loads
-    document.addEventListener('DOMContentLoaded', () => {
-      new ObservatoryDashboard();
-    });
+document.addEventListener('DOMContentLoaded', () => {
+  new ObservatoryDashboard();
+  
+  // Initialize map functionality
+  updateMapTimestamps();
+  
+  // Refresh maps every 2 minutes (to match n8n workflow)
+  setInterval(refreshMaps, 120000);
+  
+  // Refresh timestamps every 30 seconds for visual feedback
+  setInterval(updateMapTimestamps, 30000);
+});
+
+// Map refresh functionality
+function updateMapTimestamps() {
+  const now = new Date().toLocaleTimeString('en-US', {
+    timeZone: 'America/Chicago',
+    hour12: true,
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+  
+  document.getElementById('aircraft-map-time').textContent = `Updated: ${now} CT`;
+  document.getElementById('earthquake-map-time').textContent = `Updated: ${now} CT`;
+}
+
+// Force refresh maps every 2 minutes to match n8n schedule
+function refreshMaps() {
+  const timestamp = Date.now();
+  
+  // Aircraft map refresh
+  const aircraftMap = document.getElementById('aircraft-map');
+  const aircraftLoading = document.getElementById('aircraft-map-loading');
+  const aircraftError = document.getElementById('aircraft-map-error');
+  
+  aircraftLoading.style.display = 'block';
+  aircraftError.style.display = 'none';
+  aircraftMap.style.display = 'none';
+  aircraftMap.src = `maps/aircraft-map.svg?t=${timestamp}`;
+  
+  // Earthquake map refresh
+  const earthquakeMap = document.getElementById('earthquake-map');
+  const earthquakeLoading = document.getElementById('earthquake-map-loading');
+  const earthquakeError = document.getElementById('earthquake-map-error');
+  
+  earthquakeLoading.style.display = 'block';
+  earthquakeError.style.display = 'none';
+  earthquakeMap.style.display = 'none';
+  earthquakeMap.src = `maps/earthquake-map.svg?t=${timestamp}`;
+  
+  updateMapTimestamps();
+});
   </script>
