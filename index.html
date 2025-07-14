@@ -955,7 +955,7 @@ function refreshMaps() {
           this.updateElement('precipToday', `${data.weather.precipitation} inches`);
           
           // Update card details
-          this.updateElement('tempDetail', `Today: ${data.weather.normalLow}°F - ${data.weather.normalHigh}°F`);
+          this.updateElement('tempDetail', `Normal range: ${data.weather.normalLow}°F - ${data.weather.normalHigh}°F`);
           this.updateElement('windDetail', `${this.getWindDirection(data.weather.windDirection)} gusts to ${data.weather.windGust} mph`);
           this.updateElement('humidityDetail', `Dew point ${data.weather.dewPoint}°F`);
           this.updateElement('solarDetail', `W/m² • UV: ${data.weather.uvIndex}`);
