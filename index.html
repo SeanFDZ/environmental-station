@@ -769,13 +769,21 @@ async function loadLatestReport() {
   const today = new Date();
   const currentYear = today.getFullYear();
   
-  // Try dates in order: today, yesterday, 2 days ago
-  // This accounts for reports being generated the following morning
-  const datesToTry = [
-    new Date(today),                    // Today's report (if available)
-    new Date(today.getTime() - 86400000),   // Yesterday  
-    new Date(today.getTime() - 172800000)   // 2 days ago
-  ];
+// Account for timezone difference between UTC and Central Time
+// Reports are generated at ~6:00 AM CT for the previous day
+const centralTime = new Date(today.toLocaleString("en-US", {timeZone: "America/Chicago"}));
+const centralHour = centralTime.getHours();
+
+// If it's before 7 AM CT, we likely don't have today's report yet
+const datesToTry = centralHour < 7 ? [
+  new Date(today.getTime() - 86400000),   // Yesterday (most likely)
+  new Date(today.getTime() - 172800000),   // 2 days ago
+  new Date(today)                          // Today (just in case)
+] : [
+  new Date(today),                         // Today's report
+  new Date(today.getTime() - 86400000),   // Yesterday  
+  new Date(today.getTime() - 172800000)   // 2 days ago
+];
   
   console.log('Searching for latest daily report...');
   
