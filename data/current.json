@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-07-15T13:50:07.914Z",
-  "lastUpdated": "2025-07-15T13:50:07.914Z",
+  "timestamp": "2025-07-15T13:54:08.202Z",
+  "lastUpdated": "2025-07-15T13:54:08.202Z",
   "weather": {
     "temperature": 78,
     "feelsLike": 78,
     "humidity": 72,
     "pressure": "24.11",
-    "windSpeed": 9,
-    "windGust": 10,
-    "windLull": 9,
-    "windDirection": 210,
+    "windSpeed": 10,
+    "windGust": 12,
+    "windLull": 7,
+    "windDirection": 212,
     "heatIndex": 78,
     "windChill": 78,
     "dewPoint": 68,
@@ -18,8 +18,8 @@
     "stationPressure": "24.11",
     "pressureTrend": "steady",
     "uvIndex": 4,
-    "solarRadiation": 358,
-    "brightness": 42953,
+    "solarRadiation": 371,
+    "brightness": 44511,
     "airDensity": "0.952",
     "deltaT": "4.0",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 290,
-    "commercial": 60,
-    "generalAviation": 219,
+    "total": 285,
+    "commercial": 58,
+    "generalAviation": 216,
     "lifeFlights": 0,
     "military": 11,
     "balloons": 0,
     "highestAltitude": 47000,
     "aircraftNearby": 4,
-    "totalObservations": 6781,
+    "totalObservations": 6710,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 65,
+    "totalObservations": 62,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,7 +57,7 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 32295,
+    "avgSamples": 32091,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
@@ -77,10 +77,10 @@
         "distance": "41.8"
       },
       {
-        "magnitude": 1.24,
+        "magnitude": 1.29,
         "location": "7 km ENE of Calumet, Oklahoma",
-        "time": "2025-07-14T20:08:35.719Z",
-        "distance": "42.2"
+        "time": "2025-07-14T20:08:35.390Z",
+        "distance": "42.1"
       },
       {
         "magnitude": 1.86,
