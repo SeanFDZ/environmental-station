@@ -1,21 +1,21 @@
 {
-  "timestamp": "2025-07-16T06:26:04.409Z",
-  "lastUpdated": "2025-07-16T06:26:04.409Z",
+  "timestamp": "2025-07-16T06:28:04.846Z",
+  "lastUpdated": "2025-07-16T06:28:04.846Z",
   "weather": {
     "temperature": 78,
     "feelsLike": 78,
     "humidity": 73,
-    "pressure": "24.10",
+    "pressure": "24.11",
     "windSpeed": 9,
-    "windGust": 13,
+    "windGust": 10,
     "windLull": 7,
-    "windDirection": 205,
+    "windDirection": 209,
     "heatIndex": 78,
     "windChill": 78,
     "dewPoint": 69,
     "wetBulbTemperature": 71,
     "wetBulbGlobeTemperature": 73,
-    "stationPressure": "24.10",
+    "stationPressure": "24.11",
     "pressureTrend": "steady",
     "uvIndex": 0,
     "solarRadiation": 0,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 50,
-    "commercial": 23,
+    "total": 48,
+    "commercial": 21,
     "generalAviation": 27,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 43025,
     "aircraftNearby": 0,
-    "totalObservations": 942,
+    "totalObservations": 921,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 72,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 33167,
+    "avgSamples": 33175,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 3,
+    "totalToday": 2,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -81,12 +81,6 @@
         "location": "8 km ENE of Calumet, Oklahoma",
         "time": "2025-07-15T14:44:58.990Z",
         "distance": "42.6"
-      },
-      {
-        "magnitude": 1.35,
-        "location": "6 km ENE of Calumet, Oklahoma",
-        "time": "2025-07-15T06:27:22.420Z",
-        "distance": "41.8"
       }
     ],
     "dataAvailable": true
