@@ -1,27 +1,27 @@
 {
-  "timestamp": "2025-08-09T17:50:04.923Z",
-  "lastUpdated": "2025-08-09T17:50:04.923Z",
+  "timestamp": "2025-08-09T17:52:05.210Z",
+  "lastUpdated": "2025-08-09T17:52:05.210Z",
   "weather": {
     "temperature": 89,
     "feelsLike": 92,
-    "humidity": 48,
+    "humidity": 47,
     "pressure": "24.13",
-    "windSpeed": 11,
-    "windGust": 14,
-    "windLull": 9,
-    "windDirection": 221,
+    "windSpeed": 12,
+    "windGust": 15,
+    "windLull": 10,
+    "windDirection": 229,
     "heatIndex": 92,
     "windChill": 89,
-    "dewPoint": 67,
+    "dewPoint": 66,
     "wetBulbTemperature": 73,
     "wetBulbGlobeTemperature": 80,
     "stationPressure": "24.13",
     "pressureTrend": "steady",
     "uvIndex": 10,
-    "solarRadiation": 944,
-    "brightness": 113288,
+    "solarRadiation": 920,
+    "brightness": 110399,
     "airDensity": "0.934",
-    "deltaT": "9.0",
+    "deltaT": "9.3",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 327,
+    "total": 328,
     "commercial": 68,
     "generalAviation": 259,
-    "lifeFlights": 3,
+    "lifeFlights": 2,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 47000,
     "aircraftNearby": 1,
-    "totalObservations": 8638,
+    "totalObservations": 8592,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,12 +64,19 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 2.67,
+    "recentEvents": [
+      {
+        "magnitude": 2.67,
+        "location": "2 km SSW of Hinton, Oklahoma",
+        "time": "2025-08-09T17:48:42.479Z",
+        "distance": "28.2"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
