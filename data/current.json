@@ -1,17 +1,17 @@
 {
-  "timestamp": "2025-08-22T05:00:02.143Z",
-  "lastUpdated": "2025-08-22T05:00:02.143Z",
+  "timestamp": "2025-08-22T05:02:02.248Z",
+  "lastUpdated": "2025-08-22T05:02:02.248Z",
   "weather": {
-    "temperature": 73,
-    "feelsLike": 73,
-    "humidity": 72,
+    "temperature": 74,
+    "feelsLike": 74,
+    "humidity": 71,
     "pressure": "24.09",
-    "windSpeed": 2,
-    "windGust": 2,
-    "windLull": 2,
-    "windDirection": 327,
-    "heatIndex": 73,
-    "windChill": 73,
+    "windSpeed": 0,
+    "windGust": 0,
+    "windLull": 0,
+    "windDirection": 307,
+    "heatIndex": 74,
+    "windChill": 74,
     "dewPoint": 64,
     "wetBulbTemperature": 67,
     "wetBulbGlobeTemperature": 69,
@@ -20,8 +20,8 @@
     "uvIndex": 0,
     "solarRadiation": 0,
     "brightness": 0,
-    "airDensity": "0.960",
-    "deltaT": "3.8",
+    "airDensity": "0.959",
+    "deltaT": "3.9",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 98,
-    "commercial": 32,
-    "generalAviation": 66,
+    "total": 100,
+    "commercial": 33,
+    "generalAviation": 67,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
-    "highestAltitude": 47000,
+    "highestAltitude": 58400,
     "aircraftNearby": 2,
-    "totalObservations": 2477,
+    "totalObservations": 2414,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,7 +64,7 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 5,
+    "totalToday": 4,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -93,12 +93,6 @@
         "location": "8 km ENE of Calumet, Oklahoma",
         "time": "2025-08-21T06:50:40.060Z",
         "distance": "42.6"
-      },
-      {
-        "magnitude": 1.25,
-        "location": "8 km ENE of Calumet, Oklahoma",
-        "time": "2025-08-21T05:00:56.049Z",
-        "distance": "42.8"
       }
     ],
     "dataAvailable": true
