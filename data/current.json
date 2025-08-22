@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-08-22T21:04:02.276Z",
-  "lastUpdated": "2025-08-22T21:04:02.276Z",
+  "timestamp": "2025-08-22T21:06:02.206Z",
+  "lastUpdated": "2025-08-22T21:06:02.206Z",
   "weather": {
     "temperature": 93,
     "feelsLike": 93,
     "humidity": 35,
     "pressure": "24.14",
     "windSpeed": 3,
-    "windGust": 6,
+    "windGust": 4,
     "windLull": 1,
-    "windDirection": 69,
+    "windDirection": 31,
     "heatIndex": 93,
     "windChill": 93,
     "dewPoint": 61,
@@ -17,9 +17,9 @@
     "wetBulbGlobeTemperature": 81,
     "stationPressure": "24.14",
     "pressureTrend": "steady",
-    "uvIndex": 8,
-    "solarRadiation": 734,
-    "brightness": 88057,
+    "uvIndex": 7,
+    "solarRadiation": 723,
+    "brightness": 86762,
     "airDensity": "0.928",
     "deltaT": "12.5",
     "precipitation": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 288,
-    "commercial": 72,
-    "generalAviation": 210,
+    "total": 278,
+    "commercial": 70,
+    "generalAviation": 203,
     "lifeFlights": 0,
-    "military": 6,
+    "military": 5,
     "balloons": 0,
     "highestAltitude": 49000,
     "aircraftNearby": 1,
-    "totalObservations": 6838,
+    "totalObservations": 6886,
     "dataAvailable": true
   },
   "seismic": {
@@ -68,10 +68,10 @@
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 2.27,
+    "largestMagnitude": 2.26,
     "recentEvents": [
       {
-        "magnitude": 2.27,
+        "magnitude": 2.26,
         "location": "6 km WSW of Okarche, Oklahoma",
         "time": "2025-08-22T20:59:23.246Z",
         "distance": "42.1"
