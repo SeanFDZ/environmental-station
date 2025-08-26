@@ -1,6 +1,6 @@
 {
-  "timestamp": "2025-08-26T13:06:02.326Z",
-  "lastUpdated": "2025-08-26T13:06:02.326Z",
+  "timestamp": "2025-08-26T13:08:02.079Z",
+  "lastUpdated": "2025-08-26T13:08:02.079Z",
   "weather": {
     "temperature": 61,
     "feelsLike": 61,
@@ -8,8 +8,8 @@
     "pressure": "24.06",
     "windSpeed": 3,
     "windGust": 5,
-    "windLull": 1,
-    "windDirection": 228,
+    "windLull": 2,
+    "windDirection": 227,
     "heatIndex": 61,
     "windChill": 61,
     "dewPoint": 61,
@@ -18,14 +18,14 @@
     "stationPressure": "24.06",
     "pressureTrend": "steady",
     "uvIndex": 0,
-    "solarRadiation": 10,
-    "brightness": 1189,
+    "solarRadiation": 11,
+    "brightness": 1273,
     "airDensity": "0.981",
     "deltaT": "0.1",
-    "precipitation": "1.87",
+    "precipitation": "1.88",
     "precipitationRate": "0.00",
-    "precipitationLastHour": "0.22",
-    "precipitationFinal": "1.87",
+    "precipitationLastHour": "0.20",
+    "precipitationFinal": "1.88",
     "lightningStrikes": 0,
     "lightningStrikesLastHour": 0,
     "lightningStrikesLast3Hours": 0,
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 120,
-    "commercial": 24,
-    "generalAviation": 96,
+    "total": 118,
+    "commercial": 25,
+    "generalAviation": 93,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
-    "highestAltitude": 45000,
+    "highestAltitude": 43025,
     "aircraftNearby": 2,
-    "totalObservations": 2858,
+    "totalObservations": 2847,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,12 +64,18 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 2,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.82,
+    "largestMagnitude": 2.03,
     "recentEvents": [
+      {
+        "magnitude": 2.03,
+        "location": "9 km ENE of Calumet, Oklahoma",
+        "time": "2025-08-26T13:04:09.210Z",
+        "distance": "43.5"
+      },
       {
         "magnitude": 1.82,
         "location": "8 km SSW of Okarche, Oklahoma",
