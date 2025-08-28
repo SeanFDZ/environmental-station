@@ -1,27 +1,27 @@
 {
-  "timestamp": "2025-08-28T21:22:02.120Z",
-  "lastUpdated": "2025-08-28T21:22:02.120Z",
+  "timestamp": "2025-08-28T21:24:01.952Z",
+  "lastUpdated": "2025-08-28T21:24:01.952Z",
   "weather": {
-    "temperature": 78,
-    "feelsLike": 78,
-    "humidity": 79,
+    "temperature": 79,
+    "feelsLike": 79,
+    "humidity": 78,
     "pressure": "24.11",
-    "windSpeed": 3,
+    "windSpeed": 5,
     "windGust": 8,
-    "windLull": 0,
-    "windDirection": 74,
-    "heatIndex": 78,
-    "windChill": 78,
+    "windLull": 3,
+    "windDirection": 76,
+    "heatIndex": 79,
+    "windChill": 79,
     "dewPoint": 71,
     "wetBulbTemperature": 73,
-    "wetBulbGlobeTemperature": 77,
+    "wetBulbGlobeTemperature": 76,
     "stationPressure": "24.11",
     "pressureTrend": "steady",
     "uvIndex": 3,
-    "solarRadiation": 334,
-    "brightness": 40008,
+    "solarRadiation": 304,
+    "brightness": 36491,
     "airDensity": "0.951",
-    "deltaT": "2.9",
+    "deltaT": "3.1",
     "precipitation": "0.24",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 300,
+    "total": 297,
     "commercial": 52,
-    "generalAviation": 247,
+    "generalAviation": 244,
     "lifeFlights": 0,
     "military": 1,
     "balloons": 0,
     "highestAltitude": 45000,
     "aircraftNearby": 2,
-    "totalObservations": 8143,
+    "totalObservations": 8150,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,12 +64,18 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 6,
+    "totalToday": 7,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
     "largestMagnitude": 2.52,
     "recentEvents": [
+      {
+        "magnitude": 2.46,
+        "location": "7 km SSW of Okarche, Oklahoma",
+        "time": "2025-08-28T21:21:35.864Z",
+        "distance": "43.4"
+      },
       {
         "magnitude": 2.52,
         "location": "8 km ENE of Calumet, Oklahoma",
@@ -93,12 +99,6 @@
         "location": "10 km ENE of Calumet, Oklahoma",
         "time": "2025-08-28T10:32:18.730Z",
         "distance": "43.4"
-      },
-      {
-        "magnitude": 1.56,
-        "location": "8 km ENE of Calumet, Oklahoma",
-        "time": "2025-08-28T06:17:49.090Z",
-        "distance": "42.7"
       }
     ],
     "dataAvailable": true
