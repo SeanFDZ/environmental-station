@@ -1,27 +1,27 @@
 {
-  "timestamp": "2025-08-28T22:36:01.921Z",
-  "lastUpdated": "2025-08-28T22:36:01.921Z",
+  "timestamp": "2025-08-28T22:38:01.938Z",
+  "lastUpdated": "2025-08-28T22:38:01.938Z",
   "weather": {
-    "temperature": 77,
-    "feelsLike": 77,
+    "temperature": 76,
+    "feelsLike": 76,
     "humidity": 82,
     "pressure": "24.10",
-    "windSpeed": 10,
-    "windGust": 13,
-    "windLull": 8,
-    "windDirection": 55,
-    "heatIndex": 77,
-    "windChill": 77,
+    "windSpeed": 9,
+    "windGust": 12,
+    "windLull": 6,
+    "windDirection": 49,
+    "heatIndex": 76,
+    "windChill": 76,
     "dewPoint": 71,
     "wetBulbTemperature": 72,
     "wetBulbGlobeTemperature": 74,
     "stationPressure": "24.10",
     "pressureTrend": "steady",
     "uvIndex": 2,
-    "solarRadiation": 203,
-    "brightness": 24363,
-    "airDensity": "0.954",
-    "deltaT": "2.5",
+    "solarRadiation": 228,
+    "brightness": 27442,
+    "airDensity": "0.955",
+    "deltaT": "2.4",
     "precipitation": "0.24",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 295,
-    "commercial": 65,
+    "total": 292,
+    "commercial": 62,
     "generalAviation": 228,
     "lifeFlights": 1,
     "military": 2,
     "balloons": 0,
     "highestAltitude": 51000,
     "aircraftNearby": 1,
-    "totalObservations": 7787,
+    "totalObservations": 7758,
     "dataAvailable": true
   },
   "seismic": {
@@ -68,7 +68,7 @@
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 2.32,
+    "largestMagnitude": 2.04,
     "recentEvents": [
       {
         "magnitude": 1.88,
@@ -89,10 +89,10 @@
         "distance": "42.1"
       },
       {
-        "magnitude": 2.32,
-        "location": "9 km ENE of Calumet, Oklahoma",
-        "time": "2025-08-28T20:43:36.503Z",
-        "distance": "42.9"
+        "magnitude": 1.82,
+        "location": "6 km ENE of Calumet, Oklahoma",
+        "time": "2025-08-28T20:43:35.850Z",
+        "distance": "42.2"
       },
       {
         "magnitude": 1.66,
