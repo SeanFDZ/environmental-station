@@ -1,25 +1,25 @@
 {
-  "timestamp": "2025-08-30T19:56:01.840Z",
-  "lastUpdated": "2025-08-30T19:56:01.840Z",
+  "timestamp": "2025-08-30T19:58:01.578Z",
+  "lastUpdated": "2025-08-30T19:58:01.578Z",
   "weather": {
     "temperature": 78,
     "feelsLike": 78,
     "humidity": 79,
     "pressure": "24.11",
     "windSpeed": 2,
-    "windGust": 3,
+    "windGust": 4,
     "windLull": 0,
-    "windDirection": 68,
+    "windDirection": 269,
     "heatIndex": 78,
     "windChill": 78,
     "dewPoint": 71,
-    "wetBulbTemperature": 72,
+    "wetBulbTemperature": 73,
     "wetBulbGlobeTemperature": 77,
     "stationPressure": "24.11",
     "pressureTrend": "steady",
-    "uvIndex": 4,
-    "solarRadiation": 390,
-    "brightness": 46825,
+    "uvIndex": 3,
+    "solarRadiation": 320,
+    "brightness": 38403,
     "airDensity": "0.953",
     "deltaT": "2.9",
     "precipitation": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 170,
-    "commercial": 45,
-    "generalAviation": 125,
+    "total": 176,
+    "commercial": 48,
+    "generalAviation": 128,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
-    "highestAltitude": 47075,
+    "highestAltitude": 47150,
     "aircraftNearby": 0,
-    "totalObservations": 3790,
+    "totalObservations": 3830,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,19 +64,12 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 0,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.11,
-    "recentEvents": [
-      {
-        "magnitude": 1.11,
-        "location": "8 km ENE of Calumet, Oklahoma",
-        "time": "2025-08-29T19:57:02.770Z",
-        "distance": "42.4"
-      }
-    ],
+    "largestMagnitude": 0,
+    "recentEvents": [],
     "dataAvailable": true
   },
   "alerts": {
