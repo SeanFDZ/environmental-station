@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-09-02T03:10:01.880Z",
-  "lastUpdated": "2025-09-02T03:10:01.880Z",
+  "timestamp": "2025-09-02T03:12:01.585Z",
+  "lastUpdated": "2025-09-02T03:12:01.585Z",
   "weather": {
     "temperature": 69,
     "feelsLike": 69,
     "humidity": 91,
     "pressure": "24.08",
-    "windSpeed": 1,
-    "windGust": 2,
+    "windSpeed": 0,
+    "windGust": 0,
     "windLull": 0,
-    "windDirection": 215,
+    "windDirection": 0,
     "heatIndex": 69,
     "windChill": 69,
     "dewPoint": 66,
@@ -28,7 +28,7 @@
     "precipitationFinal": "0.01",
     "lightningStrikes": 0,
     "lightningStrikesLastHour": 0,
-    "lightningStrikesLast3Hours": 137,
+    "lightningStrikesLast3Hours": 111,
     "lightningLastDistance": 20,
     "normalHigh": 89,
     "normalLow": 66,
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 119,
-    "commercial": 29,
+    "total": 118,
+    "commercial": 28,
     "generalAviation": 90,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45000,
     "aircraftNearby": 0,
-    "totalObservations": 2995,
+    "totalObservations": 2949,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,19 +64,12 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 0,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.51,
-    "recentEvents": [
-      {
-        "magnitude": 1.51,
-        "location": "17 km WNW of Longdale, Oklahoma",
-        "time": "2025-09-01T03:09:44.127Z",
-        "distance": "37.8"
-      }
-    ],
+    "largestMagnitude": 0,
+    "recentEvents": [],
     "dataAvailable": true
   },
   "alerts": {
