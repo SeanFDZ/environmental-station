@@ -1,25 +1,25 @@
 {
-  "timestamp": "2025-09-03T15:44:01.782Z",
-  "lastUpdated": "2025-09-03T15:44:01.782Z",
+  "timestamp": "2025-09-03T15:46:01.776Z",
+  "lastUpdated": "2025-09-03T15:46:01.776Z",
   "weather": {
     "temperature": 72,
     "feelsLike": 72,
     "humidity": 79,
-    "pressure": "24.09",
-    "windSpeed": 4,
-    "windGust": 9,
-    "windLull": 2,
-    "windDirection": 284,
+    "pressure": "24.10",
+    "windSpeed": 7,
+    "windGust": 11,
+    "windLull": 4,
+    "windDirection": 264,
     "heatIndex": 72,
     "windChill": 72,
     "dewPoint": 65,
     "wetBulbTemperature": 67,
-    "wetBulbGlobeTemperature": 72,
-    "stationPressure": "24.09",
+    "wetBulbGlobeTemperature": 71,
+    "stationPressure": "24.10",
     "pressureTrend": "rising",
     "uvIndex": 6,
-    "solarRadiation": 585,
-    "brightness": 70255,
+    "solarRadiation": 592,
+    "brightness": 71050,
     "airDensity": "0.962",
     "deltaT": "2.7",
     "precipitation": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 307,
+    "total": 306,
     "commercial": 65,
-    "generalAviation": 234,
-    "lifeFlights": 1,
+    "generalAviation": 232,
+    "lifeFlights": 2,
     "military": 7,
     "balloons": 0,
     "highestAltitude": 47000,
     "aircraftNearby": 1,
-    "totalObservations": 6874,
+    "totalObservations": 6822,
     "dataAvailable": true
   },
   "seismic": {
@@ -71,10 +71,10 @@
     "largestMagnitude": 1.97,
     "recentEvents": [
       {
-        "magnitude": 1.92,
-        "location": "7 km NW of Isabella, Oklahoma",
-        "time": "2025-09-03T15:32:51.430Z",
-        "distance": "48.5"
+        "magnitude": 1.82,
+        "location": "5 km WNW of Isabella, Oklahoma",
+        "time": "2025-09-03T15:32:51.500Z",
+        "distance": "46.3"
       },
       {
         "magnitude": 1.97,
