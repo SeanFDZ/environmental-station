@@ -1,25 +1,25 @@
 {
-  "timestamp": "2025-09-03T15:34:01.806Z",
-  "lastUpdated": "2025-09-03T15:34:01.806Z",
+  "timestamp": "2025-09-03T15:36:01.783Z",
+  "lastUpdated": "2025-09-03T15:36:01.783Z",
   "weather": {
-    "temperature": 71,
-    "feelsLike": 71,
+    "temperature": 72,
+    "feelsLike": 72,
     "humidity": 80,
     "pressure": "24.09",
-    "windSpeed": 6,
+    "windSpeed": 5,
     "windGust": 8,
     "windLull": 3,
-    "windDirection": 286,
-    "heatIndex": 71,
-    "windChill": 71,
+    "windDirection": 284,
+    "heatIndex": 72,
+    "windChill": 72,
     "dewPoint": 65,
     "wetBulbTemperature": 67,
     "wetBulbGlobeTemperature": 71,
     "stationPressure": "24.09",
     "pressureTrend": "rising",
     "uvIndex": 6,
-    "solarRadiation": 560,
-    "brightness": 67167,
+    "solarRadiation": 566,
+    "brightness": 67914,
     "airDensity": "0.963",
     "deltaT": "2.6",
     "precipitation": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 296,
-    "commercial": 60,
-    "generalAviation": 225,
+    "total": 299,
+    "commercial": 61,
+    "generalAviation": 227,
     "lifeFlights": 1,
     "military": 11,
     "balloons": 0,
     "highestAltitude": 47000,
     "aircraftNearby": 1,
-    "totalObservations": 6552,
+    "totalObservations": 6597,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,12 +64,18 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 2,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
     "largestMagnitude": 2.19,
     "recentEvents": [
+      {
+        "magnitude": 1.92,
+        "location": "7 km NW of Isabella, Oklahoma",
+        "time": "2025-09-03T15:32:51.430Z",
+        "distance": "48.5"
+      },
       {
         "magnitude": 2.19,
         "location": "5 km WNW of Isabella, Oklahoma",
