@@ -1,18 +1,18 @@
 {
-  "timestamp": "2025-09-08T10:54:01.857Z",
-  "lastUpdated": "2025-09-08T10:54:01.857Z",
+  "timestamp": "2025-09-08T10:56:01.877Z",
+  "lastUpdated": "2025-09-08T10:56:01.877Z",
   "weather": {
     "temperature": 65,
     "feelsLike": 65,
     "humidity": 69,
     "pressure": "24.07",
-    "windSpeed": 8,
-    "windGust": 12,
-    "windLull": 4,
-    "windDirection": 223,
+    "windSpeed": 7,
+    "windGust": 9,
+    "windLull": 6,
+    "windDirection": 225,
     "heatIndex": 65,
     "windChill": 65,
-    "dewPoint": 55,
+    "dewPoint": 54,
     "wetBulbTemperature": 58,
     "wetBulbGlobeTemperature": 60,
     "stationPressure": "24.07",
@@ -20,7 +20,7 @@
     "uvIndex": 0,
     "solarRadiation": 0,
     "brightness": 1,
-    "airDensity": "0.974",
+    "airDensity": "0.975",
     "deltaT": "3.7",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 26,
+    "total": 27,
     "commercial": 8,
-    "generalAviation": 18,
+    "generalAviation": 19,
     "lifeFlights": 1,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 41000,
     "aircraftNearby": 0,
-    "totalObservations": 416,
+    "totalObservations": 422,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 65,
+    "totalObservations": 69,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -68,7 +68,7 @@
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 1,
-    "largestMagnitude": 3.31,
+    "largestMagnitude": 3.15,
     "recentEvents": [
       {
         "magnitude": 2.27,
@@ -77,10 +77,10 @@
         "distance": "43.3"
       },
       {
-        "magnitude": 3.31,
-        "location": "7 km ENE of Calumet, Oklahoma",
-        "time": "2025-09-08T08:25:13.492Z",
-        "distance": "42.3"
+        "magnitude": 3.15,
+        "location": "6 km E of Calumet, Oklahoma",
+        "time": "2025-09-08T08:25:13.009Z",
+        "distance": "42.1"
       },
       {
         "magnitude": 1.63,
