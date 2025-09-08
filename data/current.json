@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-09-08T13:12:02.382Z",
-  "lastUpdated": "2025-09-08T13:12:02.382Z",
+  "timestamp": "2025-09-08T13:14:02.167Z",
+  "lastUpdated": "2025-09-08T13:14:02.167Z",
   "weather": {
     "temperature": 64,
     "feelsLike": 64,
-    "humidity": 73,
+    "humidity": 72,
     "pressure": "24.07",
     "windSpeed": 8,
     "windGust": 10,
-    "windLull": 6,
-    "windDirection": 223,
+    "windLull": 5,
+    "windDirection": 228,
     "heatIndex": 64,
     "windChill": 64,
     "dewPoint": 55,
@@ -18,10 +18,10 @@
     "stationPressure": "24.07",
     "pressureTrend": "steady",
     "uvIndex": 1,
-    "solarRadiation": 90,
-    "brightness": 10807,
+    "solarRadiation": 95,
+    "brightness": 11364,
     "airDensity": "0.976",
-    "deltaT": "3.2",
+    "deltaT": "3.3",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 195,
-    "commercial": 45,
-    "generalAviation": 149,
+    "total": 200,
+    "commercial": 46,
+    "generalAviation": 152,
     "lifeFlights": 1,
     "military": 1,
     "balloons": 0,
     "highestAltitude": 46625,
     "aircraftNearby": 0,
-    "totalObservations": 4884,
+    "totalObservations": 4992,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 67,
+    "totalObservations": 71,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,7 +57,7 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 32827,
+    "avgSamples": 32855,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
@@ -71,10 +71,10 @@
     "largestMagnitude": 3.15,
     "recentEvents": [
       {
-        "magnitude": 2.27,
+        "magnitude": 1.76,
         "location": "9 km ENE of Calumet, Oklahoma",
-        "time": "2025-09-08T08:30:59.447Z",
-        "distance": "43.3"
+        "time": "2025-09-08T08:30:59.189Z",
+        "distance": "43.2"
       },
       {
         "magnitude": 3.15,
