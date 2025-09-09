@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-09-09T07:16:01.629Z",
-  "lastUpdated": "2025-09-09T07:16:01.629Z",
+  "timestamp": "2025-09-09T07:18:01.576Z",
+  "lastUpdated": "2025-09-09T07:18:01.576Z",
   "weather": {
     "temperature": 67,
     "feelsLike": 67,
     "humidity": 73,
     "pressure": "24.08",
-    "windSpeed": 5,
-    "windGust": 7,
-    "windLull": 4,
-    "windDirection": 229,
+    "windSpeed": 7,
+    "windGust": 10,
+    "windLull": 5,
+    "windDirection": 217,
     "heatIndex": 67,
     "windChill": 67,
     "dewPoint": 58,
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 27,
-    "commercial": 6,
-    "generalAviation": 21,
+    "total": 28,
+    "commercial": 8,
+    "generalAviation": 20,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45025,
     "aircraftNearby": 0,
-    "totalObservations": 530,
+    "totalObservations": 545,
     "dataAvailable": true
   },
   "seismic": {
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 32670,
+    "avgSamples": 32663,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 7,
+    "totalToday": 6,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 1,
