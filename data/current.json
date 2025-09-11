@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-09-11T13:36:01.817Z",
-  "lastUpdated": "2025-09-11T13:36:01.817Z",
+  "timestamp": "2025-09-11T13:38:02.086Z",
+  "lastUpdated": "2025-09-11T13:38:02.086Z",
   "weather": {
     "temperature": 72,
     "feelsLike": 72,
     "humidity": 64,
     "pressure": "24.09",
-    "windSpeed": 6,
+    "windSpeed": 7,
     "windGust": 9,
-    "windLull": 3,
-    "windDirection": 221,
+    "windLull": 5,
+    "windDirection": 216,
     "heatIndex": 72,
     "windChill": 72,
     "dewPoint": 59,
@@ -18,8 +18,8 @@
     "stationPressure": "24.09",
     "pressureTrend": "steady",
     "uvIndex": 2,
-    "solarRadiation": 179,
-    "brightness": 21475,
+    "solarRadiation": 189,
+    "brightness": 22665,
     "airDensity": "0.963",
     "deltaT": "4.8",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 247,
-    "commercial": 62,
-    "generalAviation": 177,
+    "total": 254,
+    "commercial": 61,
+    "generalAviation": 185,
     "lifeFlights": 0,
     "military": 8,
     "balloons": 0,
     "highestAltitude": 45000,
     "aircraftNearby": 0,
-    "totalObservations": 5256,
+    "totalObservations": 5351,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 24,
+    "totalObservations": 25,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,19 +57,26 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 25307,
+    "avgSamples": 25610,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 1.63,
+    "recentEvents": [
+      {
+        "magnitude": 1.63,
+        "location": "6 km E of Calumet, Oklahoma",
+        "time": "2025-09-10T14:23:38.950Z",
+        "distance": "41.8"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
