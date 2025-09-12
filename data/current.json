@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-09-12T14:42:01.951Z",
-  "lastUpdated": "2025-09-12T14:42:01.951Z",
+  "timestamp": "2025-09-12T14:44:01.932Z",
+  "lastUpdated": "2025-09-12T14:44:01.932Z",
   "weather": {
     "temperature": 78,
     "feelsLike": 78,
     "humidity": 59,
     "pressure": "24.11",
     "windSpeed": 6,
-    "windGust": 7,
-    "windLull": 3,
-    "windDirection": 222,
+    "windGust": 9,
+    "windLull": 4,
+    "windDirection": 235,
     "heatIndex": 78,
     "windChill": 78,
     "dewPoint": 62,
@@ -18,8 +18,8 @@
     "stationPressure": "24.11",
     "pressureTrend": "steady",
     "uvIndex": 4,
-    "solarRadiation": 414,
-    "brightness": 49641,
+    "solarRadiation": 421,
+    "brightness": 50555,
     "airDensity": "0.953",
     "deltaT": "6.0",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 274,
+    "total": 281,
     "commercial": 55,
-    "generalAviation": 208,
+    "generalAviation": 214,
     "lifeFlights": 0,
-    "military": 11,
+    "military": 12,
     "balloons": 0,
     "highestAltitude": 45000,
     "aircraftNearby": 0,
-    "totalObservations": 6117,
+    "totalObservations": 6116,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 65,
+    "totalObservations": 61,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 33166,
+    "avgSamples": 32944,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 3,
+    "totalToday": 2,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -81,12 +81,6 @@
         "location": "6 km E of Calumet, Oklahoma",
         "time": "2025-09-12T06:49:43.420Z",
         "distance": "42.2"
-      },
-      {
-        "magnitude": 1.26,
-        "location": "6 km ENE of Calumet, Oklahoma",
-        "time": "2025-09-11T14:43:04.599Z",
-        "distance": "41.9"
       }
     ],
     "dataAvailable": true
