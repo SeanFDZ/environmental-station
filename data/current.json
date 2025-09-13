@@ -1,6 +1,6 @@
 {
-  "timestamp": "2025-09-13T06:48:01.566Z",
-  "lastUpdated": "2025-09-13T06:48:01.566Z",
+  "timestamp": "2025-09-13T06:50:01.554Z",
+  "lastUpdated": "2025-09-13T06:50:01.554Z",
   "weather": {
     "temperature": 75,
     "feelsLike": 75,
@@ -8,8 +8,8 @@
     "pressure": "24.10",
     "windSpeed": 9,
     "windGust": 10,
-    "windLull": 5,
-    "windDirection": 212,
+    "windLull": 7,
+    "windDirection": 211,
     "heatIndex": 75,
     "windChill": 75,
     "dewPoint": 64,
@@ -44,11 +44,11 @@
     "balloons": 0,
     "highestAltitude": 47000,
     "aircraftNearby": 0,
-    "totalObservations": 699,
+    "totalObservations": 716,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 62,
+    "totalObservations": 58,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 32316,
+    "avgSamples": 32329,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 2,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -75,12 +75,6 @@
         "location": "5 km E of Calumet, Oklahoma",
         "time": "2025-09-12T07:43:02.520Z",
         "distance": "41.6"
-      },
-      {
-        "magnitude": 1.67,
-        "location": "6 km E of Calumet, Oklahoma",
-        "time": "2025-09-12T06:49:43.420Z",
-        "distance": "42.2"
       }
     ],
     "dataAvailable": true
