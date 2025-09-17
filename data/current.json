@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-09-17T12:02:18.915Z",
-  "lastUpdated": "2025-09-17T12:02:18.915Z",
+  "timestamp": "2025-09-17T12:04:18.685Z",
+  "lastUpdated": "2025-09-17T12:04:18.685Z",
   "weather": {
     "temperature": 71,
     "feelsLike": 71,
-    "humidity": 68,
+    "humidity": 69,
     "pressure": "24.08",
     "windSpeed": 6,
-    "windGust": 9,
-    "windLull": 4,
-    "windDirection": 248,
+    "windGust": 7,
+    "windLull": 3,
+    "windDirection": 236,
     "heatIndex": 71,
     "windChill": 71,
     "dewPoint": 60,
@@ -19,9 +19,9 @@
     "pressureTrend": "steady",
     "uvIndex": 0,
     "solarRadiation": 0,
-    "brightness": 15,
+    "brightness": 25,
     "airDensity": "0.965",
-    "deltaT": "4.2",
+    "deltaT": "4.0",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 85,
-    "commercial": 15,
-    "generalAviation": 70,
+    "total": 87,
+    "commercial": 16,
+    "generalAviation": 71,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
-    "highestAltitude": 45000,
+    "highestAltitude": 43025,
     "aircraftNearby": 0,
-    "totalObservations": 2299,
+    "totalObservations": 2381,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 72,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,26 +57,19 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 32727,
+    "avgSamples": 32732,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 0,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.36,
-    "recentEvents": [
-      {
-        "magnitude": 1.36,
-        "location": "6 km E of Calumet, Oklahoma",
-        "time": "2025-09-16T12:03:00.810Z",
-        "distance": "41.6"
-      }
-    ],
+    "largestMagnitude": 0,
+    "recentEvents": [],
     "dataAvailable": true
   },
   "alerts": {
