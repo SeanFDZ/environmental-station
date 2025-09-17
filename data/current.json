@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-09-17T16:26:19.024Z",
-  "lastUpdated": "2025-09-17T16:26:19.024Z",
+  "timestamp": "2025-09-17T16:28:19.027Z",
+  "lastUpdated": "2025-09-17T16:28:19.027Z",
   "weather": {
     "temperature": 84,
     "feelsLike": 85,
     "humidity": 49,
     "pressure": "24.12",
-    "windSpeed": 5,
-    "windGust": 9,
-    "windLull": 2,
-    "windDirection": 270,
+    "windSpeed": 6,
+    "windGust": 7,
+    "windLull": 4,
+    "windDirection": 248,
     "heatIndex": 85,
     "windChill": 84,
     "dewPoint": 63,
@@ -18,8 +18,8 @@
     "stationPressure": "24.12",
     "pressureTrend": "rising",
     "uvIndex": 7,
-    "solarRadiation": 716,
-    "brightness": 85953,
+    "solarRadiation": 718,
+    "brightness": 86158,
     "airDensity": "0.942",
     "deltaT": "8.4",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 348,
-    "commercial": 80,
-    "generalAviation": 260,
+    "total": 355,
+    "commercial": 77,
+    "generalAviation": 270,
     "lifeFlights": 1,
     "military": 8,
     "balloons": 0,
     "highestAltitude": 49000,
-    "aircraftNearby": 1,
-    "totalObservations": 9547,
+    "aircraftNearby": 2,
+    "totalObservations": 9590,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 72,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,7 +57,7 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 32849,
+    "avgSamples": 32837,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
@@ -68,13 +68,13 @@
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.91,
+    "largestMagnitude": 1.89,
     "recentEvents": [
       {
-        "magnitude": 1.91,
+        "magnitude": 1.89,
         "location": "6 km E of Calumet, Oklahoma",
-        "time": "2025-09-17T16:20:32.263Z",
-        "distance": "42.0"
+        "time": "2025-09-17T16:20:32.339Z",
+        "distance": "42.2"
       }
     ],
     "dataAvailable": true
