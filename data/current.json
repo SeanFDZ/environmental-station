@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-09-18T23:04:18.863Z",
-  "lastUpdated": "2025-09-18T23:04:18.863Z",
+  "timestamp": "2025-09-18T23:06:18.902Z",
+  "lastUpdated": "2025-09-18T23:06:18.902Z",
   "weather": {
     "temperature": 81,
     "feelsLike": 83,
-    "humidity": 56,
+    "humidity": 55,
     "pressure": "24.11",
     "windSpeed": 2,
     "windGust": 4,
-    "windLull": 1,
-    "windDirection": 265,
+    "windLull": 0,
+    "windDirection": 247,
     "heatIndex": 83,
     "windChill": 81,
     "dewPoint": 64,
@@ -18,10 +18,10 @@
     "stationPressure": "24.11",
     "pressureTrend": "steady",
     "uvIndex": 2,
-    "solarRadiation": 221,
-    "brightness": 26534,
+    "solarRadiation": 218,
+    "brightness": 26168,
     "airDensity": "0.947",
-    "deltaT": "6.8",
+    "deltaT": "7.0",
     "precipitation": "0.32",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 221,
+    "total": 219,
     "commercial": 50,
-    "generalAviation": 171,
+    "generalAviation": 169,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45025,
     "aircraftNearby": 0,
-    "totalObservations": 6506,
+    "totalObservations": 6467,
     "dataAvailable": true
   },
   "seismic": {
@@ -68,10 +68,10 @@
     "within10mi": 0,
     "within25mi": 1,
     "significantEvents": 0,
-    "largestMagnitude": 2.56,
+    "largestMagnitude": 2.5,
     "recentEvents": [
       {
-        "magnitude": 2.56,
+        "magnitude": 2.5,
         "location": "10 km ESE of Butler, Oklahoma",
         "time": "2025-09-18T22:58:19.950Z",
         "distance": "16.9"
