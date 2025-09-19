@@ -1,18 +1,18 @@
 {
-  "timestamp": "2025-09-19T03:36:18.837Z",
-  "lastUpdated": "2025-09-19T03:36:18.837Z",
+  "timestamp": "2025-09-19T03:38:18.828Z",
+  "lastUpdated": "2025-09-19T03:38:18.828Z",
   "weather": {
     "temperature": 67,
     "feelsLike": 67,
-    "humidity": 92,
+    "humidity": 91,
     "pressure": "24.08",
     "windSpeed": 1,
     "windGust": 2,
     "windLull": 0,
-    "windDirection": 261,
+    "windDirection": 248,
     "heatIndex": 67,
     "windChill": 67,
-    "dewPoint": 65,
+    "dewPoint": 64,
     "wetBulbTemperature": 65,
     "wetBulbGlobeTemperature": 66,
     "stationPressure": "24.08",
@@ -21,7 +21,7 @@
     "solarRadiation": 0,
     "brightness": 0,
     "airDensity": "0.971",
-    "deltaT": "1.0",
+    "deltaT": "1.1",
     "precipitation": "0.32",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 181,
-    "commercial": 44,
-    "generalAviation": 137,
+    "total": 178,
+    "commercial": 43,
+    "generalAviation": 135,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45000,
     "aircraftNearby": 0,
-    "totalObservations": 4458,
+    "totalObservations": 4444,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 62,
+    "totalObservations": 58,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 32120,
+    "avgSamples": 32130,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 3,
+    "totalToday": 2,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -81,12 +81,6 @@
         "location": "6 km E of Calumet, Oklahoma",
         "time": "2025-09-18T05:53:52.280Z",
         "distance": "42.1"
-      },
-      {
-        "magnitude": 1.61,
-        "location": "9 km SSW of Okarche, Oklahoma",
-        "time": "2025-09-18T03:37:13.480Z",
-        "distance": "43.4"
       }
     ],
     "dataAvailable": true
