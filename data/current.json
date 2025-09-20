@@ -1,27 +1,27 @@
 {
-  "timestamp": "2025-09-20T21:40:18.823Z",
-  "lastUpdated": "2025-09-20T21:40:18.823Z",
+  "timestamp": "2025-09-20T21:42:18.791Z",
+  "lastUpdated": "2025-09-20T21:42:18.791Z",
   "weather": {
     "temperature": 89,
     "feelsLike": 91,
-    "humidity": 44,
+    "humidity": 43,
     "pressure": "24.13",
-    "windSpeed": 6,
-    "windGust": 8,
-    "windLull": 3,
-    "windDirection": 251,
+    "windSpeed": 9,
+    "windGust": 14,
+    "windLull": 5,
+    "windDirection": 233,
     "heatIndex": 91,
     "windChill": 89,
-    "dewPoint": 65,
+    "dewPoint": 64,
     "wetBulbTemperature": 71,
-    "wetBulbGlobeTemperature": 79,
+    "wetBulbGlobeTemperature": 78,
     "stationPressure": "24.13",
     "pressureTrend": "steady",
     "uvIndex": 5,
-    "solarRadiation": 514,
-    "brightness": 61634,
+    "solarRadiation": 508,
+    "brightness": 60969,
     "airDensity": "0.933",
-    "deltaT": "10.0",
+    "deltaT": "10.2",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 204,
+    "total": 199,
     "commercial": 42,
-    "generalAviation": 162,
+    "generalAviation": 157,
     "lifeFlights": 1,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 47000,
     "aircraftNearby": 1,
-    "totalObservations": 4988,
+    "totalObservations": 4911,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,12 +64,19 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 1.98,
+    "recentEvents": [
+      {
+        "magnitude": 1.98,
+        "location": "5 km E of Bridgeport, Oklahoma",
+        "time": "2025-09-20T21:38:45.463Z",
+        "distance": "27.1"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
