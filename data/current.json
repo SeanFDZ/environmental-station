@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-09-21T21:38:18.612Z",
-  "lastUpdated": "2025-09-21T21:38:18.612Z",
+  "timestamp": "2025-09-21T21:40:18.549Z",
+  "lastUpdated": "2025-09-21T21:40:18.549Z",
   "weather": {
     "temperature": 80,
     "feelsLike": 80,
     "humidity": 67,
     "pressure": "24.11",
     "windSpeed": 6,
-    "windGust": 9,
-    "windLull": 1,
-    "windDirection": 211,
+    "windGust": 8,
+    "windLull": 4,
+    "windDirection": 210,
     "heatIndex": 80,
     "windChill": 80,
     "dewPoint": 68,
@@ -18,10 +18,10 @@
     "stationPressure": "24.11",
     "pressureTrend": "steady",
     "uvIndex": 5,
-    "solarRadiation": 526,
-    "brightness": 63075,
+    "solarRadiation": 519,
+    "brightness": 62310,
     "airDensity": "0.949",
-    "deltaT": "4.9",
+    "deltaT": "4.8",
     "precipitation": "0.54",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 209,
-    "commercial": 39,
-    "generalAviation": 170,
+    "total": 204,
+    "commercial": 37,
+    "generalAviation": 167,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 49000,
     "aircraftNearby": 0,
-    "totalObservations": 5171,
+    "totalObservations": 5119,
     "dataAvailable": true
   },
   "seismic": {
@@ -57,26 +57,19 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 33201,
+    "avgSamples": 33170,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 0,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.53,
-    "recentEvents": [
-      {
-        "magnitude": 1.53,
-        "location": "6 km E of Calumet, Oklahoma",
-        "time": "2025-09-20T21:38:48.700Z",
-        "distance": "41.9"
-      }
-    ],
+    "largestMagnitude": 0,
+    "recentEvents": [],
     "dataAvailable": true
   },
   "alerts": {
