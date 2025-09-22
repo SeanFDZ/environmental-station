@@ -1,27 +1,27 @@
 {
-  "timestamp": "2025-09-22T16:58:18.647Z",
-  "lastUpdated": "2025-09-22T16:58:18.647Z",
+  "timestamp": "2025-09-22T17:00:19.248Z",
+  "lastUpdated": "2025-09-22T17:00:19.248Z",
   "weather": {
     "temperature": 77,
     "feelsLike": 77,
-    "humidity": 82,
-    "pressure": "24.10",
-    "windSpeed": 2,
+    "humidity": 81,
+    "pressure": "24.11",
+    "windSpeed": 1,
     "windGust": 3,
     "windLull": 0,
-    "windDirection": 236,
+    "windDirection": 216,
     "heatIndex": 77,
     "windChill": 77,
-    "dewPoint": 71,
+    "dewPoint": 70,
     "wetBulbTemperature": 72,
-    "wetBulbGlobeTemperature": 78,
-    "stationPressure": "24.10",
+    "wetBulbGlobeTemperature": 80,
+    "stationPressure": "24.11",
     "pressureTrend": "rising",
     "uvIndex": 5,
-    "solarRadiation": 516,
-    "brightness": 61922,
+    "solarRadiation": 555,
+    "brightness": 66574,
     "airDensity": "0.954",
-    "deltaT": "2.5",
+    "deltaT": "2.6",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 281,
-    "commercial": 52,
-    "generalAviation": 223,
+    "total": 284,
+    "commercial": 54,
+    "generalAviation": 224,
     "lifeFlights": 0,
     "military": 6,
     "balloons": 0,
     "highestAltitude": 47000,
     "aircraftNearby": 0,
-    "totalObservations": 6504,
+    "totalObservations": 6531,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,19 +64,12 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 0,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.09,
-    "recentEvents": [
-      {
-        "magnitude": 1.09,
-        "location": "6 km E of Calumet, Oklahoma",
-        "time": "2025-09-21T16:58:40.649Z",
-        "distance": "41.8"
-      }
-    ],
+    "largestMagnitude": 0,
+    "recentEvents": [],
     "dataAvailable": true
   },
   "alerts": {
