@@ -1,19 +1,19 @@
 {
-  "timestamp": "2025-10-04T01:52:18.797Z",
-  "lastUpdated": "2025-10-04T01:52:18.797Z",
+  "timestamp": "2025-10-04T01:54:19.044Z",
+  "lastUpdated": "2025-10-04T01:54:19.044Z",
   "weather": {
     "temperature": 76,
     "feelsLike": 76,
-    "humidity": 62,
+    "humidity": 63,
     "pressure": "24.10",
     "windSpeed": 8,
-    "windGust": 10,
-    "windLull": 6,
-    "windDirection": 198,
+    "windGust": 9,
+    "windLull": 5,
+    "windDirection": 199,
     "heatIndex": 76,
     "windChill": 76,
-    "dewPoint": 62,
-    "wetBulbTemperature": 66,
+    "dewPoint": 63,
+    "wetBulbTemperature": 67,
     "wetBulbGlobeTemperature": 69,
     "stationPressure": "24.10",
     "pressureTrend": "steady",
@@ -21,7 +21,7 @@
     "solarRadiation": 0,
     "brightness": 1,
     "airDensity": "0.955",
-    "deltaT": "5.4",
+    "deltaT": "5.3",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 161,
-    "commercial": 35,
-    "generalAviation": 126,
+    "total": 163,
+    "commercial": 36,
+    "generalAviation": 127,
     "lifeFlights": 1,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 47000,
     "aircraftNearby": 0,
-    "totalObservations": 4027,
+    "totalObservations": 4029,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 29,
+    "totalObservations": 25,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,19 +57,26 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 26999,
+    "avgSamples": 25641,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 2.21,
+    "recentEvents": [
+      {
+        "magnitude": 2.21,
+        "location": "10 km NW of Okarche, Oklahoma",
+        "time": "2025-10-04T01:50:23.557Z",
+        "distance": "41.3"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
