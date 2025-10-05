@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-10-05T01:50:19.365Z",
-  "lastUpdated": "2025-10-05T01:50:19.365Z",
+  "timestamp": "2025-10-05T01:52:19.115Z",
+  "lastUpdated": "2025-10-05T01:52:19.115Z",
   "weather": {
     "temperature": 75,
     "feelsLike": 75,
     "humidity": 53,
     "pressure": "24.10",
-    "windSpeed": 7,
-    "windGust": 13,
-    "windLull": 2,
-    "windDirection": 184,
+    "windSpeed": 9,
+    "windGust": 17,
+    "windLull": 3,
+    "windDirection": 191,
     "heatIndex": 75,
     "windChill": 75,
     "dewPoint": 56,
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 146,
-    "commercial": 46,
-    "generalAviation": 99,
-    "lifeFlights": 2,
+    "total": 141,
+    "commercial": 45,
+    "generalAviation": 95,
+    "lifeFlights": 1,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45025,
     "aircraftNearby": 0,
-    "totalObservations": 3260,
+    "totalObservations": 3272,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,23 +64,17 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 2,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.8,
+    "largestMagnitude": 1.66,
     "recentEvents": [
       {
         "magnitude": 1.66,
         "location": "9 km WNW of Okarche, Oklahoma",
         "time": "2025-10-04T02:23:41.280Z",
         "distance": "41.0"
-      },
-      {
-        "magnitude": 1.8,
-        "location": "9 km WNW of Okarche, Oklahoma",
-        "time": "2025-10-04T01:50:22.739Z",
-        "distance": "40.8"
       }
     ],
     "dataAvailable": true
