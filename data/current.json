@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-10-05T02:22:19.036Z",
-  "lastUpdated": "2025-10-05T02:22:19.036Z",
+  "timestamp": "2025-10-05T02:24:19.083Z",
+  "lastUpdated": "2025-10-05T02:24:19.083Z",
   "weather": {
     "temperature": 74,
     "feelsLike": 74,
     "humidity": 51,
     "pressure": "24.09",
-    "windSpeed": 9,
-    "windGust": 14,
-    "windLull": 4,
-    "windDirection": 190,
+    "windSpeed": 8,
+    "windGust": 12,
+    "windLull": 3,
+    "windDirection": 196,
     "heatIndex": 74,
     "windChill": 74,
     "dewPoint": 55,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 131,
-    "commercial": 39,
-    "generalAviation": 92,
+    "total": 132,
+    "commercial": 41,
+    "generalAviation": 91,
     "lifeFlights": 1,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45000,
     "aircraftNearby": 1,
-    "totalObservations": 3062,
+    "totalObservations": 3017,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 67,
+    "totalObservations": 63,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,26 +57,19 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 33141,
+    "avgSamples": 33124,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 0,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.66,
-    "recentEvents": [
-      {
-        "magnitude": 1.66,
-        "location": "9 km WNW of Okarche, Oklahoma",
-        "time": "2025-10-04T02:23:41.280Z",
-        "distance": "41.0"
-      }
-    ],
+    "largestMagnitude": 0,
+    "recentEvents": [],
     "dataAvailable": true
   },
   "alerts": {
