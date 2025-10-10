@@ -1,14 +1,14 @@
 {
-  "timestamp": "2025-10-10T23:28:18.836Z",
-  "lastUpdated": "2025-10-10T23:28:18.836Z",
+  "timestamp": "2025-10-10T23:30:19.352Z",
+  "lastUpdated": "2025-10-10T23:30:19.352Z",
   "weather": {
     "temperature": 84,
     "feelsLike": 85,
     "humidity": 49,
     "pressure": "24.12",
     "windSpeed": 6,
-    "windGust": 7,
-    "windLull": 4,
+    "windGust": 8,
+    "windLull": 5,
     "windDirection": 223,
     "heatIndex": 85,
     "windChill": 84,
@@ -17,9 +17,9 @@
     "wetBulbGlobeTemperature": 74,
     "stationPressure": "24.12",
     "pressureTrend": "steady",
-    "uvIndex": 1,
-    "solarRadiation": 61,
-    "brightness": 7308,
+    "uvIndex": 0,
+    "solarRadiation": 56,
+    "brightness": 6740,
     "airDensity": "0.942",
     "deltaT": "8.4",
     "precipitation": "0.00",
@@ -44,11 +44,11 @@
     "balloons": 0,
     "highestAltitude": 47000,
     "aircraftNearby": 1,
-    "totalObservations": 5236,
+    "totalObservations": 5178,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 11,
+    "totalObservations": 10,
     "activeChannels": 1,
     "dataQuality": 100,
     "stationHealth": "Degraded",
@@ -57,30 +57,24 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 24448,
-    "avgSamples": 18758,
+    "avgSamples": 18342,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 2,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.36,
+    "largestMagnitude": 1.19,
     "recentEvents": [
       {
         "magnitude": 1.19,
         "location": "6 km NW of Okarche, Oklahoma",
         "time": "2025-10-10T11:43:06.919Z",
         "distance": "44.1"
-      },
-      {
-        "magnitude": 1.36,
-        "location": "7 km ENE of Calumet, Oklahoma",
-        "time": "2025-10-09T23:28:43.039Z",
-        "distance": "42.3"
       }
     ],
     "dataAvailable": true
