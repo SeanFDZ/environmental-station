@@ -1,26 +1,26 @@
 {
-  "timestamp": "2025-10-31T08:34:23.035Z",
-  "lastUpdated": "2025-10-31T08:34:23.035Z",
+  "timestamp": "2025-10-31T08:36:17.857Z",
+  "lastUpdated": "2025-10-31T08:36:17.857Z",
   "weather": {
-    "temperature": 34,
-    "feelsLike": 34,
+    "temperature": 35,
+    "feelsLike": 35,
     "humidity": 92,
     "pressure": "24.00",
     "windSpeed": 2,
-    "windGust": 2,
+    "windGust": 3,
     "windLull": 2,
     "windDirection": 340,
-    "heatIndex": 34,
-    "windChill": 34,
+    "heatIndex": 35,
+    "windChill": 35,
     "dewPoint": 32,
-    "wetBulbTemperature": 33,
+    "wetBulbTemperature": 34,
     "wetBulbGlobeTemperature": 34,
     "stationPressure": "24.00",
     "pressureTrend": "steady",
     "uvIndex": 0,
     "solarRadiation": 0,
     "brightness": 0,
-    "airDensity": "1.032",
+    "airDensity": "1.031",
     "deltaT": "0.5",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 40,
+    "total": 41,
     "commercial": 13,
-    "generalAviation": 27,
+    "generalAviation": 28,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
-    "highestAltitude": 40000,
+    "highestAltitude": 39975,
     "aircraftNearby": 0,
-    "totalObservations": 908,
+    "totalObservations": 870,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 62,
+    "totalObservations": 66,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -64,12 +64,19 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 1.71,
+    "recentEvents": [
+      {
+        "magnitude": 1.71,
+        "location": "6 km ENE of Calumet, Oklahoma",
+        "time": "2025-10-31T08:32:36.965Z",
+        "distance": "42.1"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
