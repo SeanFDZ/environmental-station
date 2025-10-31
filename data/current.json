@@ -1,6 +1,6 @@
 {
-  "timestamp": "2025-10-31T12:22:18.377Z",
-  "lastUpdated": "2025-10-31T12:22:18.377Z",
+  "timestamp": "2025-10-31T12:24:23.222Z",
+  "lastUpdated": "2025-10-31T12:24:23.222Z",
   "weather": {
     "temperature": 33,
     "feelsLike": 33,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 61,
-    "commercial": 15,
-    "generalAviation": 46,
+    "total": 68,
+    "commercial": 17,
+    "generalAviation": 51,
     "lifeFlights": 1,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 40025,
     "aircraftNearby": 0,
-    "totalObservations": 1507,
+    "totalObservations": 1519,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 61,
+    "totalObservations": 65,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,7 +57,7 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 31985,
+    "avgSamples": 32053,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
@@ -68,13 +68,13 @@
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.71,
+    "largestMagnitude": 1.72,
     "recentEvents": [
       {
-        "magnitude": 1.71,
-        "location": "6 km ENE of Calumet, Oklahoma",
-        "time": "2025-10-31T08:32:36.965Z",
-        "distance": "42.1"
+        "magnitude": 1.72,
+        "location": "7 km ENE of Calumet, Oklahoma",
+        "time": "2025-10-31T08:32:36.659Z",
+        "distance": "42.2"
       }
     ],
     "dataAvailable": true
