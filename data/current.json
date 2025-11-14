@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-11-14T00:00:27.123Z",
-  "lastUpdated": "2025-11-14T00:00:27.123Z",
+  "timestamp": "2025-11-14T00:02:24.326Z",
+  "lastUpdated": "2025-11-14T00:02:24.326Z",
   "weather": {
     "temperature": 72,
     "feelsLike": 72,
     "humidity": 48,
     "pressure": "24.09",
     "windSpeed": 11,
-    "windGust": 14,
-    "windLull": 7,
-    "windDirection": 229,
+    "windGust": 13,
+    "windLull": 8,
+    "windDirection": 224,
     "heatIndex": 72,
     "windChill": 72,
     "dewPoint": 51,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 238,
-    "commercial": 49,
-    "generalAviation": 188,
+    "total": 233,
+    "commercial": 50,
+    "generalAviation": 182,
     "lifeFlights": 1,
     "military": 1,
     "balloons": 0,
     "highestAltitude": 45000,
     "aircraftNearby": 0,
-    "totalObservations": 6146,
+    "totalObservations": 6058,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 61,
+    "totalObservations": 65,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,26 +57,19 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 32902,
+    "avgSamples": 32951,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 0,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.81,
-    "recentEvents": [
-      {
-        "magnitude": 1.81,
-        "location": "15 km WSW of Leedey, Oklahoma",
-        "time": "2025-11-13T00:00:20.390Z",
-        "distance": "42.5"
-      }
-    ],
+    "largestMagnitude": 0,
+    "recentEvents": [],
     "dataAvailable": true
   },
   "alerts": {
