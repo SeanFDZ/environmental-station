@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-15T22:18:37.790Z",
-  "lastUpdated": "2025-12-15T22:18:37.790Z",
+  "timestamp": "2025-12-15T22:20:37.778Z",
+  "lastUpdated": "2025-12-15T22:20:37.778Z",
   "weather": {
     "temperature": 50,
     "feelsLike": 50,
     "humidity": 57,
     "pressure": "24.04",
     "windSpeed": 10,
-    "windGust": 12,
-    "windLull": 6,
-    "windDirection": 260,
+    "windGust": 15,
+    "windLull": 7,
+    "windDirection": 244,
     "heatIndex": 50,
     "windChill": 50,
     "dewPoint": 36,
@@ -18,8 +18,8 @@
     "stationPressure": "24.04",
     "pressureTrend": "steady",
     "uvIndex": 0,
-    "solarRadiation": 123,
-    "brightness": 14777,
+    "solarRadiation": 117,
+    "brightness": 14062,
     "airDensity": "1.001",
     "deltaT": "4.2",
     "precipitation": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 299,
-    "commercial": 57,
-    "generalAviation": 229,
+    "total": 293,
+    "commercial": 59,
+    "generalAviation": 222,
     "lifeFlights": 2,
-    "military": 13,
+    "military": 12,
     "balloons": 0,
     "highestAltitude": 47000,
     "aircraftNearby": 1,
-    "totalObservations": 7447,
+    "totalObservations": 7432,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,7 +64,7 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 5,
+    "totalToday": 4,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -93,12 +93,6 @@
         "location": "15 km ENE of Binger, Oklahoma",
         "time": "2025-12-15T04:54:59.831Z",
         "distance": "39.0"
-      },
-      {
-        "magnitude": 1.72,
-        "location": "18 km W of Union City, Oklahoma",
-        "time": "2025-12-14T22:19:15.589Z",
-        "distance": "40.5"
       }
     ],
     "dataAvailable": true
