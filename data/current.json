@@ -1,6 +1,6 @@
 {
-  "timestamp": "2025-12-15T01:04:37.609Z",
-  "lastUpdated": "2025-12-15T01:04:37.609Z",
+  "timestamp": "2025-12-15T01:06:37.652Z",
+  "lastUpdated": "2025-12-15T01:06:37.652Z",
   "weather": {
     "temperature": 25,
     "feelsLike": 20,
@@ -9,7 +9,7 @@
     "windSpeed": 4,
     "windGust": 5,
     "windLull": 3,
-    "windDirection": 253,
+    "windDirection": 252,
     "heatIndex": 25,
     "windChill": 20,
     "dewPoint": 13,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 203,
-    "commercial": 47,
+    "total": 202,
+    "commercial": 46,
     "generalAviation": 156,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 47025,
     "aircraftNearby": 1,
-    "totalObservations": 4899,
+    "totalObservations": 4872,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 72,
+    "totalObservations": 68,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,7 +57,7 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 32804,
+    "avgSamples": 32813,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
@@ -68,13 +68,13 @@
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 2.29,
+    "largestMagnitude": 2.06,
     "recentEvents": [
       {
-        "magnitude": 2.29,
-        "location": "17 km S of Calumet, Oklahoma",
-        "time": "2025-12-14T22:19:16.274Z",
-        "distance": "39.7"
+        "magnitude": 1.72,
+        "location": "18 km W of Union City, Oklahoma",
+        "time": "2025-12-14T22:19:15.589Z",
+        "distance": "40.5"
       },
       {
         "magnitude": 2.06,
