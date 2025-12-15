@@ -1,17 +1,17 @@
 {
-  "timestamp": "2025-12-15T12:28:37.417Z",
-  "lastUpdated": "2025-12-15T12:28:37.417Z",
+  "timestamp": "2025-12-15T12:30:37.549Z",
+  "lastUpdated": "2025-12-15T12:30:37.549Z",
   "weather": {
     "temperature": 29,
-    "feelsLike": 21,
+    "feelsLike": 20,
     "humidity": 63,
     "pressure": "23.99",
     "windSpeed": 9,
     "windGust": 13,
     "windLull": 6,
-    "windDirection": 250,
+    "windDirection": 252,
     "heatIndex": 29,
-    "windChill": 21,
+    "windChill": 20,
     "dewPoint": 18,
     "wetBulbTemperature": 25,
     "wetBulbGlobeTemperature": 26,
@@ -42,9 +42,9 @@
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
-    "highestAltitude": 42975,
+    "highestAltitude": 43000,
     "aircraftNearby": 0,
-    "totalObservations": 847,
+    "totalObservations": 873,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,12 +64,18 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 5,
+    "totalToday": 6,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
     "largestMagnitude": 2.82,
     "recentEvents": [
+      {
+        "magnitude": 2.33,
+        "location": "18 km ESE of Hinton, Oklahoma",
+        "time": "2025-12-15T12:27:18.960Z",
+        "distance": "39.2"
+      },
       {
         "magnitude": 2.82,
         "location": "18 km W of Union City, Oklahoma",
@@ -93,12 +99,6 @@
         "location": "18 km W of Union City, Oklahoma",
         "time": "2025-12-14T22:19:15.589Z",
         "distance": "40.5"
-      },
-      {
-        "magnitude": 2.06,
-        "location": "16 km ESE of Hinton, Oklahoma",
-        "time": "2025-12-14T18:40:23.831Z",
-        "distance": "38.2"
       }
     ],
     "dataAvailable": true
