@@ -1,17 +1,17 @@
 {
-  "timestamp": "2025-12-16T13:14:37.472Z",
-  "lastUpdated": "2025-12-16T13:14:37.472Z",
+  "timestamp": "2025-12-16T13:16:37.487Z",
+  "lastUpdated": "2025-12-16T13:16:37.487Z",
   "weather": {
     "temperature": 39,
-    "feelsLike": 34,
+    "feelsLike": 35,
     "humidity": 92,
     "pressure": "24.01",
-    "windSpeed": 7,
-    "windGust": 9,
-    "windLull": 5,
-    "windDirection": 251,
+    "windSpeed": 6,
+    "windGust": 10,
+    "windLull": 3,
+    "windDirection": 260,
     "heatIndex": 39,
-    "windChill": 34,
+    "windChill": 35,
     "dewPoint": 37,
     "wetBulbTemperature": 38,
     "wetBulbGlobeTemperature": 39,
@@ -19,7 +19,7 @@
     "pressureTrend": "steady",
     "uvIndex": 0,
     "solarRadiation": 0,
-    "brightness": 6,
+    "brightness": 8,
     "airDensity": "1.022",
     "deltaT": "0.6",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 88,
+    "total": 86,
     "commercial": 18,
-    "generalAviation": 70,
+    "generalAviation": 68,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 43000,
     "aircraftNearby": 0,
-    "totalObservations": 1959,
+    "totalObservations": 1969,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 14,
+    "totalObservations": 15,
     "activeChannels": 1,
     "dataQuality": 100,
     "stationHealth": "Degraded",
@@ -57,7 +57,7 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 25088,
-    "avgSamples": 23552,
+    "avgSamples": 23526,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
@@ -68,13 +68,13 @@
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 2.39,
+    "largestMagnitude": 1.74,
     "recentEvents": [
       {
-        "magnitude": 2.39,
-        "location": "16 km S of Calumet, Oklahoma",
-        "time": "2025-12-16T12:02:53.761Z",
-        "distance": "39.4"
+        "magnitude": 1.74,
+        "location": "19 km W of Union City, Oklahoma",
+        "time": "2025-12-16T12:02:52.810Z",
+        "distance": "40.1"
       }
     ],
     "dataAvailable": true
