@@ -1,6 +1,6 @@
 {
-  "timestamp": "2025-12-16T04:54:37.753Z",
-  "lastUpdated": "2025-12-16T04:54:37.753Z",
+  "timestamp": "2025-12-16T04:56:37.592Z",
+  "lastUpdated": "2025-12-16T04:56:37.592Z",
   "weather": {
     "temperature": 42,
     "feelsLike": 36,
@@ -8,8 +8,8 @@
     "pressure": "24.02",
     "windSpeed": 10,
     "windGust": 14,
-    "windLull": 7,
-    "windDirection": 228,
+    "windLull": 6,
+    "windDirection": 226,
     "heatIndex": 42,
     "windChill": 36,
     "dewPoint": 38,
@@ -20,7 +20,7 @@
     "uvIndex": 0,
     "solarRadiation": 0,
     "brightness": 0,
-    "airDensity": "1.017",
+    "airDensity": "1.018",
     "deltaT": "1.0",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 115,
+    "total": 114,
     "commercial": 38,
-    "generalAviation": 76,
+    "generalAviation": 74,
     "lifeFlights": 3,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 41025,
     "aircraftNearby": 1,
-    "totalObservations": 2968,
+    "totalObservations": 2872,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,7 +64,7 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 4,
+    "totalToday": 3,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -87,12 +87,6 @@
         "location": "19 km ESE of Hinton, Oklahoma",
         "time": "2025-12-15T10:43:07.450Z",
         "distance": "39.8"
-      },
-      {
-        "magnitude": 1.64,
-        "location": "19 km ESE of Hinton, Oklahoma",
-        "time": "2025-12-15T04:54:59.210Z",
-        "distance": "40.0"
       }
     ],
     "dataAvailable": true
