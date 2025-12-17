@@ -1,6 +1,6 @@
 {
-  "timestamp": "2025-12-17T12:02:16.695Z",
-  "lastUpdated": "2025-12-17T12:02:16.695Z",
+  "timestamp": "2025-12-17T12:04:10.555Z",
+  "lastUpdated": "2025-12-17T12:04:10.555Z",
   "weather": {
     "temperature": 27,
     "feelsLike": 23,
@@ -8,8 +8,8 @@
     "pressure": "23.98",
     "windSpeed": 4,
     "windGust": 4,
-    "windLull": 3,
-    "windDirection": 10,
+    "windLull": 4,
+    "windDirection": 12,
     "heatIndex": 27,
     "windChill": 23,
     "dewPoint": 27,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 35,
-    "commercial": 11,
-    "generalAviation": 24,
+    "total": 37,
+    "commercial": 12,
+    "generalAviation": 25,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45000,
     "aircraftNearby": 0,
-    "totalObservations": 767,
+    "totalObservations": 746,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 18,
+    "totalObservations": 17,
     "activeChannels": 1,
     "dataQuality": 100,
     "stationHealth": "Degraded",
@@ -57,26 +57,19 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 18432,
-    "avgSamples": 18226,
+    "avgSamples": 18229,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 0,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.74,
-    "recentEvents": [
-      {
-        "magnitude": 1.74,
-        "location": "19 km W of Union City, Oklahoma",
-        "time": "2025-12-16T12:02:52.810Z",
-        "distance": "40.1"
-      }
-    ],
+    "largestMagnitude": 0,
+    "recentEvents": [],
     "dataAvailable": true
   },
   "alerts": {
