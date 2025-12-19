@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-19T07:26:11.318Z",
-  "lastUpdated": "2025-12-19T07:26:11.318Z",
+  "timestamp": "2025-12-19T07:28:11.011Z",
+  "lastUpdated": "2025-12-19T07:28:11.011Z",
   "weather": {
     "temperature": 28,
     "feelsLike": 28,
     "humidity": 55,
     "pressure": "23.98",
-    "windSpeed": 2,
-    "windGust": 2,
+    "windSpeed": 1,
+    "windGust": 1,
     "windLull": 1,
-    "windDirection": 324,
+    "windDirection": 297,
     "heatIndex": 28,
     "windChill": 28,
     "dewPoint": 14,
@@ -21,7 +21,7 @@
     "solarRadiation": 0,
     "brightness": 0,
     "airDensity": "1.044",
-    "deltaT": "2.7",
+    "deltaT": "2.6",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 22,
+    "total": 20,
     "commercial": 7,
-    "generalAviation": 14,
+    "generalAviation": 12,
     "lifeFlights": 1,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 41000,
     "aircraftNearby": 0,
-    "totalObservations": 470,
+    "totalObservations": 472,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 24,
+    "totalObservations": 20,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -56,20 +56,27 @@
     "recentObservations": 0,
     "stationCode": "R923A",
     "networkCode": "AM",
-    "maxSamples": 32512,
-    "avgSamples": 19355,
+    "maxSamples": 18304,
+    "avgSamples": 17498,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 2.45,
+    "recentEvents": [
+      {
+        "magnitude": 2.45,
+        "location": "18 km W of Union City, Oklahoma",
+        "time": "2025-12-19T07:23:46.487Z",
+        "distance": "41.2"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
