@@ -1,6 +1,6 @@
 {
-  "timestamp": "2025-12-20T07:24:11.052Z",
-  "lastUpdated": "2025-12-20T07:24:11.052Z",
+  "timestamp": "2025-12-20T07:26:11.094Z",
+  "lastUpdated": "2025-12-20T07:26:11.094Z",
   "weather": {
     "temperature": 50,
     "feelsLike": 50,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 65,
-    "commercial": 14,
-    "generalAviation": 51,
+    "total": 62,
+    "commercial": 13,
+    "generalAviation": 49,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 41025,
     "aircraftNearby": 0,
-    "totalObservations": 1332,
+    "totalObservations": 1307,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 38,
+    "totalObservations": 42,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,30 +57,24 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 27887,
+    "avgSamples": 28401,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 2,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.8,
+    "largestMagnitude": 1.39,
     "recentEvents": [
       {
         "magnitude": 1.39,
         "location": "18 km ESE of Hinton, Oklahoma",
         "time": "2025-12-19T12:50:21.899Z",
         "distance": "39.1"
-      },
-      {
-        "magnitude": 1.8,
-        "location": "18 km W of Union City, Oklahoma",
-        "time": "2025-12-19T07:23:45.840Z",
-        "distance": "40.5"
       }
     ],
     "dataAvailable": true
