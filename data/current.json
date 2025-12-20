@@ -1,17 +1,17 @@
 {
-  "timestamp": "2025-12-20T12:50:11.493Z",
-  "lastUpdated": "2025-12-20T12:50:11.493Z",
+  "timestamp": "2025-12-20T12:52:11.130Z",
+  "lastUpdated": "2025-12-20T12:52:11.130Z",
   "weather": {
     "temperature": 42,
-    "feelsLike": 40,
+    "feelsLike": 38,
     "humidity": 62,
     "pressure": "24.02",
-    "windSpeed": 4,
-    "windGust": 4,
-    "windLull": 2,
-    "windDirection": 319,
+    "windSpeed": 6,
+    "windGust": 7,
+    "windLull": 5,
+    "windDirection": 324,
     "heatIndex": 42,
-    "windChill": 40,
+    "windChill": 38,
     "dewPoint": 30,
     "wetBulbTemperature": 37,
     "wetBulbGlobeTemperature": 38,
@@ -19,8 +19,8 @@
     "pressureTrend": "steady",
     "uvIndex": 0,
     "solarRadiation": 0,
-    "brightness": 0,
-    "airDensity": "1.016",
+    "brightness": 1,
+    "airDensity": "1.017",
     "deltaT": "3.1",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 82,
-    "commercial": 19,
-    "generalAviation": 63,
+    "total": 78,
+    "commercial": 18,
+    "generalAviation": 60,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45025,
     "aircraftNearby": 0,
-    "totalObservations": 1916,
+    "totalObservations": 1950,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 69,
+    "totalObservations": 65,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 33020,
+    "avgSamples": 33004,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 2,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -75,12 +75,6 @@
         "location": "17 km E of Hinton, Oklahoma",
         "time": "2025-12-20T07:26:31.764Z",
         "distance": "38.2"
-      },
-      {
-        "magnitude": 1.39,
-        "location": "18 km ESE of Hinton, Oklahoma",
-        "time": "2025-12-19T12:50:21.899Z",
-        "distance": "39.1"
       }
     ],
     "dataAvailable": true
