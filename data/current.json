@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-12-26T07:44:10.685Z",
-  "lastUpdated": "2025-12-26T07:44:10.685Z",
+  "timestamp": "2025-12-26T07:46:10.667Z",
+  "lastUpdated": "2025-12-26T07:46:10.667Z",
   "weather": {
     "temperature": 64,
     "feelsLike": 64,
     "humidity": 53,
     "pressure": "24.07",
     "windSpeed": 8,
-    "windGust": 10,
-    "windLull": 7,
-    "windDirection": 297,
+    "windGust": 11,
+    "windLull": 3,
+    "windDirection": 296,
     "heatIndex": 64,
     "windChill": 64,
     "dewPoint": 46,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 15,
-    "commercial": 5,
+    "total": 14,
+    "commercial": 4,
     "generalAviation": 10,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 41000,
     "aircraftNearby": 0,
-    "totalObservations": 370,
+    "totalObservations": 391,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 64,
+    "totalObservations": 68,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,19 +57,26 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 33180,
+    "avgSamples": 33197,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 1.99,
+    "recentEvents": [
+      {
+        "magnitude": 1.99,
+        "location": "17 km E of Hinton, Oklahoma",
+        "time": "2025-12-26T07:43:10.575Z",
+        "distance": "38.2"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
