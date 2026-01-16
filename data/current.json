@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-01-16T16:00:40.523Z",
-  "lastUpdated": "2026-01-16T16:00:40.523Z",
+  "timestamp": "2026-01-16T16:02:40.529Z",
+  "lastUpdated": "2026-01-16T16:02:40.529Z",
   "weather": {
     "temperature": 42,
     "feelsLike": 35,
     "humidity": 50,
     "pressure": "24.02",
-    "windSpeed": 13,
-    "windGust": 21,
-    "windLull": 6,
-    "windDirection": 43,
+    "windSpeed": 12,
+    "windGust": 17,
+    "windLull": 8,
+    "windDirection": 40,
     "heatIndex": 42,
     "windChill": 35,
     "dewPoint": 24,
@@ -18,8 +18,8 @@
     "stationPressure": "24.02",
     "pressureTrend": "steady",
     "uvIndex": 1,
-    "solarRadiation": 339,
-    "brightness": 40752,
+    "solarRadiation": 343,
+    "brightness": 41203,
     "airDensity": "1.018",
     "deltaT": "4.1",
     "precipitation": "0.00",
@@ -36,11 +36,11 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 235,
-    "commercial": 57,
-    "generalAviation": 167,
+    "total": 232,
+    "commercial": 60,
+    "generalAviation": 162,
     "lifeFlights": 0,
-    "military": 11,
+    "military": 10,
     "balloons": 0,
     "highestAltitude": 45025,
     "aircraftNearby": 0,
@@ -64,7 +64,7 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 5,
+    "totalToday": 4,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -93,12 +93,6 @@
         "location": "9 km W of Loyal, Oklahoma",
         "time": "2026-01-15T16:36:28.309Z",
         "distance": "38.3"
-      },
-      {
-        "magnitude": 1.73,
-        "location": "9 km W of Loyal, Oklahoma",
-        "time": "2026-01-15T16:01:17.489Z",
-        "distance": "37.6"
       }
     ],
     "dataAvailable": true
