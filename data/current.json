@@ -1,25 +1,25 @@
 {
-  "timestamp": "2026-01-16T18:34:40.886Z",
-  "lastUpdated": "2026-01-16T18:34:40.886Z",
+  "timestamp": "2026-01-16T18:36:40.578Z",
+  "lastUpdated": "2026-01-16T18:36:40.578Z",
   "weather": {
     "temperature": 47,
-    "feelsLike": 42,
+    "feelsLike": 44,
     "humidity": 29,
     "pressure": "24.03",
-    "windSpeed": 14,
-    "windGust": 24,
-    "windLull": 4,
-    "windDirection": 30,
+    "windSpeed": 9,
+    "windGust": 21,
+    "windLull": 3,
+    "windDirection": 41,
     "heatIndex": 47,
-    "windChill": 42,
+    "windChill": 44,
     "dewPoint": 17,
     "wetBulbTemperature": 35,
-    "wetBulbGlobeTemperature": 40,
+    "wetBulbGlobeTemperature": 41,
     "stationPressure": "24.03",
     "pressureTrend": "steady",
     "uvIndex": 2,
-    "solarRadiation": 590,
-    "brightness": 70787,
+    "solarRadiation": 591,
+    "brightness": 70910,
     "airDensity": "1.006",
     "deltaT": "6.9",
     "precipitation": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 284,
-    "commercial": 57,
-    "generalAviation": 213,
+    "total": 287,
+    "commercial": 56,
+    "generalAviation": 216,
     "lifeFlights": 0,
-    "military": 14,
+    "military": 15,
     "balloons": 0,
     "highestAltitude": 47025,
     "aircraftNearby": 0,
-    "totalObservations": 6836,
+    "totalObservations": 6790,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,23 +64,17 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 2,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.87,
+    "largestMagnitude": 1.64,
     "recentEvents": [
       {
         "magnitude": 1.64,
         "location": "9 km W of Loyal, Oklahoma",
         "time": "2026-01-15T19:27:38.380Z",
         "distance": "37.8"
-      },
-      {
-        "magnitude": 1.87,
-        "location": "9 km W of Loyal, Oklahoma",
-        "time": "2026-01-15T18:35:33.359Z",
-        "distance": "37.9"
       }
     ],
     "dataAvailable": true
