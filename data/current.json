@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-01-16T10:22:40.351Z",
-  "lastUpdated": "2026-01-16T10:22:40.351Z",
+  "timestamp": "2026-01-16T10:24:40.317Z",
+  "lastUpdated": "2026-01-16T10:24:40.317Z",
   "weather": {
-    "temperature": 44,
-    "feelsLike": 36,
-    "humidity": 65,
+    "temperature": 43,
+    "feelsLike": 37,
+    "humidity": 66,
     "pressure": "24.02",
-    "windSpeed": 15,
-    "windGust": 26,
-    "windLull": 9,
+    "windSpeed": 13,
+    "windGust": 17,
+    "windLull": 8,
     "windDirection": 49,
-    "heatIndex": 44,
-    "windChill": 36,
+    "heatIndex": 43,
+    "windChill": 37,
     "dewPoint": 33,
     "wetBulbTemperature": 38,
     "wetBulbGlobeTemperature": 40,
@@ -21,7 +21,7 @@
     "solarRadiation": 0,
     "brightness": 0,
     "airDensity": "1.014",
-    "deltaT": "2.9",
+    "deltaT": "2.8",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -44,11 +44,11 @@
     "balloons": 0,
     "highestAltitude": 41000,
     "aircraftNearby": 0,
-    "totalObservations": 1235,
+    "totalObservations": 1260,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 71,
+    "totalObservations": 67,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 32948,
+    "avgSamples": 33014,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 5,
+    "totalToday": 4,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -93,12 +93,6 @@
         "location": "9 km W of Loyal, Oklahoma",
         "time": "2026-01-15T14:23:38.990Z",
         "distance": "38.2"
-      },
-      {
-        "magnitude": 1.88,
-        "location": "9 km W of Loyal, Oklahoma",
-        "time": "2026-01-15T10:23:03.569Z",
-        "distance": "38.0"
       }
     ],
     "dataAvailable": true
