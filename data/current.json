@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-01-22T10:18:40.239Z",
-  "lastUpdated": "2026-01-22T10:18:40.239Z",
+  "timestamp": "2026-01-22T10:20:40.283Z",
+  "lastUpdated": "2026-01-22T10:20:40.283Z",
   "weather": {
     "temperature": 22,
     "feelsLike": 22,
     "humidity": 77,
     "pressure": "23.97",
-    "windSpeed": 0,
-    "windGust": 0,
+    "windSpeed": 1,
+    "windGust": 1,
     "windLull": 0,
-    "windDirection": 0,
+    "windDirection": 237,
     "heatIndex": 22,
     "windChill": 22,
     "dewPoint": 16,
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 28,
-    "commercial": 14,
+    "total": 29,
+    "commercial": 15,
     "generalAviation": 14,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 40000,
     "aircraftNearby": 0,
-    "totalObservations": 625,
+    "totalObservations": 636,
     "dataAvailable": true
   },
   "seismic": {
