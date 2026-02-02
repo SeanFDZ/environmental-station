@@ -1,27 +1,27 @@
 {
-  "timestamp": "2026-02-02T13:48:40.427Z",
-  "lastUpdated": "2026-02-02T13:48:40.427Z",
+  "timestamp": "2026-02-02T13:50:40.436Z",
+  "lastUpdated": "2026-02-02T13:50:40.436Z",
   "weather": {
     "temperature": 36,
-    "feelsLike": 32,
+    "feelsLike": 33,
     "humidity": 85,
     "pressure": "24.00",
-    "windSpeed": 5,
+    "windSpeed": 4,
     "windGust": 6,
     "windLull": 3,
-    "windDirection": 258,
+    "windDirection": 275,
     "heatIndex": 36,
-    "windChill": 32,
+    "windChill": 33,
     "dewPoint": 32,
     "wetBulbTemperature": 34,
     "wetBulbGlobeTemperature": 35,
     "stationPressure": "24.00",
     "pressureTrend": "steady",
     "uvIndex": 0,
-    "solarRadiation": 16,
-    "brightness": 1883,
+    "solarRadiation": 17,
+    "brightness": 2125,
     "airDensity": "1.028",
-    "deltaT": "1.0",
+    "deltaT": "1.1",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 91,
+    "total": 95,
     "commercial": 19,
-    "generalAviation": 72,
+    "generalAviation": 76,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 43000,
     "aircraftNearby": 0,
-    "totalObservations": 2281,
+    "totalObservations": 2316,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,12 +64,19 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 1.74,
+    "recentEvents": [
+      {
+        "magnitude": 1.74,
+        "location": "15 km SSW of Loyal, Oklahoma",
+        "time": "2026-02-01T23:51:02.839Z",
+        "distance": "35.3"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
