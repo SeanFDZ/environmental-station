@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-07T07:30:40.292Z",
-  "lastUpdated": "2026-02-07T07:30:40.292Z",
+  "timestamp": "2026-02-07T07:32:40.269Z",
+  "lastUpdated": "2026-02-07T07:32:40.269Z",
   "weather": {
     "temperature": 39,
     "feelsLike": 39,
@@ -9,7 +9,7 @@
     "windSpeed": 0,
     "windGust": 0,
     "windLull": 0,
-    "windDirection": 27,
+    "windDirection": 0,
     "heatIndex": 39,
     "windChill": 39,
     "dewPoint": 35,
@@ -20,7 +20,7 @@
     "uvIndex": 0,
     "solarRadiation": 0,
     "brightness": 0,
-    "airDensity": "1.022",
+    "airDensity": "1.023",
     "deltaT": "1.0",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
@@ -48,7 +48,7 @@
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 17,
+    "totalObservations": 18,
     "activeChannels": 1,
     "dataQuality": 100,
     "stationHealth": "Degraded",
@@ -56,8 +56,8 @@
     "recentObservations": 0,
     "stationCode": "R923A",
     "networkCode": "AM",
-    "maxSamples": 20736,
-    "avgSamples": 19682,
+    "maxSamples": 21120,
+    "avgSamples": 19762,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
