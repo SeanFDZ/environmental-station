@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-02-07T10:14:40.292Z",
-  "lastUpdated": "2026-02-07T10:14:40.292Z",
+  "timestamp": "2026-02-07T10:16:40.555Z",
+  "lastUpdated": "2026-02-07T10:16:40.555Z",
   "weather": {
     "temperature": 37,
     "feelsLike": 37,
     "humidity": 91,
     "pressure": "24.00",
     "windSpeed": 0,
-    "windGust": 0,
+    "windGust": 1,
     "windLull": 0,
-    "windDirection": 0,
+    "windDirection": 300,
     "heatIndex": 37,
     "windChill": 37,
     "dewPoint": 34,
-    "wetBulbTemperature": 36,
+    "wetBulbTemperature": 35,
     "wetBulbGlobeTemperature": 36,
     "stationPressure": "24.00",
     "pressureTrend": "steady",
@@ -44,7 +44,7 @@
     "balloons": 0,
     "highestAltitude": 41000,
     "aircraftNearby": 1,
-    "totalObservations": 842,
+    "totalObservations": 837,
     "dataAvailable": true
   },
   "seismic": {
