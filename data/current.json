@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-02-10T10:38:40.331Z",
-  "lastUpdated": "2026-02-10T10:38:40.331Z",
+  "timestamp": "2026-02-10T10:40:40.348Z",
+  "lastUpdated": "2026-02-10T10:40:40.348Z",
   "weather": {
     "temperature": 57,
     "feelsLike": 57,
     "humidity": 51,
     "pressure": "24.05",
     "windSpeed": 15,
-    "windGust": 18,
-    "windLull": 11,
-    "windDirection": 269,
+    "windGust": 19,
+    "windLull": 12,
+    "windDirection": 271,
     "heatIndex": 57,
     "windChill": 57,
     "dewPoint": 39,
@@ -44,11 +44,11 @@
     "balloons": 0,
     "highestAltitude": 41000,
     "aircraftNearby": 1,
-    "totalObservations": 712,
+    "totalObservations": 735,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 18,
+    "totalObservations": 17,
     "activeChannels": 1,
     "dataQuality": 100,
     "stationHealth": "Degraded",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 24576,
-    "avgSamples": 24398,
+    "avgSamples": 24403,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 5,
+    "totalToday": 4,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -93,12 +93,6 @@
         "location": "2 km NE of Watonga, Oklahoma",
         "time": "2026-02-09T13:19:59.109Z",
         "distance": "26.2"
-      },
-      {
-        "magnitude": 1.67,
-        "location": "8 km ENE of Calumet, Oklahoma",
-        "time": "2026-02-09T10:39:25.690Z",
-        "distance": "42.8"
       }
     ],
     "dataAvailable": true
