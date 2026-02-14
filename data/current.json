@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-02-14T21:52:40.494Z",
-  "lastUpdated": "2026-02-14T21:52:40.494Z",
+  "timestamp": "2026-02-14T21:54:40.471Z",
+  "lastUpdated": "2026-02-14T21:54:40.471Z",
   "weather": {
     "temperature": 67,
     "feelsLike": 67,
     "humidity": 71,
     "pressure": "24.08",
-    "windSpeed": 4,
-    "windGust": 6,
+    "windSpeed": 3,
+    "windGust": 4,
     "windLull": 2,
-    "windDirection": 95,
+    "windDirection": 71,
     "heatIndex": 67,
     "windChill": 67,
     "dewPoint": 57,
@@ -18,8 +18,8 @@
     "stationPressure": "24.08",
     "pressureTrend": "steady",
     "uvIndex": 1,
-    "solarRadiation": 153,
-    "brightness": 18296,
+    "solarRadiation": 135,
+    "brightness": 16268,
     "airDensity": "0.971",
     "deltaT": "3.5",
     "precipitation": "0.07",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 190,
-    "commercial": 45,
-    "generalAviation": 145,
+    "total": 192,
+    "commercial": 44,
+    "generalAviation": 148,
     "lifeFlights": 1,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 47000,
     "aircraftNearby": 1,
-    "totalObservations": 4723,
+    "totalObservations": 4728,
     "dataAvailable": true
   },
   "seismic": {
@@ -57,7 +57,7 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 24320,
-    "avgSamples": 23637,
+    "avgSamples": 23680,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
@@ -68,13 +68,13 @@
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 2.09,
+    "largestMagnitude": 1.58,
     "recentEvents": [
       {
-        "magnitude": 2.09,
-        "location": "1 km NNE of Watonga, Oklahoma",
-        "time": "2026-02-14T19:24:27.590Z",
-        "distance": "25.5"
+        "magnitude": 1.58,
+        "location": "2 km NE of Watonga, Oklahoma",
+        "time": "2026-02-14T19:24:27.750Z",
+        "distance": "25.8"
       }
     ],
     "dataAvailable": true
