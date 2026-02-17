@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-02-17T00:54:40.545Z",
-  "lastUpdated": "2026-02-17T00:54:40.545Z",
+  "timestamp": "2026-02-17T00:56:40.531Z",
+  "lastUpdated": "2026-02-17T00:56:40.531Z",
   "weather": {
-    "temperature": 67,
-    "feelsLike": 67,
-    "humidity": 57,
+    "temperature": 66,
+    "feelsLike": 66,
+    "humidity": 58,
     "pressure": "24.08",
-    "windSpeed": 12,
-    "windGust": 15,
-    "windLull": 9,
-    "windDirection": 232,
-    "heatIndex": 67,
-    "windChill": 67,
+    "windSpeed": 11,
+    "windGust": 13,
+    "windLull": 8,
+    "windDirection": 229,
+    "heatIndex": 66,
+    "windChill": 66,
     "dewPoint": 51,
     "wetBulbTemperature": 57,
     "wetBulbGlobeTemperature": 60,
@@ -21,7 +21,7 @@
     "solarRadiation": 0,
     "brightness": 1,
     "airDensity": "0.972",
-    "deltaT": "5.5",
+    "deltaT": "5.3",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 211,
+    "total": 210,
     "commercial": 36,
     "generalAviation": 174,
-    "lifeFlights": 2,
+    "lifeFlights": 1,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 47025,
     "aircraftNearby": 0,
-    "totalObservations": 5710,
+    "totalObservations": 5653,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 17,
+    "totalObservations": 18,
     "activeChannels": 1,
     "dataQuality": 100,
     "stationHealth": "Degraded",
@@ -57,19 +57,25 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 25728,
-    "avgSamples": 24757,
+    "avgSamples": 24718,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 5,
+    "totalToday": 6,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 2,
     "largestMagnitude": 3.6,
     "recentEvents": [
+      {
+        "magnitude": 1.46,
+        "location": "6 km E of Calumet, Oklahoma",
+        "time": "2026-02-17T00:27:31.510Z",
+        "distance": "41.9"
+      },
       {
         "magnitude": 3.1,
         "location": "5 km E of Calumet, Oklahoma",
@@ -93,12 +99,6 @@
         "location": "8 km ENE of Calumet, Oklahoma",
         "time": "2026-02-16T04:19:52.909Z",
         "distance": "42.7"
-      },
-      {
-        "magnitude": 3.6,
-        "location": "7 km ENE of Calumet, Oklahoma",
-        "time": "2026-02-16T04:13:35.420Z",
-        "distance": "42.4"
       }
     ],
     "dataAvailable": true
