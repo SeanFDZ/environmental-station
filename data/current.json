@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-02-17T04:46:40.391Z",
-  "lastUpdated": "2026-02-17T04:46:40.391Z",
+  "timestamp": "2026-02-17T04:48:40.356Z",
+  "lastUpdated": "2026-02-17T04:48:40.356Z",
   "weather": {
     "temperature": 60,
     "feelsLike": 60,
     "humidity": 71,
     "pressure": "24.06",
     "windSpeed": 17,
-    "windGust": 20,
-    "windLull": 12,
-    "windDirection": 225,
+    "windGust": 21,
+    "windLull": 9,
+    "windDirection": 227,
     "heatIndex": 60,
     "windChill": 60,
     "dewPoint": 50,
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 128,
-    "commercial": 42,
-    "generalAviation": 86,
+    "total": 126,
+    "commercial": 41,
+    "generalAviation": 85,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45025,
     "aircraftNearby": 0,
-    "totalObservations": 2963,
+    "totalObservations": 2931,
     "dataAvailable": true
   },
   "seismic": {
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 25856,
-    "avgSamples": 24519,
+    "avgSamples": 24555,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 4,
+    "totalToday": 3,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 1,
@@ -87,12 +87,6 @@
         "location": "9 km SSW of Okarche, Oklahoma",
         "time": "2026-02-16T05:22:00.882Z",
         "distance": "44.2"
-      },
-      {
-        "magnitude": 1.83,
-        "location": "8 km ENE of Calumet, Oklahoma",
-        "time": "2026-02-16T04:47:18.839Z",
-        "distance": "42.8"
       }
     ],
     "dataAvailable": true
