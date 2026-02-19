@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-02-19T13:36:40.385Z",
-  "lastUpdated": "2026-02-19T13:36:40.385Z",
+  "timestamp": "2026-02-19T13:38:40.327Z",
+  "lastUpdated": "2026-02-19T13:38:40.327Z",
   "weather": {
     "temperature": 49,
     "feelsLike": 46,
     "humidity": 45,
     "pressure": "24.04",
     "windSpeed": 10,
-    "windGust": 14,
+    "windGust": 13,
     "windLull": 5,
-    "windDirection": 262,
+    "windDirection": 268,
     "heatIndex": 49,
     "windChill": 46,
     "dewPoint": 29,
@@ -18,8 +18,8 @@
     "stationPressure": "24.04",
     "pressureTrend": "steady",
     "uvIndex": 0,
-    "solarRadiation": 21,
-    "brightness": 2449,
+    "solarRadiation": 22,
+    "brightness": 2643,
     "airDensity": "1.003",
     "deltaT": "5.4",
     "precipitation": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 105,
-    "commercial": 23,
-    "generalAviation": 79,
+    "total": 109,
+    "commercial": 24,
+    "generalAviation": 82,
     "lifeFlights": 0,
     "military": 3,
     "balloons": 0,
-    "highestAltitude": 43000,
+    "highestAltitude": 44950,
     "aircraftNearby": 0,
-    "totalObservations": 2483,
+    "totalObservations": 2557,
     "dataAvailable": true
   },
   "seismic": {
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 26112,
-    "avgSamples": 24185,
+    "avgSamples": 24213,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 2,
+    "totalToday": 3,
     "within10mi": 0,
     "within25mi": 1,
     "significantEvents": 1,
@@ -75,6 +75,12 @@
         "location": "8 km ENE of Calumet, Oklahoma",
         "time": "2026-02-19T12:48:24.949Z",
         "distance": "42.7"
+      },
+      {
+        "magnitude": 1.57,
+        "location": "7 km ENE of Calumet, Oklahoma",
+        "time": "2026-02-19T03:06:57.140Z",
+        "distance": "42.6"
       },
       {
         "magnitude": 1.73,
