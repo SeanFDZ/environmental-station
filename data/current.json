@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-02-19T16:24:41.006Z",
-  "lastUpdated": "2026-02-19T16:24:41.006Z",
+  "timestamp": "2026-02-19T16:26:40.522Z",
+  "lastUpdated": "2026-02-19T16:26:40.522Z",
   "weather": {
     "temperature": 56,
     "feelsLike": 56,
     "humidity": 22,
     "pressure": "24.06",
-    "windSpeed": 16,
-    "windGust": 25,
-    "windLull": 12,
-    "windDirection": 332,
+    "windSpeed": 17,
+    "windGust": 21,
+    "windLull": 13,
+    "windDirection": 325,
     "heatIndex": 56,
     "windChill": 56,
     "dewPoint": 18,
@@ -18,10 +18,10 @@
     "stationPressure": "24.06",
     "pressureTrend": "steady",
     "uvIndex": 3,
-    "solarRadiation": 540,
-    "brightness": 64789,
+    "solarRadiation": 544,
+    "brightness": 65287,
     "airDensity": "0.990",
-    "deltaT": "9.1",
+    "deltaT": "9.2",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 218,
+    "total": 214,
     "commercial": 36,
-    "generalAviation": 182,
+    "generalAviation": 178,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45025,
     "aircraftNearby": 0,
-    "totalObservations": 5262,
+    "totalObservations": 5172,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 17,
+    "totalObservations": 18,
     "activeChannels": 1,
     "dataQuality": 100,
     "stationHealth": "Degraded",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 27264,
-    "avgSamples": 25751,
+    "avgSamples": 25771,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 5,
+    "totalToday": 4,
     "within10mi": 0,
     "within25mi": 2,
     "significantEvents": 1,
@@ -93,12 +93,6 @@
         "location": "1 km S of Watonga, Oklahoma",
         "time": "2026-02-19T02:51:31.629Z",
         "distance": "24.0"
-      },
-      {
-        "magnitude": 1.45,
-        "location": "12 km NNE of Chester, Oklahoma",
-        "time": "2026-02-18T16:24:53.340Z",
-        "distance": "45.1"
       }
     ],
     "dataAvailable": true
