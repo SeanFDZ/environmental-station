@@ -1,18 +1,18 @@
 {
-  "timestamp": "2026-02-20T05:14:40.384Z",
-  "lastUpdated": "2026-02-20T05:14:40.384Z",
+  "timestamp": "2026-02-20T05:16:40.350Z",
+  "lastUpdated": "2026-02-20T05:16:40.350Z",
   "weather": {
     "temperature": 34,
     "feelsLike": 29,
     "humidity": 58,
     "pressure": "24.00",
-    "windSpeed": 5,
-    "windGust": 6,
-    "windLull": 4,
-    "windDirection": 47,
+    "windSpeed": 4,
+    "windGust": 5,
+    "windLull": 3,
+    "windDirection": 38,
     "heatIndex": 34,
     "windChill": 29,
-    "dewPoint": 21,
+    "dewPoint": 20,
     "wetBulbTemperature": 29,
     "wetBulbGlobeTemperature": 30,
     "stationPressure": "24.00",
@@ -21,7 +21,7 @@
     "solarRadiation": 0,
     "brightness": 0,
     "airDensity": "1.033",
-    "deltaT": "2.9",
+    "deltaT": "2.8",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 123,
-    "commercial": 37,
-    "generalAviation": 86,
+    "total": 119,
+    "commercial": 34,
+    "generalAviation": 85,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45025,
     "aircraftNearby": 0,
-    "totalObservations": 2694,
+    "totalObservations": 2683,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 17,
+    "totalObservations": 16,
     "activeChannels": 1,
     "dataQuality": 100,
     "stationHealth": "Degraded",
@@ -57,16 +57,16 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 23296,
-    "avgSamples": 21798,
+    "avgSamples": 21752,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 4,
+    "totalToday": 3,
     "within10mi": 0,
-    "within25mi": 1,
+    "within25mi": 0,
     "significantEvents": 1,
     "largestMagnitude": 3.07,
     "recentEvents": [
@@ -87,12 +87,6 @@
         "location": "8 km ENE of Calumet, Oklahoma",
         "time": "2026-02-19T12:48:24.949Z",
         "distance": "42.7"
-      },
-      {
-        "magnitude": 1.81,
-        "location": "2 km SSW of Watonga, Oklahoma",
-        "time": "2026-02-19T05:15:38.920Z",
-        "distance": "23.4"
       }
     ],
     "dataAvailable": true
