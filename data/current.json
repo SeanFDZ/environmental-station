@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-02-20T03:06:40.538Z",
-  "lastUpdated": "2026-02-20T03:06:40.538Z",
+  "timestamp": "2026-02-20T03:08:41.606Z",
+  "lastUpdated": "2026-02-20T03:08:41.606Z",
   "weather": {
     "temperature": 39,
     "feelsLike": 36,
     "humidity": 49,
     "pressure": "24.01",
-    "windSpeed": 5,
+    "windSpeed": 4,
     "windGust": 6,
-    "windLull": 4,
-    "windDirection": 45,
+    "windLull": 2,
+    "windDirection": 50,
     "heatIndex": 39,
     "windChill": 36,
     "dewPoint": 21,
@@ -20,7 +20,7 @@
     "uvIndex": 0,
     "solarRadiation": 0,
     "brightness": 0,
-    "airDensity": "1.022",
+    "airDensity": "1.023",
     "deltaT": "4.0",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 144,
-    "commercial": 37,
-    "generalAviation": 107,
+    "total": 147,
+    "commercial": 38,
+    "generalAviation": 109,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45025,
     "aircraftNearby": 2,
-    "totalObservations": 3638,
+    "totalObservations": 3613,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 18,
+    "totalObservations": 17,
     "activeChannels": 1,
     "dataQuality": 100,
     "stationHealth": "Degraded",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 30336,
-    "avgSamples": 25344,
+    "avgSamples": 25065,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 5,
+    "totalToday": 4,
     "within10mi": 0,
     "within25mi": 1,
     "significantEvents": 1,
@@ -93,12 +93,6 @@
         "location": "2 km SSW of Watonga, Oklahoma",
         "time": "2026-02-19T05:15:38.920Z",
         "distance": "23.4"
-      },
-      {
-        "magnitude": 1.57,
-        "location": "7 km ENE of Calumet, Oklahoma",
-        "time": "2026-02-19T03:06:57.140Z",
-        "distance": "42.6"
       }
     ],
     "dataAvailable": true
