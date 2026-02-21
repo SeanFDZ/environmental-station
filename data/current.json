@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-02-21T04:04:40.424Z",
-  "lastUpdated": "2026-02-21T04:04:40.424Z",
+  "timestamp": "2026-02-21T04:06:40.418Z",
+  "lastUpdated": "2026-02-21T04:06:40.418Z",
   "weather": {
     "temperature": 34,
-    "feelsLike": 28,
+    "feelsLike": 29,
     "humidity": 67,
     "pressure": "24.00",
     "windSpeed": 7,
-    "windGust": 8,
-    "windLull": 5,
-    "windDirection": 58,
+    "windGust": 9,
+    "windLull": 6,
+    "windDirection": 56,
     "heatIndex": 34,
-    "windChill": 28,
+    "windChill": 29,
     "dewPoint": 24,
     "wetBulbTemperature": 30,
     "wetBulbGlobeTemperature": 32,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 126,
-    "commercial": 31,
+    "total": 128,
+    "commercial": 33,
     "generalAviation": 95,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 43025,
     "aircraftNearby": 0,
-    "totalObservations": 3248,
+    "totalObservations": 3226,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 17,
+    "totalObservations": 18,
     "activeChannels": 1,
     "dataQuality": 100,
     "stationHealth": "Degraded",
@@ -57,26 +57,19 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 30720,
-    "avgSamples": 26963,
+    "avgSamples": 26972,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 0,
     "within10mi": 0,
-    "within25mi": 1,
+    "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.61,
-    "recentEvents": [
-      {
-        "magnitude": 1.61,
-        "location": "1 km S of Watonga, Oklahoma",
-        "time": "2026-02-20T04:06:19.859Z",
-        "distance": "23.9"
-      }
-    ],
+    "largestMagnitude": 0,
+    "recentEvents": [],
     "dataAvailable": true
   },
   "alerts": {
