@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-02-25T14:30:40.475Z",
-  "lastUpdated": "2026-02-25T14:30:40.475Z",
+  "timestamp": "2026-02-25T14:32:40.453Z",
+  "lastUpdated": "2026-02-25T14:32:40.453Z",
   "weather": {
     "temperature": 46,
     "feelsLike": 46,
     "humidity": 78,
     "pressure": "24.03",
     "windSpeed": 2,
-    "windGust": 2,
+    "windGust": 3,
     "windLull": 2,
-    "windDirection": 25,
+    "windDirection": 79,
     "heatIndex": 46,
     "windChill": 46,
     "dewPoint": 40,
@@ -18,8 +18,8 @@
     "stationPressure": "24.03",
     "pressureTrend": "steady",
     "uvIndex": 1,
-    "solarRadiation": 177,
-    "brightness": 21233,
+    "solarRadiation": 195,
+    "brightness": 23401,
     "airDensity": "1.009",
     "deltaT": "1.9",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 176,
+    "total": 179,
     "commercial": 33,
-    "generalAviation": 133,
+    "generalAviation": 136,
     "lifeFlights": 0,
     "military": 10,
     "balloons": 0,
     "highestAltitude": 45000,
     "aircraftNearby": 0,
-    "totalObservations": 4369,
+    "totalObservations": 4362,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 65,
+    "totalObservations": 69,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,19 +57,26 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 32648,
+    "avgSamples": 32670,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 1.45,
+    "recentEvents": [
+      {
+        "magnitude": 1.45,
+        "location": "8 km ENE of Calumet, Oklahoma",
+        "time": "2026-02-25T12:13:13.339Z",
+        "distance": "43.0"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
