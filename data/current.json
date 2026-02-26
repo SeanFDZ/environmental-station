@@ -1,27 +1,27 @@
 {
-  "timestamp": "2026-02-26T14:28:40.444Z",
-  "lastUpdated": "2026-02-26T14:28:40.444Z",
+  "timestamp": "2026-02-26T14:30:40.440Z",
+  "lastUpdated": "2026-02-26T14:30:40.440Z",
   "weather": {
     "temperature": 51,
     "feelsLike": 51,
-    "humidity": 65,
+    "humidity": 64,
     "pressure": "24.04",
     "windSpeed": 4,
     "windGust": 6,
     "windLull": 3,
-    "windDirection": 19,
+    "windDirection": 18,
     "heatIndex": 51,
     "windChill": 51,
-    "dewPoint": 40,
+    "dewPoint": 39,
     "wetBulbTemperature": 45,
-    "wetBulbGlobeTemperature": 47,
+    "wetBulbGlobeTemperature": 48,
     "stationPressure": "24.04",
     "pressureTrend": "steady",
     "uvIndex": 1,
-    "solarRadiation": 183,
-    "brightness": 21921,
+    "solarRadiation": 190,
+    "brightness": 22765,
     "airDensity": "1.000",
-    "deltaT": "3.4",
+    "deltaT": "3.5",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -44,11 +44,11 @@
     "balloons": 0,
     "highestAltitude": 43000,
     "aircraftNearby": 0,
-    "totalObservations": 4208,
+    "totalObservations": 4298,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 37,
+    "totalObservations": 38,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,19 +57,25 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 29139,
+    "avgSamples": 29107,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 7,
+    "totalToday": 8,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
     "largestMagnitude": 2.14,
     "recentEvents": [
+      {
+        "magnitude": 2.01,
+        "location": "9 km ENE of Calumet, Oklahoma",
+        "time": "2026-02-26T14:27:07.902Z",
+        "distance": "43.5"
+      },
       {
         "magnitude": 1.57,
         "location": "9 km ENE of Calumet, Oklahoma",
@@ -93,12 +99,6 @@
         "location": "8 km ENE of Calumet, Oklahoma",
         "time": "2026-02-26T08:58:31.390Z",
         "distance": "42.7"
-      },
-      {
-        "magnitude": 1.6,
-        "location": "7 km ENE of Calumet, Oklahoma",
-        "time": "2026-02-26T07:49:06.000Z",
-        "distance": "42.1"
       }
     ],
     "dataAvailable": true
