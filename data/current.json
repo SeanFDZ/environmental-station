@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-02-28T01:52:40.515Z",
-  "lastUpdated": "2026-02-28T01:52:40.515Z",
+  "timestamp": "2026-02-28T01:54:40.536Z",
+  "lastUpdated": "2026-02-28T01:54:40.536Z",
   "weather": {
     "temperature": 65,
     "feelsLike": 65,
-    "humidity": 38,
+    "humidity": 39,
     "pressure": "24.07",
     "windSpeed": 2,
     "windGust": 4,
     "windLull": 0,
-    "windDirection": 206,
+    "windDirection": 212,
     "heatIndex": 65,
     "windChill": 65,
     "dewPoint": 39,
-    "wetBulbTemperature": 50,
+    "wetBulbTemperature": 51,
     "wetBulbGlobeTemperature": 55,
     "stationPressure": "24.07",
     "pressureTrend": "falling",
@@ -21,7 +21,7 @@
     "solarRadiation": 0,
     "brightness": 1,
     "airDensity": "0.974",
-    "deltaT": "8.2",
+    "deltaT": "8.0",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 191,
+    "total": 193,
     "commercial": 55,
-    "generalAviation": 136,
+    "generalAviation": 138,
     "lifeFlights": 2,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45050,
     "aircraftNearby": 0,
-    "totalObservations": 4746,
+    "totalObservations": 4740,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 63,
+    "totalObservations": 67,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 32343,
+    "avgSamples": 32390,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 4,
+    "totalToday": 3,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -87,12 +87,6 @@
         "location": "10 km NNW of El Reno, Oklahoma",
         "time": "2026-02-27T06:28:02.270Z",
         "distance": "44.8"
-      },
-      {
-        "magnitude": 1.33,
-        "location": "8 km ENE of Calumet, Oklahoma",
-        "time": "2026-02-27T01:54:00.140Z",
-        "distance": "42.9"
       }
     ],
     "dataAvailable": true
