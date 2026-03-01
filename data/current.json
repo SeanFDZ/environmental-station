@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-03-01T00:48:40.511Z",
-  "lastUpdated": "2026-03-01T00:48:40.511Z",
+  "timestamp": "2026-03-01T00:50:40.498Z",
+  "lastUpdated": "2026-03-01T00:50:40.498Z",
   "weather": {
     "temperature": 72,
     "feelsLike": 72,
@@ -9,7 +9,7 @@
     "windSpeed": 2,
     "windGust": 6,
     "windLull": 0,
-    "windDirection": 27,
+    "windDirection": 33,
     "heatIndex": 72,
     "windChill": 72,
     "dewPoint": 51,
@@ -19,9 +19,9 @@
     "pressureTrend": "steady",
     "uvIndex": 0,
     "solarRadiation": 0,
-    "brightness": 20,
+    "brightness": 13,
     "airDensity": "0.962",
-    "deltaT": "7.6",
+    "deltaT": "7.5",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 173,
-    "commercial": 49,
-    "generalAviation": 124,
+    "total": 170,
+    "commercial": 48,
+    "generalAviation": 122,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45000,
     "aircraftNearby": 0,
-    "totalObservations": 4837,
+    "totalObservations": 4886,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 72,
+    "totalObservations": 68,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,7 +57,7 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 31458,
+    "avgSamples": 31388,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
@@ -68,13 +68,13 @@
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 2.13,
+    "largestMagnitude": 1.72,
     "recentEvents": [
       {
-        "magnitude": 2.13,
-        "location": "9 km ENE of Calumet, Oklahoma",
-        "time": "2026-03-01T00:06:25.565Z",
-        "distance": "43.2"
+        "magnitude": 1.72,
+        "location": "8 km ENE of Calumet, Oklahoma",
+        "time": "2026-03-01T00:06:25.350Z",
+        "distance": "43.0"
       }
     ],
     "dataAvailable": true
