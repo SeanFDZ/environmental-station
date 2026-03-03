@@ -1,26 +1,26 @@
 {
-  "timestamp": "2026-03-03T02:02:40.510Z",
-  "lastUpdated": "2026-03-03T02:02:40.510Z",
+  "timestamp": "2026-03-03T02:04:40.522Z",
+  "lastUpdated": "2026-03-03T02:04:40.522Z",
   "weather": {
     "temperature": 46,
     "feelsLike": 46,
     "humidity": 83,
     "pressure": "24.03",
     "windSpeed": 0,
-    "windGust": 2,
+    "windGust": 1,
     "windLull": 0,
-    "windDirection": 239,
+    "windDirection": 236,
     "heatIndex": 46,
     "windChill": 46,
-    "dewPoint": 41,
+    "dewPoint": 42,
     "wetBulbTemperature": 44,
-    "wetBulbGlobeTemperature": 44,
+    "wetBulbGlobeTemperature": 45,
     "stationPressure": "24.03",
     "pressureTrend": "steady",
     "uvIndex": 0,
     "solarRadiation": 0,
     "brightness": 1,
-    "airDensity": "1.009",
+    "airDensity": "1.008",
     "deltaT": "1.5",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 205,
+    "total": 204,
     "commercial": 46,
     "generalAviation": 154,
     "lifeFlights": 0,
-    "military": 5,
+    "military": 4,
     "balloons": 0,
     "highestAltitude": 45025,
     "aircraftNearby": 1,
-    "totalObservations": 5360,
+    "totalObservations": 5452,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 72,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,19 +57,26 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 32809,
+    "avgSamples": 32843,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 2.34,
+    "recentEvents": [
+      {
+        "magnitude": 2.34,
+        "location": "9 km ENE of Calumet, Oklahoma",
+        "time": "2026-03-03T02:01:52.569Z",
+        "distance": "43.2"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
