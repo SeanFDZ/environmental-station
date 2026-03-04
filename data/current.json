@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-03-04T13:28:40.331Z",
-  "lastUpdated": "2026-03-04T13:28:40.331Z",
+  "timestamp": "2026-03-04T13:30:40.331Z",
+  "lastUpdated": "2026-03-04T13:30:40.331Z",
   "weather": {
     "temperature": 48,
     "feelsLike": 43,
-    "humidity": 95,
+    "humidity": 94,
     "pressure": "24.03",
-    "windSpeed": 12,
-    "windGust": 14,
-    "windLull": 10,
-    "windDirection": 16,
+    "windSpeed": 11,
+    "windGust": 13,
+    "windLull": 7,
+    "windDirection": 14,
     "heatIndex": 48,
     "windChill": 43,
     "dewPoint": 46,
@@ -18,10 +18,10 @@
     "stationPressure": "24.03",
     "pressureTrend": "steady",
     "uvIndex": 0,
-    "solarRadiation": 4,
-    "brightness": 417,
+    "solarRadiation": 3,
+    "brightness": 362,
     "airDensity": "1.006",
-    "deltaT": "0.4",
+    "deltaT": "0.5",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 68,
+    "total": 69,
     "commercial": 14,
-    "generalAviation": 54,
+    "generalAviation": 55,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45000,
     "aircraftNearby": 0,
-    "totalObservations": 1741,
+    "totalObservations": 1797,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 35,
+    "totalObservations": 36,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,7 +57,7 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 30687,
+    "avgSamples": 30482,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
@@ -83,10 +83,10 @@
         "distance": "41.4"
       },
       {
-        "magnitude": 1.63,
+        "magnitude": 1.35,
         "location": "7 km ENE of Calumet, Oklahoma",
-        "time": "2026-03-04T08:05:15.845Z",
-        "distance": "42.3"
+        "time": "2026-03-04T08:05:15.359Z",
+        "distance": "42.2"
       }
     ],
     "dataAvailable": true
