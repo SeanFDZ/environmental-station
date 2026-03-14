@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-03-14T08:54:40.502Z",
-  "lastUpdated": "2026-03-14T08:54:40.502Z",
+  "timestamp": "2026-03-14T08:56:40.377Z",
+  "lastUpdated": "2026-03-14T08:56:40.377Z",
   "weather": {
     "temperature": 44,
     "feelsLike": 44,
-    "humidity": 76,
+    "humidity": 77,
     "pressure": "24.02",
-    "windSpeed": 0,
-    "windGust": 0,
-    "windLull": 0,
-    "windDirection": 0,
+    "windSpeed": 1,
+    "windGust": 2,
+    "windLull": 1,
+    "windDirection": 238,
     "heatIndex": 44,
     "windChill": 44,
     "dewPoint": 37,
@@ -21,7 +21,7 @@
     "solarRadiation": 0,
     "brightness": 0,
     "airDensity": "1.014",
-    "deltaT": "2.0",
+    "deltaT": "1.8",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 54,
+    "total": 56,
     "commercial": 9,
-    "generalAviation": 44,
+    "generalAviation": 46,
     "lifeFlights": 3,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 40975,
     "aircraftNearby": 1,
-    "totalObservations": 1509,
+    "totalObservations": 1507,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,12 +64,18 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 8,
+    "totalToday": 9,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
     "largestMagnitude": 2.46,
     "recentEvents": [
+      {
+        "magnitude": 2.08,
+        "location": "13 km ESE of Hinton, Oklahoma",
+        "time": "2026-03-14T08:53:00.698Z",
+        "distance": "36.3"
+      },
       {
         "magnitude": 1.59,
         "location": "16 km ENE of Lookeba, Oklahoma",
@@ -93,12 +99,6 @@
         "location": "16 km ENE of Lookeba, Oklahoma",
         "time": "2026-03-14T00:08:19.179Z",
         "distance": "38.4"
-      },
-      {
-        "magnitude": 2.46,
-        "location": "9 km ENE of Calumet, Oklahoma",
-        "time": "2026-03-13T22:52:04.226Z",
-        "distance": "43.2"
       }
     ],
     "dataAvailable": true
