@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-03-14T01:56:40.492Z",
-  "lastUpdated": "2026-03-14T01:56:40.492Z",
+  "timestamp": "2026-03-14T01:58:40.485Z",
+  "lastUpdated": "2026-03-14T01:58:40.485Z",
   "weather": {
     "temperature": 59,
     "feelsLike": 59,
-    "humidity": 48,
+    "humidity": 49,
     "pressure": "24.06",
     "windSpeed": 0,
-    "windGust": 2,
+    "windGust": 1,
     "windLull": 0,
-    "windDirection": 0,
+    "windDirection": 334,
     "heatIndex": 59,
     "windChill": 59,
     "dewPoint": 40,
-    "wetBulbTemperature": 48,
+    "wetBulbTemperature": 49,
     "wetBulbGlobeTemperature": 52,
     "stationPressure": "24.06",
     "pressureTrend": "falling",
@@ -21,7 +21,7 @@
     "solarRadiation": 0,
     "brightness": 0,
     "airDensity": "0.985",
-    "deltaT": "6.0",
+    "deltaT": "5.8",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 185,
+    "total": 182,
     "commercial": 44,
-    "generalAviation": 141,
+    "generalAviation": 138,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 47000,
     "aircraftNearby": 1,
-    "totalObservations": 4739,
+    "totalObservations": 4644,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 72,
+    "totalObservations": 68,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,19 +57,25 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 32766,
+    "avgSamples": 32791,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 6,
+    "totalToday": 7,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
     "largestMagnitude": 2.54,
     "recentEvents": [
+      {
+        "magnitude": 2.41,
+        "location": "18 km ESE of Hinton, Oklahoma",
+        "time": "2026-03-14T01:55:25.738Z",
+        "distance": "39.3"
+      },
       {
         "magnitude": 2.4,
         "location": "8 km ENE of Calumet, Oklahoma",
@@ -93,12 +99,6 @@
         "location": "8 km ENE of Calumet, Oklahoma",
         "time": "2026-03-13T21:38:10.407Z",
         "distance": "42.6"
-      },
-      {
-        "magnitude": 2.42,
-        "location": "7 km ENE of Calumet, Oklahoma",
-        "time": "2026-03-13T19:39:04.650Z",
-        "distance": "42.7"
       }
     ],
     "dataAvailable": true
