@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-03-14T03:00:40.487Z",
-  "lastUpdated": "2026-03-14T03:00:40.487Z",
+  "timestamp": "2026-03-14T03:02:40.492Z",
+  "lastUpdated": "2026-03-14T03:02:40.492Z",
   "weather": {
     "temperature": 56,
     "feelsLike": 56,
     "humidity": 53,
     "pressure": "24.05",
     "windSpeed": 0,
-    "windGust": 1,
+    "windGust": 0,
     "windLull": 0,
-    "windDirection": 299,
+    "windDirection": 283,
     "heatIndex": 56,
     "windChill": 56,
     "dewPoint": 39,
-    "wetBulbTemperature": 47,
+    "wetBulbTemperature": 46,
     "wetBulbGlobeTemperature": 49,
     "stationPressure": "24.05",
     "pressureTrend": "falling",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 171,
-    "commercial": 42,
-    "generalAviation": 128,
+    "total": 170,
+    "commercial": 43,
+    "generalAviation": 126,
     "lifeFlights": 2,
     "military": 0,
     "balloons": 0,
-    "highestAltitude": 47050,
+    "highestAltitude": 45025,
     "aircraftNearby": 0,
-    "totalObservations": 4335,
+    "totalObservations": 4378,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 72,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,7 +57,7 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 32335,
+    "avgSamples": 32341,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
@@ -71,10 +71,10 @@
     "largestMagnitude": 2.54,
     "recentEvents": [
       {
-        "magnitude": 2.41,
-        "location": "18 km ESE of Hinton, Oklahoma",
-        "time": "2026-03-14T01:55:25.738Z",
-        "distance": "39.3"
+        "magnitude": 1.77,
+        "location": "15 km ENE of Lookeba, Oklahoma",
+        "time": "2026-03-14T01:55:25.019Z",
+        "distance": "38.0"
       },
       {
         "magnitude": 2.4,
