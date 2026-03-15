@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-03-15T01:54:40.442Z",
-  "lastUpdated": "2026-03-15T01:54:40.442Z",
+  "timestamp": "2026-03-15T01:56:40.427Z",
+  "lastUpdated": "2026-03-15T01:56:40.427Z",
   "weather": {
     "temperature": 73,
     "feelsLike": 73,
     "humidity": 51,
     "pressure": "24.09",
-    "windSpeed": 13,
-    "windGust": 15,
-    "windLull": 10,
-    "windDirection": 220,
+    "windSpeed": 15,
+    "windGust": 17,
+    "windLull": 11,
+    "windDirection": 221,
     "heatIndex": 73,
     "windChill": 73,
     "dewPoint": 54,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 139,
-    "commercial": 34,
-    "generalAviation": 105,
+    "total": 142,
+    "commercial": 35,
+    "generalAviation": 107,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 47025,
     "aircraftNearby": 0,
-    "totalObservations": 3474,
+    "totalObservations": 3546,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 72,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 33233,
+    "avgSamples": 33241,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 4,
+    "totalToday": 3,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -87,12 +87,6 @@
         "location": "16 km ENE of Lookeba, Oklahoma",
         "time": "2026-03-14T03:32:12.230Z",
         "distance": "38.4"
-      },
-      {
-        "magnitude": 1.77,
-        "location": "15 km ENE of Lookeba, Oklahoma",
-        "time": "2026-03-14T01:55:25.019Z",
-        "distance": "38.0"
       }
     ],
     "dataAvailable": true
