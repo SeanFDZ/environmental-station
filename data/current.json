@@ -1,18 +1,18 @@
 {
-  "timestamp": "2026-03-15T01:34:40.442Z",
-  "lastUpdated": "2026-03-15T01:34:40.442Z",
+  "timestamp": "2026-03-15T01:36:40.443Z",
+  "lastUpdated": "2026-03-15T01:36:40.443Z",
   "weather": {
     "temperature": 73,
     "feelsLike": 73,
     "humidity": 48,
     "pressure": "24.09",
-    "windSpeed": 17,
-    "windGust": 20,
+    "windSpeed": 16,
+    "windGust": 19,
     "windLull": 12,
-    "windDirection": 225,
+    "windDirection": 226,
     "heatIndex": 73,
     "windChill": 73,
-    "dewPoint": 53,
+    "dewPoint": 52,
     "wetBulbTemperature": 60,
     "wetBulbGlobeTemperature": 64,
     "stationPressure": "24.09",
@@ -44,11 +44,11 @@
     "balloons": 0,
     "highestAltitude": 47025,
     "aircraftNearby": 0,
-    "totalObservations": 3717,
+    "totalObservations": 3659,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 72,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,18 +57,18 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 33308,
+    "avgSamples": 33307,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 5,
+    "totalToday": 4,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 2.4,
+    "largestMagnitude": 2.22,
     "recentEvents": [
       {
         "magnitude": 2.22,
@@ -93,12 +93,6 @@
         "location": "15 km ENE of Lookeba, Oklahoma",
         "time": "2026-03-14T01:55:25.019Z",
         "distance": "38.0"
-      },
-      {
-        "magnitude": 2.4,
-        "location": "8 km ENE of Calumet, Oklahoma",
-        "time": "2026-03-14T01:35:09.307Z",
-        "distance": "42.7"
       }
     ],
     "dataAvailable": true
