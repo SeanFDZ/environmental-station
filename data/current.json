@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-03-15T15:46:40.519Z",
-  "lastUpdated": "2026-03-15T15:46:40.519Z",
+  "timestamp": "2026-03-15T15:48:40.556Z",
+  "lastUpdated": "2026-03-15T15:48:40.556Z",
   "weather": {
     "temperature": 48,
     "feelsLike": 0,
@@ -18,8 +18,8 @@
     "stationPressure": "24.03",
     "pressureTrend": "steady",
     "uvIndex": 3,
-    "solarRadiation": 465,
-    "brightness": 55749,
+    "solarRadiation": 460,
+    "brightness": 55251,
     "airDensity": "1.005",
     "deltaT": "4.8",
     "precipitation": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 225,
-    "commercial": 46,
-    "generalAviation": 179,
+    "total": 224,
+    "commercial": 47,
+    "generalAviation": 177,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
-    "highestAltitude": 47025,
+    "highestAltitude": 47150,
     "aircraftNearby": 1,
-    "totalObservations": 5803,
+    "totalObservations": 5729,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,7 +64,7 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 3,
+    "totalToday": 2,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -81,12 +81,6 @@
         "location": "16 km ESE of Hinton, Oklahoma",
         "time": "2026-03-15T03:49:33.870Z",
         "distance": "37.6"
-      },
-      {
-        "magnitude": 2.22,
-        "location": "16 km ENE of Lookeba, Oklahoma",
-        "time": "2026-03-14T15:47:20.809Z",
-        "distance": "38.3"
       }
     ],
     "dataAvailable": true
