@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-16T03:50:12.446Z",
-  "lastUpdated": "2026-03-16T03:50:12.446Z",
+  "timestamp": "2026-03-16T03:52:11.237Z",
+  "lastUpdated": "2026-03-16T03:52:11.237Z",
   "weather": {
     "temperature": 33,
-    "feelsLike": 27,
+    "feelsLike": 25,
     "humidity": 48,
     "pressure": "24.00",
-    "windSpeed": 7,
-    "windGust": 11,
-    "windLull": 4,
-    "windDirection": 126,
+    "windSpeed": 9,
+    "windGust": 12,
+    "windLull": 7,
+    "windDirection": 124,
     "heatIndex": 33,
-    "windChill": 27,
+    "windChill": 25,
     "dewPoint": 15,
     "wetBulbTemperature": 27,
     "wetBulbGlobeTemperature": 29,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 107,
-    "commercial": 13,
+    "total": 106,
+    "commercial": 12,
     "generalAviation": 94,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 47500,
     "aircraftNearby": 1,
-    "totalObservations": 2745,
+    "totalObservations": 2706,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 72,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 33374,
+    "avgSamples": 33372,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 2,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -75,12 +75,6 @@
         "location": "18 km S of Calumet, Oklahoma",
         "time": "2026-03-15T04:06:11.736Z",
         "distance": "39.1"
-      },
-      {
-        "magnitude": 2.56,
-        "location": "16 km ESE of Hinton, Oklahoma",
-        "time": "2026-03-15T03:49:33.870Z",
-        "distance": "37.6"
       }
     ],
     "dataAvailable": true
