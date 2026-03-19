@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-03-19T04:20:10.562Z",
-  "lastUpdated": "2026-03-19T04:20:10.562Z",
+  "timestamp": "2026-03-19T04:22:10.549Z",
+  "lastUpdated": "2026-03-19T04:22:10.549Z",
   "weather": {
     "temperature": 62,
     "feelsLike": 62,
     "humidity": 35,
     "pressure": "24.06",
-    "windSpeed": 2,
-    "windGust": 3,
-    "windLull": 2,
-    "windDirection": 266,
+    "windSpeed": 4,
+    "windGust": 4,
+    "windLull": 3,
+    "windDirection": 308,
     "heatIndex": 62,
     "windChill": 62,
     "dewPoint": 34,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 141,
-    "commercial": 41,
-    "generalAviation": 99,
-    "lifeFlights": 1,
+    "total": 140,
+    "commercial": 42,
+    "generalAviation": 98,
+    "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
-    "highestAltitude": 43025,
+    "highestAltitude": 43000,
     "aircraftNearby": 0,
-    "totalObservations": 3203,
+    "totalObservations": 3207,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 72,
+    "totalObservations": 68,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,19 +57,26 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 33026,
+    "avgSamples": 33024,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 2.2,
+    "recentEvents": [
+      {
+        "magnitude": 2.2,
+        "location": "16 km ESE of Hinton, Oklahoma",
+        "time": "2026-03-19T04:04:50.137Z",
+        "distance": "38.0"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
