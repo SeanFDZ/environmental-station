@@ -1,27 +1,27 @@
 {
-  "timestamp": "2026-03-20T13:44:11.300Z",
-  "lastUpdated": "2026-03-20T13:44:11.300Z",
+  "timestamp": "2026-03-20T13:46:11.531Z",
+  "lastUpdated": "2026-03-20T13:46:11.531Z",
   "weather": {
     "temperature": 52,
     "feelsLike": 52,
-    "humidity": 70,
-    "pressure": "24.04",
-    "windSpeed": 1,
-    "windGust": 3,
+    "humidity": 69,
+    "pressure": "24.05",
+    "windSpeed": 2,
+    "windGust": 4,
     "windLull": 0,
-    "windDirection": 84,
+    "windDirection": 345,
     "heatIndex": 52,
     "windChill": 52,
     "dewPoint": 42,
-    "wetBulbTemperature": 46,
-    "wetBulbGlobeTemperature": 50,
-    "stationPressure": "24.04",
+    "wetBulbTemperature": 47,
+    "wetBulbGlobeTemperature": 49,
+    "stationPressure": "24.05",
     "pressureTrend": "steady",
     "uvIndex": 1,
-    "solarRadiation": 141,
-    "brightness": 16892,
-    "airDensity": "0.999",
-    "deltaT": "2.9",
+    "solarRadiation": 147,
+    "brightness": 17692,
+    "airDensity": "0.998",
+    "deltaT": "3.1",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 242,
+    "total": 250,
     "commercial": 67,
-    "generalAviation": 163,
+    "generalAviation": 171,
     "lifeFlights": 1,
     "military": 11,
     "balloons": 0,
     "highestAltitude": 45025,
     "aircraftNearby": 0,
-    "totalObservations": 6225,
+    "totalObservations": 6294,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,17 +64,23 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 2,
+    "totalToday": 3,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.83,
+    "largestMagnitude": 1.85,
     "recentEvents": [
       {
-        "magnitude": 1.83,
+        "magnitude": 1.85,
+        "location": "9 km ESE of Gracemont, Oklahoma",
+        "time": "2026-03-20T13:42:52.720Z",
+        "distance": "49.4"
+      },
+      {
+        "magnitude": 1.42,
         "location": "7 km ENE of Calumet, Oklahoma",
-        "time": "2026-03-20T10:27:24.626Z",
-        "distance": "42.4"
+        "time": "2026-03-20T10:27:24.640Z",
+        "distance": "42.3"
       },
       {
         "magnitude": 1.73,
