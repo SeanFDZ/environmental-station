@@ -1,27 +1,27 @@
 {
-  "timestamp": "2026-04-06T12:16:11.148Z",
-  "lastUpdated": "2026-04-06T12:16:11.148Z",
+  "timestamp": "2026-04-06T12:18:11.380Z",
+  "lastUpdated": "2026-04-06T12:18:11.380Z",
   "weather": {
-    "temperature": 44,
-    "feelsLike": 43,
-    "humidity": 76,
+    "temperature": 45,
+    "feelsLike": 45,
+    "humidity": 75,
     "pressure": "24.03",
-    "windSpeed": 3,
-    "windGust": 5,
-    "windLull": 2,
-    "windDirection": 233,
-    "heatIndex": 44,
-    "windChill": 43,
+    "windSpeed": 2,
+    "windGust": 6,
+    "windLull": 0,
+    "windDirection": 226,
+    "heatIndex": 45,
+    "windChill": 45,
     "dewPoint": 37,
     "wetBulbTemperature": 41,
     "wetBulbGlobeTemperature": 42,
     "stationPressure": "24.03",
     "pressureTrend": "steady",
     "uvIndex": 0,
-    "solarRadiation": 5,
-    "brightness": 591,
-    "airDensity": "1.012",
-    "deltaT": "2.0",
+    "solarRadiation": 6,
+    "brightness": 744,
+    "airDensity": "1.011",
+    "deltaT": "2.1",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 97,
-    "commercial": 26,
+    "total": 98,
+    "commercial": 27,
     "generalAviation": 71,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 43000,
     "aircraftNearby": 0,
-    "totalObservations": 2234,
+    "totalObservations": 2289,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,23 +64,17 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 2,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.86,
+    "largestMagnitude": 1.55,
     "recentEvents": [
       {
         "magnitude": 1.55,
         "location": "8 km E of Calumet, Oklahoma",
         "time": "2026-04-06T08:33:04.188Z",
         "distance": "43.3"
-      },
-      {
-        "magnitude": 1.86,
-        "location": "18 km W of Union City, Oklahoma",
-        "time": "2026-04-05T12:17:00.420Z",
-        "distance": "40.7"
       }
     ],
     "dataAvailable": true
