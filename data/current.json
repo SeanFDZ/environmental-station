@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-04-07T08:32:10.466Z",
-  "lastUpdated": "2026-04-07T08:32:10.466Z",
+  "timestamp": "2026-04-07T08:34:25.843Z",
+  "lastUpdated": "2026-04-07T08:34:25.843Z",
   "weather": {
     "temperature": 51,
     "feelsLike": 51,
     "humidity": 66,
     "pressure": "24.04",
     "windSpeed": 8,
-    "windGust": 9,
+    "windGust": 10,
     "windLull": 7,
-    "windDirection": 206,
+    "windDirection": 202,
     "heatIndex": 51,
     "windChill": 51,
     "dewPoint": 40,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 51,
-    "commercial": 10,
+    "total": 49,
+    "commercial": 8,
     "generalAviation": 41,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 40000,
-    "aircraftNearby": 0,
-    "totalObservations": 1090,
+    "aircraftNearby": 2,
+    "totalObservations": 1101,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 72,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 33005,
+    "avgSamples": 33003,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 4,
+    "totalToday": 3,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -87,12 +87,6 @@
         "location": "17 km W of Union City, Oklahoma",
         "time": "2026-04-06T14:07:34.960Z",
         "distance": "41.1"
-      },
-      {
-        "magnitude": 1.29,
-        "location": "8 km ENE of Calumet, Oklahoma",
-        "time": "2026-04-06T08:33:04.230Z",
-        "distance": "42.9"
       }
     ],
     "dataAvailable": true
