@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-04-07T07:04:10.379Z",
-  "lastUpdated": "2026-04-07T07:04:10.379Z",
+  "timestamp": "2026-04-07T07:06:11.127Z",
+  "lastUpdated": "2026-04-07T07:06:11.127Z",
   "weather": {
     "temperature": 51,
     "feelsLike": 51,
     "humidity": 60,
     "pressure": "24.04",
-    "windSpeed": 9,
-    "windGust": 10,
-    "windLull": 8,
-    "windDirection": 206,
+    "windSpeed": 8,
+    "windGust": 9,
+    "windLull": 6,
+    "windDirection": 215,
     "heatIndex": 51,
     "windChill": 51,
     "dewPoint": 38,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 35,
+    "total": 33,
     "commercial": 11,
-    "generalAviation": 24,
+    "generalAviation": 22,
     "lifeFlights": 1,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 43000,
     "aircraftNearby": 0,
-    "totalObservations": 724,
+    "totalObservations": 729,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 72,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,7 +57,7 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 32732,
+    "avgSamples": 32745,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
@@ -68,13 +68,13 @@
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 2.06,
+    "largestMagnitude": 2.08,
     "recentEvents": [
       {
-        "magnitude": 2.06,
-        "location": "16 km W of Union City, Oklahoma",
-        "time": "2026-04-07T06:58:47.529Z",
-        "distance": "41.2"
+        "magnitude": 2.08,
+        "location": "17 km W of Union City, Oklahoma",
+        "time": "2026-04-07T06:58:47.737Z",
+        "distance": "41.0"
       },
       {
         "magnitude": 1.37,
