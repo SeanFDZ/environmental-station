@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-04-12T00:50:10.704Z",
-  "lastUpdated": "2026-04-12T00:50:10.704Z",
+  "timestamp": "2026-04-12T00:52:10.851Z",
+  "lastUpdated": "2026-04-12T00:52:10.851Z",
   "weather": {
     "temperature": 74,
     "feelsLike": 74,
     "humidity": 71,
     "pressure": "24.09",
-    "windSpeed": 18,
-    "windGust": 23,
-    "windLull": 14,
-    "windDirection": 203,
+    "windSpeed": 19,
+    "windGust": 25,
+    "windLull": 9,
+    "windDirection": 200,
     "heatIndex": 74,
     "windChill": 74,
     "dewPoint": 64,
@@ -18,8 +18,8 @@
     "stationPressure": "24.09",
     "pressureTrend": "steady",
     "uvIndex": 0,
-    "solarRadiation": 14,
-    "brightness": 1774,
+    "solarRadiation": 13,
+    "brightness": 1571,
     "airDensity": "0.959",
     "deltaT": "3.9",
     "precipitation": "0.05",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 181,
-    "commercial": 51,
-    "generalAviation": 130,
+    "total": 177,
+    "commercial": 52,
+    "generalAviation": 125,
     "lifeFlights": 1,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 47000,
     "aircraftNearby": 0,
-    "totalObservations": 4770,
+    "totalObservations": 4768,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 72,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,19 +57,26 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 34255,
+    "avgSamples": 34276,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 2.05,
+    "recentEvents": [
+      {
+        "magnitude": 2.05,
+        "location": "18 km ESE of Hinton, Oklahoma",
+        "time": "2026-04-12T00:49:52.087Z",
+        "distance": "39.7"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
