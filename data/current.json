@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-04-17T07:24:10.458Z",
-  "lastUpdated": "2026-04-17T07:24:10.458Z",
+  "timestamp": "2026-04-17T07:26:10.490Z",
+  "lastUpdated": "2026-04-17T07:26:10.490Z",
   "weather": {
     "temperature": 71,
     "feelsLike": 71,
     "humidity": 84,
     "pressure": "24.08",
     "windSpeed": 14,
-    "windGust": 18,
-    "windLull": 6,
-    "windDirection": 227,
+    "windGust": 17,
+    "windLull": 7,
+    "windDirection": 226,
     "heatIndex": 71,
     "windChill": 71,
     "dewPoint": 65,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 54,
+    "total": 55,
     "commercial": 18,
-    "generalAviation": 36,
+    "generalAviation": 37,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45025,
     "aircraftNearby": 0,
-    "totalObservations": 1753,
+    "totalObservations": 1759,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 72,
+    "totalObservations": 68,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,18 +57,18 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 33500,
+    "avgSamples": 33491,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 3,
+    "totalToday": 2,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 2.1,
+    "largestMagnitude": 1.86,
     "recentEvents": [
       {
         "magnitude": 1.86,
@@ -81,12 +81,6 @@
         "location": "15 km WNW of Okarche, Oklahoma",
         "time": "2026-04-16T07:48:34.880Z",
         "distance": "37.9"
-      },
-      {
-        "magnitude": 2.1,
-        "location": "12 km WSW of El Reno, Oklahoma",
-        "time": "2026-04-16T07:24:09.029Z",
-        "distance": "42.5"
       }
     ],
     "dataAvailable": true
