@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-04-17T21:54:10.811Z",
-  "lastUpdated": "2026-04-17T21:54:10.811Z",
+  "timestamp": "2026-04-17T21:56:10.890Z",
+  "lastUpdated": "2026-04-17T21:56:10.890Z",
   "weather": {
     "temperature": 75,
     "feelsLike": 0,
@@ -17,14 +17,14 @@
     "wetBulbGlobeTemperature": 0,
     "stationPressure": "24.10",
     "pressureTrend": "steady",
-    "uvIndex": 2,
-    "solarRadiation": 215,
-    "brightness": 25777,
-    "airDensity": "0.956",
+    "uvIndex": 5,
+    "solarRadiation": 575,
+    "brightness": 69090,
+    "airDensity": "0.957",
     "deltaT": "3.0",
     "precipitation": "0.01",
     "precipitationRate": "0.00",
-    "precipitationLastHour": "0.16",
+    "precipitationLastHour": "0.15",
     "precipitationFinal": "0.01",
     "lightningStrikes": 0,
     "lightningStrikesLastHour": 0,
@@ -37,14 +37,14 @@
   },
   "aircraft": {
     "total": 270,
-    "commercial": 66,
-    "generalAviation": 198,
+    "commercial": 67,
+    "generalAviation": 197,
     "lifeFlights": 0,
     "military": 6,
     "balloons": 0,
     "highestAltitude": 47025,
     "aircraftNearby": 0,
-    "totalObservations": 7885,
+    "totalObservations": 7949,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,7 +64,7 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 4,
+    "totalToday": 3,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -87,12 +87,6 @@
         "location": "17 km S of Calumet, Oklahoma",
         "time": "2026-04-16T22:36:45.929Z",
         "distance": "39.9"
-      },
-      {
-        "magnitude": 1.28,
-        "location": "18 km W of Union City, Oklahoma",
-        "time": "2026-04-16T21:54:58.450Z",
-        "distance": "40.1"
       }
     ],
     "dataAvailable": true
