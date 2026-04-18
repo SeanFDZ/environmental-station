@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-04-18T14:02:10.810Z",
-  "lastUpdated": "2026-04-18T14:02:10.810Z",
+  "timestamp": "2026-04-18T14:04:11.144Z",
+  "lastUpdated": "2026-04-18T14:04:11.144Z",
   "weather": {
     "temperature": 45,
     "feelsLike": 41,
-    "humidity": 62,
+    "humidity": 61,
     "pressure": "24.03",
     "windSpeed": 9,
-    "windGust": 13,
-    "windLull": 6,
+    "windGust": 14,
+    "windLull": 5,
     "windDirection": 38,
     "heatIndex": 45,
     "windChill": 41,
@@ -18,10 +18,10 @@
     "stationPressure": "24.03",
     "pressureTrend": "steady",
     "uvIndex": 3,
-    "solarRadiation": 338,
-    "brightness": 40537,
+    "solarRadiation": 346,
+    "brightness": 41528,
     "airDensity": "1.010",
-    "deltaT": "3.3",
+    "deltaT": "3.4",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 146,
-    "commercial": 39,
-    "generalAviation": 107,
+    "total": 145,
+    "commercial": 42,
+    "generalAviation": 103,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45025,
     "aircraftNearby": 0,
-    "totalObservations": 3923,
+    "totalObservations": 3997,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,19 +64,12 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 0,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.88,
-    "recentEvents": [
-      {
-        "magnitude": 1.88,
-        "location": "18 km ESE of Hinton, Oklahoma",
-        "time": "2026-04-17T14:03:04.629Z",
-        "distance": "39.1"
-      }
-    ],
+    "largestMagnitude": 0,
+    "recentEvents": [],
     "dataAvailable": true
   },
   "alerts": {
