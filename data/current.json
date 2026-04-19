@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-04-19T23:04:10.817Z",
-  "lastUpdated": "2026-04-19T23:04:10.817Z",
+  "timestamp": "2026-04-19T23:06:10.714Z",
+  "lastUpdated": "2026-04-19T23:06:10.714Z",
   "weather": {
     "temperature": 69,
     "feelsLike": 69,
     "humidity": 25,
     "pressure": "24.08",
     "windSpeed": 11,
-    "windGust": 15,
-    "windLull": 8,
-    "windDirection": 226,
+    "windGust": 17,
+    "windLull": 7,
+    "windDirection": 229,
     "heatIndex": 69,
     "windChill": 69,
     "dewPoint": 32,
@@ -17,9 +17,9 @@
     "wetBulbGlobeTemperature": 56,
     "stationPressure": "24.08",
     "pressureTrend": "steady",
-    "uvIndex": 2,
-    "solarRadiation": 270,
-    "brightness": 32367,
+    "uvIndex": 3,
+    "solarRadiation": 328,
+    "brightness": 39371,
     "airDensity": "0.967",
     "deltaT": "11.0",
     "precipitation": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 238,
+    "total": 240,
     "commercial": 40,
-    "generalAviation": 198,
+    "generalAviation": 200,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 47075,
     "aircraftNearby": 0,
-    "totalObservations": 5997,
+    "totalObservations": 6001,
     "dataAvailable": true
   },
   "seismic": {
@@ -72,9 +72,9 @@
     "recentEvents": [
       {
         "magnitude": 2.92,
-        "location": "18 km W of Union City, Oklahoma",
-        "time": "2026-04-19T22:57:57.995Z",
-        "distance": "40.8"
+        "location": "17 km W of Union City, Oklahoma",
+        "time": "2026-04-19T22:57:58.244Z",
+        "distance": "41.1"
       }
     ],
     "dataAvailable": true
