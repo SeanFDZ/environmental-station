@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-04-20T15:10:52.435Z",
-  "lastUpdated": "2026-04-20T15:10:52.435Z",
+  "timestamp": "2026-04-20T15:12:14.435Z",
+  "lastUpdated": "2026-04-20T15:12:14.435Z",
   "weather": {
     "temperature": 61,
     "feelsLike": 61,
-    "humidity": 49,
+    "humidity": 50,
     "pressure": "24.07",
     "windSpeed": 11,
-    "windGust": 13,
+    "windGust": 14,
     "windLull": 8,
     "windDirection": 219,
     "heatIndex": 61,
@@ -18,10 +18,10 @@
     "stationPressure": "24.07",
     "pressureTrend": "rising",
     "uvIndex": 4,
-    "solarRadiation": 496,
-    "brightness": 59487,
+    "solarRadiation": 507,
+    "brightness": 60820,
     "airDensity": "0.982",
-    "deltaT": "6.1",
+    "deltaT": "6.0",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 278,
-    "commercial": 55,
-    "generalAviation": 209,
+    "total": 272,
+    "commercial": 52,
+    "generalAviation": 206,
     "lifeFlights": 0,
     "military": 14,
     "balloons": 0,
     "highestAltitude": 46600,
     "aircraftNearby": 0,
-    "totalObservations": 6586,
+    "totalObservations": 6555,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 72,
+    "totalObservations": 68,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 33552,
+    "avgSamples": 33555,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 2,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -75,6 +75,12 @@
         "location": "18 km W of Union City, Oklahoma",
         "time": "2026-04-19T22:57:57.679Z",
         "distance": "40.7"
+      },
+      {
+        "magnitude": 1.49,
+        "location": "18 km ENE of Binger, Oklahoma",
+        "time": "2026-04-19T16:48:03.259Z",
+        "distance": "41.2"
       }
     ],
     "dataAvailable": true
