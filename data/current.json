@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-04-22T18:18:11.338Z",
-  "lastUpdated": "2026-04-22T18:18:11.338Z",
+  "timestamp": "2026-04-22T18:20:11.592Z",
+  "lastUpdated": "2026-04-22T18:20:11.592Z",
   "weather": {
     "temperature": 69,
     "feelsLike": 69,
     "humidity": 81,
     "pressure": "24.08",
-    "windSpeed": 10,
-    "windGust": 13,
-    "windLull": 7,
-    "windDirection": 224,
+    "windSpeed": 13,
+    "windGust": 16,
+    "windLull": 8,
+    "windDirection": 225,
     "heatIndex": 69,
     "windChill": 69,
     "dewPoint": 63,
@@ -18,8 +18,8 @@
     "stationPressure": "24.08",
     "pressureTrend": "steady",
     "uvIndex": 4,
-    "solarRadiation": 465,
-    "brightness": 55872,
+    "solarRadiation": 550,
+    "brightness": 65941,
     "airDensity": "0.967",
     "deltaT": "2.4",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 283,
+    "total": 287,
     "commercial": 59,
-    "generalAviation": 213,
+    "generalAviation": 217,
     "lifeFlights": 0,
     "military": 11,
     "balloons": 0,
     "highestAltitude": 47000,
     "aircraftNearby": 1,
-    "totalObservations": 6677,
+    "totalObservations": 6730,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 72,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,26 +57,19 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 35812,
+    "avgSamples": 35808,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 0,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.16,
-    "recentEvents": [
-      {
-        "magnitude": 1.16,
-        "location": "16 km W of Union City, Oklahoma",
-        "time": "2026-04-21T18:19:46.060Z",
-        "distance": "42.5"
-      }
-    ],
+    "largestMagnitude": 0,
+    "recentEvents": [],
     "dataAvailable": true
   },
   "alerts": {
