@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-04-30T15:00:14.196Z",
-  "lastUpdated": "2026-04-30T15:00:14.196Z",
+  "timestamp": "2026-04-30T15:02:17.364Z",
+  "lastUpdated": "2026-04-30T15:02:17.364Z",
   "weather": {
     "temperature": 56,
     "feelsLike": 56,
     "humidity": 64,
     "pressure": "24.06",
-    "windSpeed": 5,
-    "windGust": 9,
+    "windSpeed": 7,
+    "windGust": 13,
     "windLull": 2,
-    "windDirection": 96,
+    "windDirection": 88,
     "heatIndex": 56,
     "windChill": 56,
     "dewPoint": 44,
@@ -18,8 +18,8 @@
     "stationPressure": "24.06",
     "pressureTrend": "steady",
     "uvIndex": 3,
-    "solarRadiation": 335,
-    "brightness": 40182,
+    "solarRadiation": 351,
+    "brightness": 42096,
     "airDensity": "0.990",
     "deltaT": "3.8",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 260,
-    "commercial": 41,
-    "generalAviation": 212,
+    "total": 256,
+    "commercial": 39,
+    "generalAviation": 210,
     "lifeFlights": 0,
     "military": 7,
     "balloons": 0,
     "highestAltitude": 45025,
     "aircraftNearby": 0,
-    "totalObservations": 6532,
+    "totalObservations": 6503,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 72,
+    "totalObservations": 68,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,19 +57,26 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 32425,
+    "avgSamples": 32437,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 1.47,
+    "recentEvents": [
+      {
+        "magnitude": 1.47,
+        "location": "17 km WNW of Union City, Oklahoma",
+        "time": "2026-04-30T06:20:01.590Z",
+        "distance": "40.4"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
