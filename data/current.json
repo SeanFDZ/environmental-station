@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-05-03T13:06:11.136Z",
-  "lastUpdated": "2026-05-03T13:06:11.136Z",
+  "timestamp": "2026-05-03T13:08:12.939Z",
+  "lastUpdated": "2026-05-03T13:08:12.939Z",
   "weather": {
     "temperature": 57,
     "feelsLike": 57,
-    "humidity": 61,
+    "humidity": 60,
     "pressure": "24.06",
     "windSpeed": 4,
-    "windGust": 5,
-    "windLull": 2,
-    "windDirection": 274,
+    "windGust": 6,
+    "windLull": 3,
+    "windDirection": 267,
     "heatIndex": 57,
     "windChill": 57,
     "dewPoint": 43,
@@ -17,11 +17,11 @@
     "wetBulbGlobeTemperature": 52,
     "stationPressure": "24.06",
     "pressureTrend": "steady",
-    "uvIndex": 1,
-    "solarRadiation": 169,
-    "brightness": 20258,
+    "uvIndex": 2,
+    "solarRadiation": 175,
+    "brightness": 21030,
     "airDensity": "0.989",
-    "deltaT": "4.2",
+    "deltaT": "4.3",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 134,
-    "commercial": 33,
-    "generalAviation": 101,
+    "total": 137,
+    "commercial": 37,
+    "generalAviation": 100,
     "lifeFlights": 1,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 46025,
     "aircraftNearby": 0,
-    "totalObservations": 3054,
+    "totalObservations": 3074,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,12 +64,19 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 1.68,
+    "recentEvents": [
+      {
+        "magnitude": 1.68,
+        "location": "5 km SE of Gracemont, Oklahoma",
+        "time": "2026-05-03T13:04:13.437Z",
+        "distance": "48.0"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
