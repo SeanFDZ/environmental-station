@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-05-05T09:28:10.697Z",
-  "lastUpdated": "2026-05-05T09:28:10.697Z",
+  "timestamp": "2026-05-05T09:30:12.750Z",
+  "lastUpdated": "2026-05-05T09:30:12.750Z",
   "weather": {
     "temperature": 67,
     "feelsLike": 67,
@@ -8,8 +8,8 @@
     "pressure": "24.08",
     "windSpeed": 6,
     "windGust": 7,
-    "windLull": 6,
-    "windDirection": 219,
+    "windLull": 4,
+    "windDirection": 223,
     "heatIndex": 67,
     "windChill": 67,
     "dewPoint": 58,
@@ -37,18 +37,18 @@
   },
   "aircraft": {
     "total": 59,
-    "commercial": 19,
-    "generalAviation": 40,
+    "commercial": 18,
+    "generalAviation": 41,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 41000,
     "aircraftNearby": 0,
-    "totalObservations": 1508,
+    "totalObservations": 1504,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 72,
+    "totalObservations": 68,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,19 +57,26 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 32942,
+    "avgSamples": 32920,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 2.19,
+    "recentEvents": [
+      {
+        "magnitude": 2.19,
+        "location": "14 km WNW of Union City, Oklahoma",
+        "time": "2026-05-05T09:26:46.133Z",
+        "distance": "42.6"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
