@@ -1,27 +1,27 @@
 {
-  "timestamp": "2026-05-06T15:22:10.977Z",
-  "lastUpdated": "2026-05-06T15:22:10.977Z",
+  "timestamp": "2026-05-06T15:24:11.006Z",
+  "lastUpdated": "2026-05-06T15:24:11.006Z",
   "weather": {
     "temperature": 53,
     "feelsLike": 53,
     "humidity": 59,
     "pressure": "24.05",
     "windSpeed": 5,
-    "windGust": 10,
-    "windLull": 2,
-    "windDirection": 97,
+    "windGust": 8,
+    "windLull": 3,
+    "windDirection": 111,
     "heatIndex": 53,
     "windChill": 53,
     "dewPoint": 39,
     "wetBulbTemperature": 46,
-    "wetBulbGlobeTemperature": 50,
+    "wetBulbGlobeTemperature": 49,
     "stationPressure": "24.05",
     "pressureTrend": "steady",
-    "uvIndex": 3,
-    "solarRadiation": 336,
-    "brightness": 40269,
+    "uvIndex": 2,
+    "solarRadiation": 275,
+    "brightness": 33097,
     "airDensity": "0.996",
-    "deltaT": "4.1",
+    "deltaT": "4.2",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 231,
+    "total": 230,
     "commercial": 59,
-    "generalAviation": 166,
+    "generalAviation": 165,
     "lifeFlights": 0,
     "military": 6,
     "balloons": 0,
     "highestAltitude": 45025,
     "aircraftNearby": 0,
-    "totalObservations": 5780,
+    "totalObservations": 5870,
     "dataAvailable": true
   },
   "seismic": {
@@ -57,19 +57,26 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 34957,
+    "avgSamples": 35083,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 2.29,
+    "recentEvents": [
+      {
+        "magnitude": 2.29,
+        "location": "7 km S of Okarche, Oklahoma",
+        "time": "2026-05-06T15:20:40.481Z",
+        "distance": "45.5"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
