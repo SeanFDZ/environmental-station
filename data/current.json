@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-05-06T09:26:10.707Z",
-  "lastUpdated": "2026-05-06T09:26:10.707Z",
+  "timestamp": "2026-05-06T09:28:10.741Z",
+  "lastUpdated": "2026-05-06T09:28:10.741Z",
   "weather": {
     "temperature": 49,
-    "feelsLike": 45,
+    "feelsLike": 46,
     "humidity": 75,
     "pressure": "24.03",
-    "windSpeed": 9,
-    "windGust": 13,
-    "windLull": 4,
-    "windDirection": 78,
+    "windSpeed": 8,
+    "windGust": 12,
+    "windLull": 5,
+    "windDirection": 68,
     "heatIndex": 49,
-    "windChill": 45,
+    "windChill": 46,
     "dewPoint": 42,
     "wetBulbTemperature": 45,
     "wetBulbGlobeTemperature": 46,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 47,
+    "total": 45,
     "commercial": 15,
-    "generalAviation": 32,
+    "generalAviation": 30,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 49000,
     "aircraftNearby": 0,
-    "totalObservations": 1226,
+    "totalObservations": 1199,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 71,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,26 +57,19 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 32529,
+    "avgSamples": 32503,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 0,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.69,
-    "recentEvents": [
-      {
-        "magnitude": 1.69,
-        "location": "14 km WSW of El Reno, Oklahoma",
-        "time": "2026-05-05T09:26:46.439Z",
-        "distance": "41.8"
-      }
-    ],
+    "largestMagnitude": 0,
+    "recentEvents": [],
     "dataAvailable": true
   },
   "alerts": {
