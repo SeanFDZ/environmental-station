@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-05-06T12:50:10.860Z",
-  "lastUpdated": "2026-05-06T12:50:10.860Z",
+  "timestamp": "2026-05-06T12:52:11.311Z",
+  "lastUpdated": "2026-05-06T12:52:11.311Z",
   "weather": {
     "temperature": 47,
     "feelsLike": 42,
-    "humidity": 77,
+    "humidity": 78,
     "pressure": "24.03",
-    "windSpeed": 13,
-    "windGust": 17,
-    "windLull": 7,
-    "windDirection": 91,
+    "windSpeed": 11,
+    "windGust": 15,
+    "windLull": 8,
+    "windDirection": 73,
     "heatIndex": 47,
     "windChill": 42,
     "dewPoint": 41,
@@ -18,10 +18,10 @@
     "stationPressure": "24.03",
     "pressureTrend": "steady",
     "uvIndex": 1,
-    "solarRadiation": 68,
-    "brightness": 8148,
-    "airDensity": "1.006",
-    "deltaT": "2.1",
+    "solarRadiation": 61,
+    "brightness": 7279,
+    "airDensity": "1.007",
+    "deltaT": "2.0",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 153,
-    "commercial": 40,
-    "generalAviation": 113,
+    "total": 152,
+    "commercial": 38,
+    "generalAviation": 114,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 43650,
     "aircraftNearby": 2,
-    "totalObservations": 4016,
+    "totalObservations": 4087,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 72,
+    "totalObservations": 68,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,19 +57,26 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 33195,
+    "avgSamples": 33210,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 1.3,
+    "recentEvents": [
+      {
+        "magnitude": 1.3,
+        "location": "15 km WNW of Union City, Oklahoma",
+        "time": "2026-05-05T13:42:06.820Z",
+        "distance": "41.7"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
