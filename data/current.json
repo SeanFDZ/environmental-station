@@ -1,27 +1,27 @@
 {
-  "timestamp": "2026-06-04T11:58:17.953Z",
-  "lastUpdated": "2026-06-04T11:58:17.953Z",
+  "timestamp": "2026-06-04T12:00:17.782Z",
+  "lastUpdated": "2026-06-04T12:00:17.782Z",
   "weather": {
     "temperature": 72,
     "feelsLike": 72,
-    "humidity": 89,
+    "humidity": 90,
     "pressure": "24.09",
-    "windSpeed": 9,
-    "windGust": 14,
-    "windLull": 2,
-    "windDirection": 195,
+    "windSpeed": 12,
+    "windGust": 15,
+    "windLull": 5,
+    "windDirection": 188,
     "heatIndex": 72,
     "windChill": 72,
-    "dewPoint": 68,
+    "dewPoint": 69,
     "wetBulbTemperature": 69,
     "wetBulbGlobeTemperature": 70,
     "stationPressure": "24.09",
     "pressureTrend": "steady",
     "uvIndex": 1,
-    "solarRadiation": 56,
-    "brightness": 6737,
+    "solarRadiation": 64,
+    "brightness": 7655,
     "airDensity": "0.963",
-    "deltaT": "1.4",
+    "deltaT": "1.3",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 127,
-    "commercial": 29,
-    "generalAviation": 98,
+    "total": 119,
+    "commercial": 30,
+    "generalAviation": 89,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 43000,
     "aircraftNearby": 0,
-    "totalObservations": 2920,
+    "totalObservations": 2914,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,7 +64,7 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 2,
+    "totalToday": 3,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -81,6 +81,12 @@
         "location": "7 km W of Binger, Oklahoma",
         "time": "2026-06-03T14:12:11.564Z",
         "distance": "32.8"
+      },
+      {
+        "magnitude": 1.04,
+        "location": "17 km ESE of Hinton, Oklahoma",
+        "time": "2026-06-03T12:11:39.429Z",
+        "distance": "38.5"
       }
     ],
     "dataAvailable": true
