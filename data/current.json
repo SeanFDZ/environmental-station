@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-06-04T12:10:17.637Z",
-  "lastUpdated": "2026-06-04T12:10:17.637Z",
+  "timestamp": "2026-06-04T12:12:17.629Z",
+  "lastUpdated": "2026-06-04T12:12:17.629Z",
   "weather": {
     "temperature": 72,
     "feelsLike": 72,
     "humidity": 89,
     "pressure": "24.09",
-    "windSpeed": 11,
-    "windGust": 17,
-    "windLull": 5,
-    "windDirection": 207,
+    "windSpeed": 8,
+    "windGust": 12,
+    "windLull": 3,
+    "windDirection": 204,
     "heatIndex": 72,
     "windChill": 72,
     "dewPoint": 68,
@@ -18,8 +18,8 @@
     "stationPressure": "24.09",
     "pressureTrend": "steady",
     "uvIndex": 1,
-    "solarRadiation": 88,
-    "brightness": 10489,
+    "solarRadiation": 93,
+    "brightness": 11207,
     "airDensity": "0.963",
     "deltaT": "1.4",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 119,
+    "total": 117,
     "commercial": 31,
-    "generalAviation": 88,
+    "generalAviation": 86,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 43000,
     "aircraftNearby": 0,
-    "totalObservations": 2831,
+    "totalObservations": 2800,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 71,
+    "totalObservations": 67,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 32993,
+    "avgSamples": 32999,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 3,
+    "totalToday": 2,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -81,12 +81,6 @@
         "location": "7 km W of Binger, Oklahoma",
         "time": "2026-06-03T14:12:11.564Z",
         "distance": "32.8"
-      },
-      {
-        "magnitude": 1.04,
-        "location": "17 km ESE of Hinton, Oklahoma",
-        "time": "2026-06-03T12:11:39.429Z",
-        "distance": "38.5"
       }
     ],
     "dataAvailable": true
