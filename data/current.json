@@ -1,27 +1,27 @@
 {
-  "timestamp": "2026-06-08T14:22:17.842Z",
-  "lastUpdated": "2026-06-08T14:22:17.842Z",
+  "timestamp": "2026-06-08T14:24:17.824Z",
+  "lastUpdated": "2026-06-08T14:24:17.824Z",
   "weather": {
     "temperature": 80,
     "feelsLike": 84,
-    "humidity": 80,
+    "humidity": 79,
     "pressure": "24.11",
     "windSpeed": 17,
-    "windGust": 23,
-    "windLull": 8,
-    "windDirection": 226,
+    "windGust": 21,
+    "windLull": 12,
+    "windDirection": 229,
     "heatIndex": 84,
     "windChill": 80,
     "dewPoint": 73,
     "wetBulbTemperature": 75,
-    "wetBulbGlobeTemperature": 78,
+    "wetBulbGlobeTemperature": 77,
     "stationPressure": "24.11",
     "pressureTrend": "steady",
-    "uvIndex": 5,
-    "solarRadiation": 479,
-    "brightness": 57499,
+    "uvIndex": 4,
+    "solarRadiation": 404,
+    "brightness": 48412,
     "airDensity": "0.949",
-    "deltaT": "2.8",
+    "deltaT": "3.0",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 287,
+    "total": 285,
     "commercial": 72,
-    "generalAviation": 212,
+    "generalAviation": 210,
     "lifeFlights": 0,
     "military": 3,
     "balloons": 0,
-    "highestAltitude": 49000,
-    "aircraftNearby": 3,
-    "totalObservations": 7437,
+    "highestAltitude": 48025,
+    "aircraftNearby": 2,
+    "totalObservations": 7481,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,7 +64,7 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 4,
+    "totalToday": 3,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -87,12 +87,6 @@
         "location": "16 km ESE of Hinton, Oklahoma",
         "time": "2026-06-07T15:06:53.710Z",
         "distance": "38.3"
-      },
-      {
-        "magnitude": 0.93,
-        "location": "9 km NNE of Calumet, Oklahoma",
-        "time": "2026-06-07T14:21:40.530Z",
-        "distance": "40.9"
       }
     ],
     "dataAvailable": true
