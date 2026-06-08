@@ -1,27 +1,27 @@
 {
-  "timestamp": "2026-06-08T19:30:17.933Z",
-  "lastUpdated": "2026-06-08T19:30:17.933Z",
+  "timestamp": "2026-06-08T19:32:17.805Z",
+  "lastUpdated": "2026-06-08T19:32:17.805Z",
   "weather": {
     "temperature": 92,
-    "feelsLike": 103,
-    "humidity": 59,
+    "feelsLike": 104,
+    "humidity": 60,
     "pressure": "24.14",
-    "windSpeed": 14,
-    "windGust": 21,
+    "windSpeed": 13,
+    "windGust": 17,
     "windLull": 10,
-    "windDirection": 231,
-    "heatIndex": 103,
+    "windDirection": 240,
+    "heatIndex": 104,
     "windChill": 92,
-    "dewPoint": 75,
+    "dewPoint": 76,
     "wetBulbTemperature": 79,
     "wetBulbGlobeTemperature": 85,
     "stationPressure": "24.14",
     "pressureTrend": "steady",
     "uvIndex": 9,
-    "solarRadiation": 925,
-    "brightness": 111031,
+    "solarRadiation": 933,
+    "brightness": 112030,
     "airDensity": "0.930",
-    "deltaT": "7.0",
+    "deltaT": "6.8",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 280,
-    "commercial": 44,
-    "generalAviation": 228,
+    "total": 276,
+    "commercial": 45,
+    "generalAviation": 223,
     "lifeFlights": 0,
     "military": 8,
     "balloons": 0,
     "highestAltitude": 47000,
-    "aircraftNearby": 1,
-    "totalObservations": 6703,
+    "aircraftNearby": 0,
+    "totalObservations": 6689,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,7 +64,7 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 2,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -75,12 +75,6 @@
         "location": "16 km ENE of Lookeba, Oklahoma",
         "time": "2026-06-07T19:43:36.780Z",
         "distance": "38.3"
-      },
-      {
-        "magnitude": 0.9,
-        "location": "9 km NNE of Calumet, Oklahoma",
-        "time": "2026-06-07T19:31:05.179Z",
-        "distance": "40.9"
       }
     ],
     "dataAvailable": true
