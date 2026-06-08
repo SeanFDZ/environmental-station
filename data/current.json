@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-06-08T13:30:17.882Z",
-  "lastUpdated": "2026-06-08T13:30:17.882Z",
+  "timestamp": "2026-06-08T13:32:17.737Z",
+  "lastUpdated": "2026-06-08T13:32:17.737Z",
   "weather": {
     "temperature": 78,
     "feelsLike": 78,
     "humidity": 83,
     "pressure": "24.11",
-    "windSpeed": 13,
-    "windGust": 15,
-    "windLull": 8,
-    "windDirection": 230,
+    "windSpeed": 12,
+    "windGust": 16,
+    "windLull": 9,
+    "windDirection": 229,
     "heatIndex": 78,
     "windChill": 78,
     "dewPoint": 73,
@@ -19,7 +19,7 @@
     "pressureTrend": "steady",
     "uvIndex": 3,
     "solarRadiation": 283,
-    "brightness": 33979,
+    "brightness": 33951,
     "airDensity": "0.952",
     "deltaT": "2.3",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 189,
-    "commercial": 49,
+    "total": 188,
+    "commercial": 48,
     "generalAviation": 139,
     "lifeFlights": 1,
     "military": 1,
     "balloons": 0,
-    "highestAltitude": 45600,
-    "aircraftNearby": 1,
-    "totalObservations": 4801,
+    "highestAltitude": 47575,
+    "aircraftNearby": 0,
+    "totalObservations": 4852,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 72,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 33410,
+    "avgSamples": 33412,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 2,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -75,6 +75,12 @@
         "location": "16 km ENE of Lookeba, Oklahoma",
         "time": "2026-06-07T19:43:36.780Z",
         "distance": "38.3"
+      },
+      {
+        "magnitude": 0.9,
+        "location": "9 km NNE of Calumet, Oklahoma",
+        "time": "2026-06-07T19:31:05.179Z",
+        "distance": "40.9"
       }
     ],
     "dataAvailable": true
