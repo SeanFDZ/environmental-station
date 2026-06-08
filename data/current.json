@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-06-08T15:06:17.832Z",
-  "lastUpdated": "2026-06-08T15:06:17.832Z",
+  "timestamp": "2026-06-08T15:08:17.862Z",
+  "lastUpdated": "2026-06-08T15:08:17.862Z",
   "weather": {
     "temperature": 82,
     "feelsLike": 88,
     "humidity": 77,
     "pressure": "24.11",
     "windSpeed": 13,
-    "windGust": 17,
-    "windLull": 9,
-    "windDirection": 233,
+    "windGust": 20,
+    "windLull": 10,
+    "windDirection": 236,
     "heatIndex": 88,
     "windChill": 82,
     "dewPoint": 74,
@@ -17,9 +17,9 @@
     "wetBulbGlobeTemperature": 79,
     "stationPressure": "24.11",
     "pressureTrend": "steady",
-    "uvIndex": 6,
-    "solarRadiation": 596,
-    "brightness": 71445,
+    "uvIndex": 4,
+    "solarRadiation": 404,
+    "brightness": 48501,
     "airDensity": "0.945",
     "deltaT": "3.4",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 330,
+    "total": 323,
     "commercial": 63,
-    "generalAviation": 254,
+    "generalAviation": 247,
     "lifeFlights": 0,
     "military": 13,
     "balloons": 0,
     "highestAltitude": 45025,
     "aircraftNearby": 2,
-    "totalObservations": 8043,
+    "totalObservations": 8102,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 65,
+    "totalObservations": 69,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 33292,
+    "avgSamples": 33295,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 3,
+    "totalToday": 2,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -81,12 +81,6 @@
         "location": "9 km NNE of Calumet, Oklahoma",
         "time": "2026-06-07T19:31:05.179Z",
         "distance": "40.9"
-      },
-      {
-        "magnitude": 0.95,
-        "location": "16 km ESE of Hinton, Oklahoma",
-        "time": "2026-06-07T15:06:53.710Z",
-        "distance": "38.3"
       }
     ],
     "dataAvailable": true
