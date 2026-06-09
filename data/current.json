@@ -1,27 +1,27 @@
 {
-  "timestamp": "2026-06-09T21:28:18.093Z",
-  "lastUpdated": "2026-06-09T21:28:18.093Z",
+  "timestamp": "2026-06-09T21:30:17.739Z",
+  "lastUpdated": "2026-06-09T21:30:17.739Z",
   "weather": {
     "temperature": 89,
-    "feelsLike": 96,
-    "humidity": 56,
+    "feelsLike": 95,
+    "humidity": 55,
     "pressure": "24.13",
-    "windSpeed": 19,
-    "windGust": 23,
-    "windLull": 14,
-    "windDirection": 226,
-    "heatIndex": 96,
+    "windSpeed": 20,
+    "windGust": 28,
+    "windLull": 13,
+    "windDirection": 227,
+    "heatIndex": 95,
     "windChill": 89,
     "dewPoint": 71,
-    "wetBulbTemperature": 76,
+    "wetBulbTemperature": 75,
     "wetBulbGlobeTemperature": 80,
     "stationPressure": "24.13",
     "pressureTrend": "steady",
     "uvIndex": 3,
-    "solarRadiation": 364,
-    "brightness": 43741,
+    "solarRadiation": 318,
+    "brightness": 38186,
     "airDensity": "0.934",
-    "deltaT": "7.4",
+    "deltaT": "7.6",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 247,
-    "commercial": 55,
-    "generalAviation": 187,
+    "total": 245,
+    "commercial": 54,
+    "generalAviation": 186,
     "lifeFlights": 0,
     "military": 5,
     "balloons": 0,
     "highestAltitude": 49000,
     "aircraftNearby": 0,
-    "totalObservations": 5907,
+    "totalObservations": 5970,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,7 +64,7 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 2,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -75,12 +75,6 @@
         "location": "9 km W of Loyal, Oklahoma",
         "time": "2026-06-09T18:08:43.359Z",
         "distance": "38.1"
-      },
-      {
-        "magnitude": 1.19,
-        "location": "12 km NNE of Gracemont, Oklahoma",
-        "time": "2026-06-08T21:28:42.789Z",
-        "distance": "42.9"
       }
     ],
     "dataAvailable": true
