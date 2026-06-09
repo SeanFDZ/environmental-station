@@ -1,25 +1,25 @@
 {
-  "timestamp": "2026-06-09T14:54:17.844Z",
-  "lastUpdated": "2026-06-09T14:54:17.844Z",
+  "timestamp": "2026-06-09T14:56:17.864Z",
+  "lastUpdated": "2026-06-09T14:56:17.864Z",
   "weather": {
     "temperature": 81,
-    "feelsLike": 85,
+    "feelsLike": 86,
     "humidity": 76,
     "pressure": "24.11",
-    "windSpeed": 12,
-    "windGust": 15,
-    "windLull": 8,
-    "windDirection": 232,
-    "heatIndex": 85,
+    "windSpeed": 10,
+    "windGust": 13,
+    "windLull": 7,
+    "windDirection": 237,
+    "heatIndex": 86,
     "windChill": 81,
     "dewPoint": 73,
-    "wetBulbTemperature": 74,
+    "wetBulbTemperature": 75,
     "wetBulbGlobeTemperature": 78,
     "stationPressure": "24.11",
     "pressureTrend": "steady",
     "uvIndex": 6,
-    "solarRadiation": 588,
-    "brightness": 70638,
+    "solarRadiation": 593,
+    "brightness": 71142,
     "airDensity": "0.947",
     "deltaT": "3.5",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 308,
-    "commercial": 64,
+    "total": 311,
+    "commercial": 65,
     "generalAviation": 235,
     "lifeFlights": 0,
-    "military": 9,
+    "military": 11,
     "balloons": 0,
     "highestAltitude": 43000,
-    "aircraftNearby": 3,
-    "totalObservations": 7661,
+    "aircraftNearby": 4,
+    "totalObservations": 7698,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 65,
+    "totalObservations": 69,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,18 +57,18 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 33558,
+    "avgSamples": 33555,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 2,
+    "totalToday": 3,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.5,
+    "largestMagnitude": 1.69,
     "recentEvents": [
       {
         "magnitude": 1.19,
@@ -81,6 +81,12 @@
         "location": "16 km E of Hinton, Oklahoma",
         "time": "2026-06-08T20:07:34.229Z",
         "distance": "37.6"
+      },
+      {
+        "magnitude": 1.69,
+        "location": "8 km WSW of Okarche, Oklahoma",
+        "time": "2026-06-08T18:52:59.229Z",
+        "distance": "41.5"
       }
     ],
     "dataAvailable": true
