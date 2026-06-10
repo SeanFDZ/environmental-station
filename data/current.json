@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-06-10T12:36:17.626Z",
-  "lastUpdated": "2026-06-10T12:36:17.626Z",
+  "timestamp": "2026-06-10T12:38:17.618Z",
+  "lastUpdated": "2026-06-10T12:38:17.618Z",
   "weather": {
     "temperature": 76,
     "feelsLike": 76,
     "humidity": 81,
     "pressure": "24.10",
-    "windSpeed": 13,
-    "windGust": 15,
-    "windLull": 10,
-    "windDirection": 231,
+    "windSpeed": 12,
+    "windGust": 17,
+    "windLull": 9,
+    "windDirection": 233,
     "heatIndex": 76,
     "windChill": 76,
     "dewPoint": 70,
@@ -18,8 +18,8 @@
     "stationPressure": "24.10",
     "pressureTrend": "steady",
     "uvIndex": 1,
-    "solarRadiation": 122,
-    "brightness": 14656,
+    "solarRadiation": 128,
+    "brightness": 15330,
     "airDensity": "0.955",
     "deltaT": "2.6",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 125,
-    "commercial": 28,
-    "generalAviation": 97,
+    "total": 130,
+    "commercial": 29,
+    "generalAviation": 101,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 43000,
     "aircraftNearby": 0,
-    "totalObservations": 2988,
+    "totalObservations": 3067,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 69,
+    "totalObservations": 65,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 33471,
+    "avgSamples": 33473,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 3,
+    "totalToday": 4,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -87,6 +87,12 @@
         "location": "9 km W of Loyal, Oklahoma",
         "time": "2026-06-09T18:08:43.359Z",
         "distance": "38.1"
+      },
+      {
+        "magnitude": 1.32,
+        "location": "17 km ESE of Hinton, Oklahoma",
+        "time": "2026-06-09T15:02:37.450Z",
+        "distance": "38.4"
       }
     ],
     "dataAvailable": true
