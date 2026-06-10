@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-06-10T12:40:17.654Z",
-  "lastUpdated": "2026-06-10T12:40:17.654Z",
+  "timestamp": "2026-06-10T12:42:17.634Z",
+  "lastUpdated": "2026-06-10T12:42:17.634Z",
   "weather": {
     "temperature": 76,
     "feelsLike": 76,
     "humidity": 81,
     "pressure": "24.10",
-    "windSpeed": 13,
-    "windGust": 16,
+    "windSpeed": 14,
+    "windGust": 17,
     "windLull": 11,
-    "windDirection": 234,
+    "windDirection": 229,
     "heatIndex": 76,
     "windChill": 76,
     "dewPoint": 70,
@@ -18,8 +18,8 @@
     "stationPressure": "24.10",
     "pressureTrend": "steady",
     "uvIndex": 1,
-    "solarRadiation": 133,
-    "brightness": 15955,
+    "solarRadiation": 138,
+    "brightness": 16601,
     "airDensity": "0.955",
     "deltaT": "2.6",
     "precipitation": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 136,
+    "total": 139,
     "commercial": 32,
-    "generalAviation": 104,
+    "generalAviation": 107,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
-    "highestAltitude": 43000,
+    "highestAltitude": 43675,
     "aircraftNearby": 0,
-    "totalObservations": 3158,
+    "totalObservations": 3242,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,7 +64,7 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 4,
+    "totalToday": 5,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -87,6 +87,12 @@
         "location": "9 km W of Loyal, Oklahoma",
         "time": "2026-06-09T18:08:43.359Z",
         "distance": "38.1"
+      },
+      {
+        "magnitude": 1.66,
+        "location": "10 km E of Hitchcock, Oklahoma",
+        "time": "2026-06-09T16:16:02.609Z",
+        "distance": "36.9"
       },
       {
         "magnitude": 1.32,
