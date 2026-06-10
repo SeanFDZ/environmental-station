@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-10T15:02:18.002Z",
-  "lastUpdated": "2026-06-10T15:02:18.002Z",
+  "timestamp": "2026-06-10T15:04:17.926Z",
+  "lastUpdated": "2026-06-10T15:04:17.926Z",
   "weather": {
     "temperature": 83,
     "feelsLike": 87,
@@ -8,8 +8,8 @@
     "pressure": "24.12",
     "windSpeed": 19,
     "windGust": 26,
-    "windLull": 12,
-    "windDirection": 235,
+    "windLull": 14,
+    "windDirection": 234,
     "heatIndex": 87,
     "windChill": 83,
     "dewPoint": 71,
@@ -18,8 +18,8 @@
     "stationPressure": "24.12",
     "pressureTrend": "steady",
     "uvIndex": 6,
-    "solarRadiation": 630,
-    "brightness": 75619,
+    "solarRadiation": 656,
+    "brightness": 78815,
     "airDensity": "0.944",
     "deltaT": "4.8",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 340,
-    "commercial": 64,
+    "total": 342,
+    "commercial": 66,
     "generalAviation": 269,
     "lifeFlights": 0,
     "military": 7,
     "balloons": 0,
-    "highestAltitude": 49900,
+    "highestAltitude": 50000,
     "aircraftNearby": 0,
-    "totalObservations": 8271,
+    "totalObservations": 8190,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 72,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 33666,
+    "avgSamples": 33692,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 5,
+    "totalToday": 4,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -93,12 +93,6 @@
         "location": "10 km E of Hitchcock, Oklahoma",
         "time": "2026-06-09T16:16:02.609Z",
         "distance": "36.9"
-      },
-      {
-        "magnitude": 1.32,
-        "location": "17 km ESE of Hinton, Oklahoma",
-        "time": "2026-06-09T15:02:37.450Z",
-        "distance": "38.4"
       }
     ],
     "dataAvailable": true
