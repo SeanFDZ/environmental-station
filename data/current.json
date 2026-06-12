@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-06-12T13:12:17.515Z",
-  "lastUpdated": "2026-06-12T13:12:17.515Z",
+  "timestamp": "2026-06-12T13:14:17.520Z",
+  "lastUpdated": "2026-06-12T13:14:17.520Z",
   "weather": {
     "temperature": 73,
     "feelsLike": 73,
     "humidity": 54,
     "pressure": "24.09",
-    "windSpeed": 6,
-    "windGust": 8,
-    "windLull": 4,
-    "windDirection": 112,
+    "windSpeed": 3,
+    "windGust": 6,
+    "windLull": 1,
+    "windDirection": 147,
     "heatIndex": 73,
     "windChill": 73,
     "dewPoint": 55,
@@ -18,8 +18,8 @@
     "stationPressure": "24.09",
     "pressureTrend": "steady",
     "uvIndex": 1,
-    "solarRadiation": 60,
-    "brightness": 7168,
+    "solarRadiation": 62,
+    "brightness": 7350,
     "airDensity": "0.961",
     "deltaT": "6.5",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 181,
-    "commercial": 56,
-    "generalAviation": 121,
+    "total": 187,
+    "commercial": 57,
+    "generalAviation": 126,
     "lifeFlights": 0,
     "military": 4,
     "balloons": 0,
     "highestAltitude": 49000,
     "aircraftNearby": 1,
-    "totalObservations": 4731,
+    "totalObservations": 4791,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 62,
+    "totalObservations": 58,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,23 +57,29 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 32745,
+    "avgSamples": 32717,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 2,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.5,
+    "largestMagnitude": 1.67,
     "recentEvents": [
       {
         "magnitude": 1.5,
         "location": "15 km ENE of Lookeba, Oklahoma",
         "time": "2026-06-11T21:43:46.460Z",
+        "distance": "37.8"
+      },
+      {
+        "magnitude": 1.67,
+        "location": "10 km W of Loyal, Oklahoma",
+        "time": "2026-06-11T16:10:03.399Z",
         "distance": "37.8"
       }
     ],
