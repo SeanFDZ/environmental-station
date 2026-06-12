@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-06-12T10:22:17.419Z",
-  "lastUpdated": "2026-06-12T10:22:17.419Z",
+  "timestamp": "2026-06-12T10:24:17.401Z",
+  "lastUpdated": "2026-06-12T10:24:17.401Z",
   "weather": {
     "temperature": 72,
     "feelsLike": 72,
     "humidity": 44,
     "pressure": "24.09",
-    "windSpeed": 11,
-    "windGust": 17,
+    "windSpeed": 10,
+    "windGust": 15,
     "windLull": 6,
-    "windDirection": 80,
+    "windDirection": 88,
     "heatIndex": 72,
     "windChill": 72,
     "dewPoint": 49,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 61,
-    "commercial": 15,
-    "generalAviation": 46,
+    "total": 59,
+    "commercial": 14,
+    "generalAviation": 45,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
-    "highestAltitude": 41000,
+    "highestAltitude": 38000,
     "aircraftNearby": 0,
     "totalObservations": 1470,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 72,
+    "totalObservations": 68,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,30 +57,24 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 33170,
+    "avgSamples": 33171,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 2,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.61,
+    "largestMagnitude": 1.5,
     "recentEvents": [
       {
         "magnitude": 1.5,
         "location": "15 km ENE of Lookeba, Oklahoma",
         "time": "2026-06-11T21:43:46.460Z",
         "distance": "37.8"
-      },
-      {
-        "magnitude": 1.61,
-        "location": "5 km WSW of Okarche, Oklahoma",
-        "time": "2026-06-11T10:22:19.699Z",
-        "distance": "42.7"
       }
     ],
     "dataAvailable": true
