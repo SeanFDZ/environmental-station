@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-07-06T10:00:17.513Z",
-  "lastUpdated": "2026-07-06T10:00:17.513Z",
+  "timestamp": "2026-07-06T10:02:17.550Z",
+  "lastUpdated": "2026-07-06T10:02:17.550Z",
   "weather": {
     "temperature": 67,
     "feelsLike": 67,
-    "humidity": 95,
+    "humidity": 94,
     "pressure": "24.08",
-    "windSpeed": 1,
-    "windGust": 2,
+    "windSpeed": 0,
+    "windGust": 0,
     "windLull": 0,
-    "windDirection": 211,
+    "windDirection": 0,
     "heatIndex": 67,
     "windChill": 67,
     "dewPoint": 65,
@@ -36,9 +36,9 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 28,
+    "total": 27,
     "commercial": 2,
-    "generalAviation": 26,
+    "generalAviation": 25,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
