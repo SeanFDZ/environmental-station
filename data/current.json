@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-07-15T06:42:17.296Z",
-  "lastUpdated": "2026-07-15T06:42:17.296Z",
+  "timestamp": "2026-07-15T06:44:17.293Z",
+  "lastUpdated": "2026-07-15T06:44:17.293Z",
   "weather": {
     "temperature": 74,
     "feelsLike": 74,
     "humidity": 82,
     "pressure": "24.09",
-    "windSpeed": 0,
+    "windSpeed": 1,
     "windGust": 2,
     "windLull": 0,
-    "windDirection": 195,
+    "windDirection": 241,
     "heatIndex": 74,
     "windChill": 74,
     "dewPoint": 68,
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 29,
+    "total": 30,
     "commercial": 5,
-    "generalAviation": 24,
+    "generalAviation": 25,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 43025,
     "aircraftNearby": 0,
-    "totalObservations": 545,
+    "totalObservations": 555,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,12 +64,19 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 1.56,
+    "recentEvents": [
+      {
+        "magnitude": 1.56,
+        "location": "8 km NNW of Chester, Oklahoma",
+        "time": "2026-07-15T06:41:53.615Z",
+        "distance": "43.7"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
