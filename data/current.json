@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-07-15T12:16:17.504Z",
-  "lastUpdated": "2026-07-15T12:16:17.504Z",
+  "timestamp": "2026-07-15T12:18:17.478Z",
+  "lastUpdated": "2026-07-15T12:18:17.478Z",
   "weather": {
     "temperature": 69,
     "feelsLike": 69,
     "humidity": 91,
     "pressure": "24.08",
     "windSpeed": 0,
-    "windGust": 0,
+    "windGust": 1,
     "windLull": 0,
-    "windDirection": 0,
+    "windDirection": 249,
     "heatIndex": 69,
     "windChill": 69,
     "dewPoint": 67,
@@ -18,8 +18,8 @@
     "stationPressure": "24.08",
     "pressureTrend": "steady",
     "uvIndex": 1,
-    "solarRadiation": 54,
-    "brightness": 6488,
+    "solarRadiation": 59,
+    "brightness": 7062,
     "airDensity": "0.967",
     "deltaT": "1.1",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 125,
-    "commercial": 21,
+    "total": 124,
+    "commercial": 20,
     "generalAviation": 104,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 43000,
     "aircraftNearby": 0,
-    "totalObservations": 2864,
+    "totalObservations": 2868,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 72,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,7 +57,7 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 32013,
+    "avgSamples": 32016,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
@@ -68,13 +68,13 @@
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.56,
+    "largestMagnitude": 1.4,
     "recentEvents": [
       {
-        "magnitude": 1.56,
-        "location": "8 km NNW of Chester, Oklahoma",
-        "time": "2026-07-15T06:41:53.615Z",
-        "distance": "43.7"
+        "magnitude": 1.4,
+        "location": "9 km NNW of Chester, Oklahoma",
+        "time": "2026-07-15T06:41:53.700Z",
+        "distance": "44.2"
       }
     ],
     "dataAvailable": true
