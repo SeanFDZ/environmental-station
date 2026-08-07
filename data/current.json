@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-07T15:44:17.632Z",
-  "lastUpdated": "2026-08-07T15:44:17.632Z",
+  "timestamp": "2026-08-07T15:46:17.638Z",
+  "lastUpdated": "2026-08-07T15:46:17.638Z",
   "weather": {
     "temperature": 93,
     "feelsLike": 93,
@@ -9,7 +9,7 @@
     "windSpeed": 10,
     "windGust": 13,
     "windLull": 7,
-    "windDirection": 242,
+    "windDirection": 252,
     "heatIndex": 93,
     "windChill": 93,
     "dewPoint": 64,
@@ -18,8 +18,8 @@
     "stationPressure": "24.14",
     "pressureTrend": "steady",
     "uvIndex": 5,
-    "solarRadiation": 509,
-    "brightness": 61038,
+    "solarRadiation": 496,
+    "brightness": 59461,
     "airDensity": "0.928",
     "deltaT": "11.5",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 267,
-    "commercial": 52,
+    "total": 264,
+    "commercial": 48,
     "generalAviation": 211,
     "lifeFlights": 0,
-    "military": 4,
+    "military": 5,
     "balloons": 0,
     "highestAltitude": 45025,
     "aircraftNearby": 0,
-    "totalObservations": 6552,
+    "totalObservations": 6563,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 70,
+    "totalObservations": 66,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
