@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-08-10T10:52:17.522Z",
-  "lastUpdated": "2026-08-10T10:52:17.522Z",
+  "timestamp": "2026-08-10T10:56:17.356Z",
+  "lastUpdated": "2026-08-10T10:56:17.356Z",
   "weather": {
     "temperature": 80,
     "feelsLike": 82,
     "humidity": 57,
     "pressure": "24.11",
-    "windSpeed": 11,
+    "windSpeed": 12,
     "windGust": 15,
     "windLull": 8,
-    "windDirection": 226,
+    "windDirection": 228,
     "heatIndex": 82,
     "windChill": 80,
     "dewPoint": 64,
-    "wetBulbTemperature": 69,
+    "wetBulbTemperature": 68,
     "wetBulbGlobeTemperature": 72,
     "stationPressure": "24.11",
     "pressureTrend": "steady",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 34,
+    "total": 33,
     "commercial": 8,
-    "generalAviation": 26,
+    "generalAviation": 25,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 40000,
     "aircraftNearby": 1,
-    "totalObservations": 864,
+    "totalObservations": 788,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 72,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,26 +57,19 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 33214,
+    "avgSamples": 33212,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 0,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.91,
-    "recentEvents": [
-      {
-        "magnitude": 1.91,
-        "location": "18 km ENE of Binger, Oklahoma",
-        "time": "2026-08-09T10:52:37.311Z",
-        "distance": "40.4"
-      }
-    ],
+    "largestMagnitude": 0,
+    "recentEvents": [],
     "dataAvailable": true
   },
   "alerts": {
