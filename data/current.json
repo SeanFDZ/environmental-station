@@ -1,25 +1,25 @@
 {
-  "timestamp": "2026-08-16T20:26:17.641Z",
-  "lastUpdated": "2026-08-16T20:26:17.641Z",
+  "timestamp": "2026-08-16T20:28:17.585Z",
+  "lastUpdated": "2026-08-16T20:28:17.585Z",
   "weather": {
     "temperature": 98,
     "feelsLike": 98,
     "humidity": 36,
     "pressure": "24.16",
     "windSpeed": 3,
-    "windGust": 4,
+    "windGust": 6,
     "windLull": 2,
-    "windDirection": 35,
+    "windDirection": 341,
     "heatIndex": 98,
     "windChill": 98,
     "dewPoint": 67,
     "wetBulbTemperature": 75,
-    "wetBulbGlobeTemperature": 87,
+    "wetBulbGlobeTemperature": 86,
     "stationPressure": "24.16",
     "pressureTrend": "steady",
     "uvIndex": 8,
-    "solarRadiation": 827,
-    "brightness": 99270,
+    "solarRadiation": 781,
+    "brightness": 93720,
     "airDensity": "0.919",
     "deltaT": "12.9",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 252,
-    "commercial": 40,
-    "generalAviation": 210,
+    "total": 255,
+    "commercial": 38,
+    "generalAviation": 215,
     "lifeFlights": 0,
     "military": 2,
     "balloons": 0,
     "highestAltitude": 45050,
     "aircraftNearby": 1,
-    "totalObservations": 6304,
+    "totalObservations": 6373,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 70,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,19 +57,26 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 33167,
+    "avgSamples": 33070,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 1.95,
+    "recentEvents": [
+      {
+        "magnitude": 1.95,
+        "location": "8 km ENE of Leedey, Oklahoma",
+        "time": "2026-08-16T20:25:08.541Z",
+        "distance": "31.3"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
