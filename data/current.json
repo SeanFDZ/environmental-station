@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-08-23T09:54:17.432Z",
-  "lastUpdated": "2026-08-23T09:54:17.432Z",
+  "timestamp": "2026-08-23T09:56:17.471Z",
+  "lastUpdated": "2026-08-23T09:56:17.471Z",
   "weather": {
     "temperature": 74,
     "feelsLike": 74,
     "humidity": 80,
     "pressure": "24.09",
     "windSpeed": 2,
-    "windGust": 3,
+    "windGust": 4,
     "windLull": 1,
-    "windDirection": 337,
+    "windDirection": 251,
     "heatIndex": 74,
     "windChill": 74,
     "dewPoint": 68,
@@ -48,7 +48,7 @@
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 70,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,7 +57,7 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 32774,
+    "avgSamples": 32702,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
