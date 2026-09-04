@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-09-04T11:50:17.432Z",
-  "lastUpdated": "2026-09-04T11:50:17.432Z",
+  "timestamp": "2026-09-04T11:52:17.426Z",
+  "lastUpdated": "2026-09-04T11:52:17.426Z",
   "weather": {
     "temperature": 75,
     "feelsLike": 75,
     "humidity": 76,
     "pressure": "24.10",
-    "windSpeed": 5,
+    "windSpeed": 6,
     "windGust": 8,
-    "windLull": 0,
-    "windDirection": 219,
+    "windLull": 4,
+    "windDirection": 205,
     "heatIndex": 75,
     "windChill": 75,
     "dewPoint": 67,
@@ -19,7 +19,7 @@
     "pressureTrend": "steady",
     "uvIndex": 0,
     "solarRadiation": 0,
-    "brightness": 12,
+    "brightness": 20,
     "airDensity": "0.957",
     "deltaT": "3.2",
     "precipitation": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 69,
+    "total": 72,
     "commercial": 16,
-    "generalAviation": 52,
+    "generalAviation": 55,
     "lifeFlights": 1,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 47000,
     "aircraftNearby": 2,
-    "totalObservations": 1647,
+    "totalObservations": 1644,
     "dataAvailable": true
   },
   "seismic": {
