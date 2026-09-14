@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-09-14T06:42:17.324Z",
-  "lastUpdated": "2026-09-14T06:42:17.324Z",
+  "timestamp": "2026-09-14T06:44:17.352Z",
+  "lastUpdated": "2026-09-14T06:44:17.352Z",
   "weather": {
     "temperature": 84,
     "feelsLike": 86,
     "humidity": 51,
     "pressure": "24.12",
-    "windSpeed": 16,
-    "windGust": 20,
-    "windLull": 12,
-    "windDirection": 219,
+    "windSpeed": 15,
+    "windGust": 21,
+    "windLull": 10,
+    "windDirection": 220,
     "heatIndex": 86,
     "windChill": 84,
     "dewPoint": 64,
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 27,
+    "total": 26,
     "commercial": 6,
-    "generalAviation": 21,
+    "generalAviation": 20,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 41025,
     "aircraftNearby": 0,
-    "totalObservations": 547,
+    "totalObservations": 545,
     "dataAvailable": true
   },
   "seismic": {
@@ -57,19 +57,26 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 33423,
+    "avgSamples": 33426,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 2.6,
+    "recentEvents": [
+      {
+        "magnitude": 2.6,
+        "location": "6 km ENE of Calumet, Oklahoma",
+        "time": "2026-09-14T06:26:30.529Z",
+        "distance": "42.0"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
