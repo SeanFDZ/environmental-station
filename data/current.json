@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-09-16T12:10:17.490Z",
-  "lastUpdated": "2026-09-16T12:10:17.490Z",
+  "timestamp": "2026-09-16T12:12:17.468Z",
+  "lastUpdated": "2026-09-16T12:12:17.468Z",
   "weather": {
     "temperature": 76,
     "feelsLike": 76,
-    "humidity": 59,
+    "humidity": 60,
     "pressure": "24.10",
-    "windSpeed": 2,
-    "windGust": 2,
-    "windLull": 2,
-    "windDirection": 1,
+    "windSpeed": 3,
+    "windGust": 4,
+    "windLull": 3,
+    "windDirection": 37,
     "heatIndex": 76,
     "windChill": 76,
     "dewPoint": 61,
@@ -19,9 +19,9 @@
     "pressureTrend": "steady",
     "uvIndex": 0,
     "solarRadiation": 1,
-    "brightness": 120,
+    "brightness": 171,
     "airDensity": "0.955",
-    "deltaT": "5.9",
+    "deltaT": "5.8",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 105,
-    "commercial": 18,
+    "total": 106,
+    "commercial": 19,
     "generalAviation": 87,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45000,
     "aircraftNearby": 0,
-    "totalObservations": 2037,
+    "totalObservations": 2063,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 12,
+    "totalObservations": 16,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -56,8 +56,8 @@
     "recentObservations": 0,
     "stationCode": "R923A",
     "networkCode": "AM",
-    "maxSamples": 97664,
-    "avgSamples": 51200,
+    "maxSamples": 97920,
+    "avgSamples": 62872,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
@@ -68,13 +68,13 @@
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.71,
+    "largestMagnitude": 1.28,
     "recentEvents": [
       {
-        "magnitude": 1.71,
-        "location": "6 km WSW of Okarche, Oklahoma",
-        "time": "2026-09-16T01:13:13.878Z",
-        "distance": "42.2"
+        "magnitude": 1.28,
+        "location": "6 km E of Calumet, Oklahoma",
+        "time": "2026-09-16T01:13:14.250Z",
+        "distance": "42.1"
       }
     ],
     "dataAvailable": true
