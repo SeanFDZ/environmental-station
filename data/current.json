@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-09-18T12:30:17.694Z",
-  "lastUpdated": "2026-09-18T12:30:17.694Z",
+  "timestamp": "2026-09-18T12:32:17.936Z",
+  "lastUpdated": "2026-09-18T12:32:17.936Z",
   "weather": {
     "temperature": 79,
     "feelsLike": 79,
     "humidity": 60,
     "pressure": "24.11",
     "windSpeed": 6,
-    "windGust": 8,
-    "windLull": 4,
-    "windDirection": 242,
+    "windGust": 7,
+    "windLull": 5,
+    "windDirection": 247,
     "heatIndex": 79,
     "windChill": 79,
     "dewPoint": 64,
@@ -18,8 +18,8 @@
     "stationPressure": "24.11",
     "pressureTrend": "steady",
     "uvIndex": 0,
-    "solarRadiation": 11,
-    "brightness": 1325,
+    "solarRadiation": 13,
+    "brightness": 1547,
     "airDensity": "0.950",
     "deltaT": "6.0",
     "precipitation": "0.00",
@@ -37,18 +37,18 @@
   },
   "aircraft": {
     "total": 124,
-    "commercial": 26,
-    "generalAviation": 98,
+    "commercial": 27,
+    "generalAviation": 97,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 43000,
     "aircraftNearby": 0,
-    "totalObservations": 2959,
+    "totalObservations": 3097,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 72,
+    "totalObservations": 68,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,19 +57,26 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 33083,
+    "avgSamples": 33079,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 1.33,
+    "recentEvents": [
+      {
+        "magnitude": 1.33,
+        "location": "7 km ENE of Calumet, Oklahoma",
+        "time": "2026-09-18T12:24:27.000Z",
+        "distance": "42.6"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
