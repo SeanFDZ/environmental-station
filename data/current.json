@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-10-28T12:06:13.403Z",
-  "lastUpdated": "2026-10-28T12:06:13.403Z",
+  "timestamp": "2026-10-28T12:08:13.606Z",
+  "lastUpdated": "2026-10-28T12:08:13.606Z",
   "weather": {
     "temperature": 63,
     "feelsLike": 63,
     "humidity": 74,
     "pressure": "24.07",
-    "windSpeed": 9,
-    "windGust": 11,
-    "windLull": 7,
-    "windDirection": 237,
+    "windSpeed": 10,
+    "windGust": 14,
+    "windLull": 6,
+    "windDirection": 240,
     "heatIndex": 63,
     "windChill": 63,
     "dewPoint": 55,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 83,
-    "commercial": 17,
-    "generalAviation": 66,
+    "total": 82,
+    "commercial": 18,
+    "generalAviation": 64,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 43000,
     "aircraftNearby": 0,
-    "totalObservations": 1882,
+    "totalObservations": 1898,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 64,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,19 +57,26 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 32960,
+    "avgSamples": 32964,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 1.26,
+    "recentEvents": [
+      {
+        "magnitude": 1.26,
+        "location": "3 km NNE of Gracemont, Oklahoma",
+        "time": "2026-10-28T04:42:46.750Z",
+        "distance": "43.6"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
