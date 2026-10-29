@@ -1,27 +1,27 @@
 {
-  "timestamp": "2026-10-29T04:42:13.971Z",
-  "lastUpdated": "2026-10-29T04:42:13.971Z",
+  "timestamp": "2026-10-29T04:44:13.974Z",
+  "lastUpdated": "2026-10-29T04:44:13.974Z",
   "weather": {
     "temperature": 68,
     "feelsLike": 68,
-    "humidity": 76,
+    "humidity": 77,
     "pressure": "24.08",
-    "windSpeed": 8,
-    "windGust": 10,
-    "windLull": 5,
-    "windDirection": 224,
+    "windSpeed": 9,
+    "windGust": 11,
+    "windLull": 6,
+    "windDirection": 226,
     "heatIndex": 68,
     "windChill": 68,
     "dewPoint": 60,
-    "wetBulbTemperature": 62,
+    "wetBulbTemperature": 63,
     "wetBulbGlobeTemperature": 64,
     "stationPressure": "24.08",
     "pressureTrend": "steady",
     "uvIndex": 0,
     "solarRadiation": 0,
     "brightness": 1,
-    "airDensity": "0.969",
-    "deltaT": "3.0",
+    "airDensity": "0.970",
+    "deltaT": "2.8",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 84,
-    "commercial": 25,
-    "generalAviation": 59,
+    "total": 82,
+    "commercial": 24,
+    "generalAviation": 58,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45050,
     "aircraftNearby": 0,
-    "totalObservations": 2419,
+    "totalObservations": 2300,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 66,
+    "totalObservations": 70,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -64,19 +64,12 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 0,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.26,
-    "recentEvents": [
-      {
-        "magnitude": 1.26,
-        "location": "3 km NNE of Gracemont, Oklahoma",
-        "time": "2026-10-28T04:42:46.750Z",
-        "distance": "43.6"
-      }
-    ],
+    "largestMagnitude": 0,
+    "recentEvents": [],
     "dataAvailable": true
   },
   "alerts": {
