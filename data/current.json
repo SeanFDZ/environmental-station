@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-10-30T13:30:14.202Z",
-  "lastUpdated": "2026-10-30T13:30:14.202Z",
+  "timestamp": "2026-10-30T13:32:13.945Z",
+  "lastUpdated": "2026-10-30T13:32:13.945Z",
   "weather": {
     "temperature": 64,
     "feelsLike": 64,
     "humidity": 95,
     "pressure": "24.07",
-    "windSpeed": 5,
-    "windGust": 6,
-    "windLull": 4,
+    "windSpeed": 6,
+    "windGust": 7,
+    "windLull": 5,
     "windDirection": 220,
     "heatIndex": 64,
     "windChill": 64,
@@ -18,13 +18,13 @@
     "stationPressure": "24.07",
     "pressureTrend": "steady",
     "uvIndex": 0,
-    "solarRadiation": 10,
-    "brightness": 1189,
+    "solarRadiation": 12,
+    "brightness": 1398,
     "airDensity": "0.977",
     "deltaT": "0.6",
     "precipitation": "0.49",
     "precipitationRate": "0.00",
-    "precipitationLastHour": "0.18",
+    "precipitationLastHour": "0.05",
     "precipitationFinal": "0.49",
     "lightningStrikes": 0,
     "lightningStrikesLastHour": 0,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 158,
+    "total": 159,
     "commercial": 31,
-    "generalAviation": 125,
+    "generalAviation": 126,
     "lifeFlights": 0,
     "military": 2,
     "balloons": 0,
     "highestAltitude": 47025,
     "aircraftNearby": 0,
-    "totalObservations": 3942,
+    "totalObservations": 3968,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 67,
+    "totalObservations": 71,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,19 +57,26 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 32829,
+    "avgSamples": 32799,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 1.19,
+    "recentEvents": [
+      {
+        "magnitude": 1.19,
+        "location": "4 km WNW of Gracemont, Oklahoma",
+        "time": "2026-10-29T22:48:07.230Z",
+        "distance": "41.9"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
