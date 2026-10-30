@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-10-30T22:48:14.206Z",
-  "lastUpdated": "2026-10-30T22:48:14.206Z",
+  "timestamp": "2026-10-30T22:50:13.839Z",
+  "lastUpdated": "2026-10-30T22:50:13.839Z",
   "weather": {
     "temperature": 62,
     "feelsLike": 62,
     "humidity": 89,
     "pressure": "24.07",
-    "windSpeed": 1,
-    "windGust": 1,
-    "windLull": 0,
-    "windDirection": 321,
+    "windSpeed": 2,
+    "windGust": 2,
+    "windLull": 1,
+    "windDirection": 301,
     "heatIndex": 62,
     "windChill": 62,
     "dewPoint": 59,
@@ -18,8 +18,8 @@
     "stationPressure": "24.07",
     "pressureTrend": "steady",
     "uvIndex": 0,
-    "solarRadiation": 13,
-    "brightness": 1554,
+    "solarRadiation": 10,
+    "brightness": 1266,
     "airDensity": "0.980",
     "deltaT": "1.2",
     "precipitation": "0.72",
@@ -37,18 +37,18 @@
   },
   "aircraft": {
     "total": 207,
-    "commercial": 42,
-    "generalAviation": 165,
+    "commercial": 44,
+    "generalAviation": 163,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 47000,
     "aircraftNearby": 0,
-    "totalObservations": 5091,
+    "totalObservations": 5094,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 70,
+    "totalObservations": 66,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,26 +57,19 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 33488,
+    "avgSamples": 33550,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 0,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.19,
-    "recentEvents": [
-      {
-        "magnitude": 1.19,
-        "location": "4 km WNW of Gracemont, Oklahoma",
-        "time": "2026-10-29T22:48:07.230Z",
-        "distance": "41.9"
-      }
-    ],
+    "largestMagnitude": 0,
+    "recentEvents": [],
     "dataAvailable": true
   },
   "alerts": {
