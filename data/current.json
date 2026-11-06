@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-06T15:02:13.964Z",
-  "lastUpdated": "2026-11-06T15:02:13.964Z",
+  "timestamp": "2026-11-06T15:04:13.894Z",
+  "lastUpdated": "2026-11-06T15:04:13.894Z",
   "weather": {
     "temperature": 47,
     "feelsLike": 46,
@@ -9,7 +9,7 @@
     "windSpeed": 4,
     "windGust": 6,
     "windLull": 3,
-    "windDirection": 52,
+    "windDirection": 71,
     "heatIndex": 47,
     "windChill": 46,
     "dewPoint": 43,
@@ -17,9 +17,9 @@
     "wetBulbGlobeTemperature": 47,
     "stationPressure": "24.03",
     "pressureTrend": "steady",
-    "uvIndex": 1,
-    "solarRadiation": 199,
-    "brightness": 23856,
+    "uvIndex": 2,
+    "solarRadiation": 249,
+    "brightness": 29807,
     "airDensity": "1.006",
     "deltaT": "1.3",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 195,
-    "commercial": 40,
-    "generalAviation": 144,
+    "total": 202,
+    "commercial": 42,
+    "generalAviation": 149,
     "lifeFlights": 1,
     "military": 11,
     "balloons": 0,
     "highestAltitude": 47000,
     "aircraftNearby": 0,
-    "totalObservations": 4645,
+    "totalObservations": 4733,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 67,
+    "totalObservations": 63,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,19 +57,26 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 33121,
+    "avgSamples": 33057,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 0,
+    "totalToday": 1,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 0,
-    "recentEvents": [],
+    "largestMagnitude": 1.14,
+    "recentEvents": [
+      {
+        "magnitude": 1.14,
+        "location": "16 km ESE of Quinlan, Oklahoma",
+        "time": "2026-11-05T20:38:11.570Z",
+        "distance": "49.4"
+      }
+    ],
     "dataAvailable": true
   },
   "alerts": {
