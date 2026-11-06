@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-11-06T20:38:13.849Z",
-  "lastUpdated": "2026-11-06T20:38:13.849Z",
+  "timestamp": "2026-11-06T20:40:13.631Z",
+  "lastUpdated": "2026-11-06T20:40:13.631Z",
   "weather": {
     "temperature": 51,
     "feelsLike": 51,
-    "humidity": 77,
+    "humidity": 78,
     "pressure": "24.04",
     "windSpeed": 7,
-    "windGust": 10,
-    "windLull": 4,
-    "windDirection": 79,
+    "windGust": 9,
+    "windLull": 5,
+    "windDirection": 86,
     "heatIndex": 51,
     "windChill": 51,
     "dewPoint": 44,
@@ -18,10 +18,10 @@
     "stationPressure": "24.04",
     "pressureTrend": "steady",
     "uvIndex": 3,
-    "solarRadiation": 464,
-    "brightness": 55693,
+    "solarRadiation": 459,
+    "brightness": 55070,
     "airDensity": "1.000",
-    "deltaT": "2.2",
+    "deltaT": "2.1",
     "precipitation": "0.00",
     "precipitationRate": "0.00",
     "precipitationLastHour": "0.00",
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 230,
+    "total": 229,
     "commercial": 38,
-    "generalAviation": 190,
+    "generalAviation": 189,
     "lifeFlights": 0,
     "military": 2,
     "balloons": 0,
     "highestAltitude": 47025,
     "aircraftNearby": 0,
-    "totalObservations": 5439,
+    "totalObservations": 5400,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,19 +64,12 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 0,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.14,
-    "recentEvents": [
-      {
-        "magnitude": 1.14,
-        "location": "16 km ESE of Quinlan, Oklahoma",
-        "time": "2026-11-05T20:38:11.570Z",
-        "distance": "49.4"
-      }
-    ],
+    "largestMagnitude": 0,
+    "recentEvents": [],
     "dataAvailable": true
   },
   "alerts": {
