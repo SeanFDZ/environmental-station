@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-11-07T14:10:13.593Z",
-  "lastUpdated": "2026-11-07T14:10:13.593Z",
+  "timestamp": "2026-11-07T14:12:13.760Z",
+  "lastUpdated": "2026-11-07T14:12:13.760Z",
   "weather": {
     "temperature": 35,
     "feelsLike": 35,
     "humidity": 96,
     "pressure": "24.00",
-    "windSpeed": 0,
-    "windGust": 0,
-    "windLull": 0,
-    "windDirection": 322,
+    "windSpeed": 2,
+    "windGust": 2,
+    "windLull": 1,
+    "windDirection": 298,
     "heatIndex": 35,
     "windChill": 35,
     "dewPoint": 34,
@@ -18,8 +18,8 @@
     "stationPressure": "24.00",
     "pressureTrend": "steady",
     "uvIndex": 1,
-    "solarRadiation": 87,
-    "brightness": 10474,
+    "solarRadiation": 99,
+    "brightness": 11840,
     "airDensity": "1.030",
     "deltaT": "0.3",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 129,
-    "commercial": 31,
+    "total": 128,
+    "commercial": 30,
     "generalAviation": 97,
     "lifeFlights": 0,
     "military": 1,
     "balloons": 0,
     "highestAltitude": 45025,
     "aircraftNearby": 0,
-    "totalObservations": 3040,
+    "totalObservations": 3031,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 72,
+    "totalObservations": 68,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,7 +57,7 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 32331,
+    "avgSamples": 32314,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
@@ -68,13 +68,13 @@
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 1,
-    "largestMagnitude": 3.5,
+    "largestMagnitude": 3.38,
     "recentEvents": [
       {
-        "magnitude": 3.5,
-        "location": "7 km ENE of Calumet, Oklahoma",
-        "time": "2026-11-07T11:53:43.849Z",
-        "distance": "42.3"
+        "magnitude": 3.38,
+        "location": "6 km E of Calumet, Oklahoma",
+        "time": "2026-11-07T11:53:43.259Z",
+        "distance": "42.2"
       }
     ],
     "dataAvailable": true
