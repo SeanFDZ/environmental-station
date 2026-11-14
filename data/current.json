@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-11-14T00:36:13.835Z",
-  "lastUpdated": "2026-11-14T00:36:13.835Z",
+  "timestamp": "2026-11-14T00:38:13.610Z",
+  "lastUpdated": "2026-11-14T00:38:13.610Z",
   "weather": {
     "temperature": 45,
     "feelsLike": 45,
     "humidity": 73,
     "pressure": "24.03",
-    "windSpeed": 1,
-    "windGust": 3,
+    "windSpeed": 0,
+    "windGust": 2,
     "windLull": 0,
-    "windDirection": 151,
+    "windDirection": 153,
     "heatIndex": 45,
     "windChill": 45,
     "dewPoint": 37,
@@ -44,7 +44,7 @@
     "balloons": 0,
     "highestAltitude": 40000,
     "aircraftNearby": 0,
-    "totalObservations": 188,
+    "totalObservations": 180,
     "dataAvailable": true
   },
   "seismic": {
@@ -64,19 +64,12 @@
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 0,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
-    "largestMagnitude": 1.82,
-    "recentEvents": [
-      {
-        "magnitude": 1.82,
-        "location": "3 km WNW of Gracemont, Oklahoma",
-        "time": "2026-11-13T00:37:57.857Z",
-        "distance": "42.6"
-      }
-    ],
+    "largestMagnitude": 0,
+    "recentEvents": [],
     "dataAvailable": true
   },
   "alerts": {
