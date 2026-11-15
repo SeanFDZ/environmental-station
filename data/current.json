@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-11-15T12:14:13.588Z",
-  "lastUpdated": "2026-11-15T12:14:13.588Z",
+  "timestamp": "2026-11-15T12:16:13.585Z",
+  "lastUpdated": "2026-11-15T12:16:13.585Z",
   "weather": {
     "temperature": 40,
-    "feelsLike": 38,
+    "feelsLike": 37,
     "humidity": 93,
     "pressure": "24.01",
     "windSpeed": 4,
-    "windGust": 6,
-    "windLull": 1,
-    "windDirection": 149,
+    "windGust": 8,
+    "windLull": 2,
+    "windDirection": 159,
     "heatIndex": 40,
-    "windChill": 38,
+    "windChill": 37,
     "dewPoint": 38,
     "wetBulbTemperature": 39,
     "wetBulbGlobeTemperature": 40,
@@ -24,7 +24,7 @@
     "deltaT": "0.5",
     "precipitation": "0.46",
     "precipitationRate": "0.00",
-    "precipitationLastHour": "0.12",
+    "precipitationLastHour": "0.13",
     "precipitationFinal": "0.46",
     "lightningStrikes": 0,
     "lightningStrikesLastHour": 0,
@@ -36,15 +36,15 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 27,
+    "total": 25,
     "commercial": 7,
-    "generalAviation": 20,
+    "generalAviation": 18,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45000,
     "aircraftNearby": 0,
-    "totalObservations": 600,
+    "totalObservations": 583,
     "dataAvailable": true
   },
   "seismic": {
@@ -57,19 +57,25 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 32353,
+    "avgSamples": 32349,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 4,
+    "totalToday": 5,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 2,
     "largestMagnitude": 3.44,
     "recentEvents": [
+      {
+        "magnitude": 1.67,
+        "location": "7 km E of Calumet, Oklahoma",
+        "time": "2026-11-15T12:13:22.364Z",
+        "distance": "42.5"
+      },
       {
         "magnitude": 1.73,
         "location": "7 km E of Calumet, Oklahoma",
