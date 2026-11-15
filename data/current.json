@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-11-15T11:20:13.420Z",
-  "lastUpdated": "2026-11-15T11:20:13.420Z",
+  "timestamp": "2026-11-15T11:22:13.422Z",
+  "lastUpdated": "2026-11-15T11:22:13.422Z",
   "weather": {
     "temperature": 40,
-    "feelsLike": 38,
+    "feelsLike": 40,
     "humidity": 92,
     "pressure": "24.02",
-    "windSpeed": 4,
+    "windSpeed": 2,
     "windGust": 4,
-    "windLull": 2,
-    "windDirection": 142,
+    "windLull": 1,
+    "windDirection": 172,
     "heatIndex": 40,
-    "windChill": 38,
+    "windChill": 40,
     "dewPoint": 38,
     "wetBulbTemperature": 39,
     "wetBulbGlobeTemperature": 40,
@@ -24,7 +24,7 @@
     "deltaT": "0.6",
     "precipitation": "0.35",
     "precipitationRate": "0.00",
-    "precipitationLastHour": "0.09",
+    "precipitationLastHour": "0.08",
     "precipitationFinal": "0.35",
     "lightningStrikes": 0,
     "lightningStrikesLastHour": 0,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 18,
-    "commercial": 4,
+    "total": 19,
+    "commercial": 5,
     "generalAviation": 14,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45000,
     "aircraftNearby": 0,
-    "totalObservations": 573,
+    "totalObservations": 584,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 68,
+    "totalObservations": 72,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,7 +57,7 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 32518,
+    "avgSamples": 32514,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
@@ -71,10 +71,10 @@
     "largestMagnitude": 3.44,
     "recentEvents": [
       {
-        "magnitude": 2.62,
-        "location": "8 km ENE of Calumet, Oklahoma",
-        "time": "2026-11-15T10:57:04.275Z",
-        "distance": "42.7"
+        "magnitude": 2.34,
+        "location": "7 km E of Calumet, Oklahoma",
+        "time": "2026-11-15T10:57:03.859Z",
+        "distance": "42.3"
       },
       {
         "magnitude": 3.44,
