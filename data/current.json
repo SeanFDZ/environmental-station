@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-11-16T22:22:13.693Z",
-  "lastUpdated": "2026-11-16T22:22:13.693Z",
+  "timestamp": "2026-11-16T22:24:14.005Z",
+  "lastUpdated": "2026-11-16T22:24:14.005Z",
   "weather": {
     "temperature": 46,
     "feelsLike": 44,
     "humidity": 87,
     "pressure": "24.03",
     "windSpeed": 5,
-    "windGust": 6,
+    "windGust": 7,
     "windLull": 4,
-    "windDirection": 241,
+    "windDirection": 230,
     "heatIndex": 46,
     "windChill": 44,
     "dewPoint": 42,
@@ -18,8 +18,8 @@
     "stationPressure": "24.03",
     "pressureTrend": "steady",
     "uvIndex": 0,
-    "solarRadiation": 28,
-    "brightness": 3369,
+    "solarRadiation": 27,
+    "brightness": 3257,
     "airDensity": "1.009",
     "deltaT": "1.1",
     "precipitation": "0.00",
@@ -37,18 +37,18 @@
   },
   "aircraft": {
     "total": 275,
-    "commercial": 49,
-    "generalAviation": 209,
+    "commercial": 46,
+    "generalAviation": 212,
     "lifeFlights": 0,
     "military": 17,
     "balloons": 0,
     "highestAltitude": 48500,
     "aircraftNearby": 0,
-    "totalObservations": 6952,
+    "totalObservations": 6824,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 63,
+    "totalObservations": 67,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,14 +57,14 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 33331,
+    "avgSamples": 33362,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 4,
+    "totalToday": 3,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
@@ -87,12 +87,6 @@
         "location": "7 km E of Calumet, Oklahoma",
         "time": "2026-11-15T22:58:08.330Z",
         "distance": "42.4"
-      },
-      {
-        "magnitude": 1.26,
-        "location": "7 km E of Calumet, Oklahoma",
-        "time": "2026-11-15T22:22:30.429Z",
-        "distance": "42.3"
       }
     ],
     "dataAvailable": true
