@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-11-16T14:54:13.919Z",
-  "lastUpdated": "2026-11-16T14:54:13.919Z",
+  "timestamp": "2026-11-16T14:56:13.853Z",
+  "lastUpdated": "2026-11-16T14:56:13.853Z",
   "weather": {
     "temperature": 42,
     "feelsLike": 37,
     "humidity": 93,
     "pressure": "24.02",
     "windSpeed": 8,
-    "windGust": 10,
-    "windLull": 6,
+    "windGust": 9,
+    "windLull": 7,
     "windDirection": 221,
     "heatIndex": 42,
     "windChill": 37,
@@ -18,8 +18,8 @@
     "stationPressure": "24.02",
     "pressureTrend": "steady",
     "uvIndex": 0,
-    "solarRadiation": 34,
-    "brightness": 4100,
+    "solarRadiation": 37,
+    "brightness": 4454,
     "airDensity": "1.018",
     "deltaT": "0.6",
     "precipitation": "0.00",
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 236,
-    "commercial": 49,
-    "generalAviation": 173,
+    "total": 246,
+    "commercial": 50,
+    "generalAviation": 181,
     "lifeFlights": 0,
-    "military": 14,
+    "military": 15,
     "balloons": 0,
     "highestAltitude": 45000,
     "aircraftNearby": 0,
-    "totalObservations": 5877,
+    "totalObservations": 6109,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 64,
+    "totalObservations": 60,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,19 +57,25 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36864,
-    "avgSamples": 32686,
+    "avgSamples": 32561,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 2,
     "within10mi": 0,
     "within25mi": 0,
     "significantEvents": 0,
     "largestMagnitude": 1.34,
     "recentEvents": [
+      {
+        "magnitude": 1.09,
+        "location": "6 km ENE of Calumet, Oklahoma",
+        "time": "2026-11-16T02:52:50.090Z",
+        "distance": "41.9"
+      },
       {
         "magnitude": 1.34,
         "location": "7 km E of Calumet, Oklahoma",
