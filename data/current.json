@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-11-16T11:28:13.710Z",
-  "lastUpdated": "2026-11-16T11:28:13.710Z",
+  "timestamp": "2026-11-16T11:30:13.875Z",
+  "lastUpdated": "2026-11-16T11:30:13.875Z",
   "weather": {
     "temperature": 41,
-    "feelsLike": 38,
-    "humidity": 94,
+    "feelsLike": 37,
+    "humidity": 93,
     "pressure": "24.02",
-    "windSpeed": 4,
+    "windSpeed": 6,
     "windGust": 6,
-    "windLull": 4,
-    "windDirection": 233,
+    "windLull": 5,
+    "windDirection": 230,
     "heatIndex": 41,
-    "windChill": 38,
+    "windChill": 37,
     "dewPoint": 39,
     "wetBulbTemperature": 40,
     "wetBulbGlobeTemperature": 40,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 29,
+    "total": 30,
     "commercial": 9,
-    "generalAviation": 20,
+    "generalAviation": 21,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 45000,
     "aircraftNearby": 0,
-    "totalObservations": 780,
+    "totalObservations": 797,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 66,
+    "totalObservations": 63,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,18 +57,18 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 31959,
+    "avgSamples": 31738,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 4,
+    "totalToday": 3,
     "within10mi": 0,
     "within25mi": 0,
-    "significantEvents": 1,
-    "largestMagnitude": 3.06,
+    "significantEvents": 0,
+    "largestMagnitude": 1.77,
     "recentEvents": [
       {
         "magnitude": 1.77,
@@ -87,12 +87,6 @@
         "location": "7 km E of Calumet, Oklahoma",
         "time": "2026-11-15T12:10:08.217Z",
         "distance": "42.6"
-      },
-      {
-        "magnitude": 3.06,
-        "location": "6 km E of Calumet, Oklahoma",
-        "time": "2026-11-15T11:29:08.070Z",
-        "distance": "42.2"
       }
     ],
     "dataAvailable": true
