@@ -1,20 +1,20 @@
 {
-  "timestamp": "2026-11-23T01:02:13.663Z",
-  "lastUpdated": "2026-11-23T01:02:13.663Z",
+  "timestamp": "2026-11-23T01:04:13.846Z",
+  "lastUpdated": "2026-11-23T01:04:13.846Z",
   "weather": {
     "temperature": 42,
     "feelsLike": 39,
     "humidity": 68,
     "pressure": "24.02",
     "windSpeed": 4,
-    "windGust": 6,
-    "windLull": 4,
-    "windDirection": 57,
+    "windGust": 5,
+    "windLull": 3,
+    "windDirection": 58,
     "heatIndex": 42,
     "windChill": 39,
     "dewPoint": 32,
     "wetBulbTemperature": 37,
-    "wetBulbGlobeTemperature": 39,
+    "wetBulbGlobeTemperature": 38,
     "stationPressure": "24.02",
     "pressureTrend": "steady",
     "uvIndex": 0,
@@ -36,19 +36,19 @@
     "dataAvailable": true
   },
   "aircraft": {
-    "total": 179,
+    "total": 169,
     "commercial": 36,
-    "generalAviation": 143,
+    "generalAviation": 133,
     "lifeFlights": 0,
     "military": 0,
     "balloons": 0,
     "highestAltitude": 47025,
     "aircraftNearby": 0,
-    "totalObservations": 4235,
+    "totalObservations": 4187,
     "dataAvailable": true
   },
   "seismic": {
-    "totalObservations": 69,
+    "totalObservations": 65,
     "activeChannels": 4,
     "dataQuality": 100,
     "stationHealth": "Excellent",
@@ -57,19 +57,25 @@
     "stationCode": "R923A",
     "networkCode": "AM",
     "maxSamples": 36992,
-    "avgSamples": 32373,
+    "avgSamples": 32362,
     "sampleRate": 100,
     "recentEvents": 0,
     "totalHistoricalObservations": 1847293,
     "dataAvailable": true
   },
   "earthquakes": {
-    "totalToday": 1,
+    "totalToday": 2,
     "within10mi": 0,
     "within25mi": 1,
     "significantEvents": 1,
     "largestMagnitude": 3.19,
     "recentEvents": [
+      {
+        "magnitude": 2.55,
+        "location": "10 km NNW of El Reno, Oklahoma",
+        "time": "2026-11-23T01:02:04.085Z",
+        "distance": "44.5"
+      },
       {
         "magnitude": 3.19,
         "location": "5 km NNW of Hydro, Oklahoma",
